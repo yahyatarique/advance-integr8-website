@@ -8,7 +8,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/ai8-logo.svg" />
     <!-- Local Fonts -->
-    <link rel="stylesheet" href="../src/eurostile/Eurostile.ttf" />
+    <!-- <link rel="stylesheet" href="assets/eurostile/Eurostile.ttf" /> -->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,7 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
-
+    <script src="main.js" defer></script>
     <title>Ai8 | Empowering Success</title>
 </head>
 <header>
@@ -30,9 +30,9 @@
             <img src="assets/ai8-logo-dark.svg" alt="Ai8 Logo" />
         </div>
         <ul class="flex gap-20 items-center text-xl font-bold">
-            <li class="cursor-pointer">Work</li>
-            <li>Services</li>
-            <li>Our Story</li>
+            <li class="nav-item cursor-pointer">Work</li>
+            <li class="nav-item cursor-pointer">Services</li>
+            <li class="nav-item cursor-pointer">Our Story</li>
         </ul>
         <button class="btn text-xl uppercase font-bold text-primary-red border-spacing-1">Connect</button>
     </nav>
@@ -40,8 +40,8 @@
 <section class="hero">
     <div>
 
-        <span>Empowering</span>
-        <span>
+        <span id="hero-text-1" class="hero-item">Empowering</span>
+        <span class="hero-item">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="171" height="107" viewBox="0 0 171 107" fill="none">
                 <path
@@ -64,8 +64,8 @@
                 </defs>
             </svg>
         </span>
-        <span>Success</span>
-        <span>
+        <span id="hero-text-2" class="hero-item">Success</span>
+        <span class="hero-item">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="189" height="90" viewBox="0 0 189 90" fill="none">
                 <path d="M187 2L113 88" stroke="url(#paint0_linear_396_290)" stroke-width="5" />
@@ -96,24 +96,26 @@
                 </defs>
             </svg>
         </span>
-        <span> Through Innovative
+        <span id="hero-text-3" class="hero-item"> Through Innovative
         </span>
-        <span>
+        <span class="hero-item">
             Solutions</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="190" height="93" viewBox="0 0 190 93" fill="none">
-            <rect x="1.5" y="1.5" width="187" height="90" rx="45" stroke="#E6222F" stroke-width="3" />
-            <circle cx="143.5" cy="46.5" r="37.5" fill="url(#paint0_linear_660_280)" />
-            <defs>
-                <linearGradient id="paint0_linear_660_280" x1="143.5" y1="9" x2="196.585" y2="60.8566"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#F96E7C" />
-                    <stop offset="1" stop-color="#8D74EF" />
-                </linearGradient>
-            </defs>
-        </svg>
-        <span>
-            <span>Turning Visions Into IT-Enabled Success.
-            </span>
+        <span class="hero-item">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="190" height="93" viewBox="0 0 190 93" fill="none">
+                <rect x="1.5" y="1.5" width="187" height="90" rx="45" stroke="#E6222F" stroke-width="3" />
+                <circle cx="143.5" cy="46.5" r="37.5" fill="url(#paint0_linear_660_280)" />
+                <defs>
+                    <linearGradient id="paint0_linear_660_280" x1="143.5" y1="9" x2="196.585" y2="60.8566"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F96E7C" />
+                        <stop offset="1" stop-color="#8D74EF" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </span>
+        <span class="hero-item">Turning Visions Into IT-Enabled Success.
+        </span>
     </div>
     <div class="hero_cta">
         <button class="btn text-xl uppercase font-bold text-primary-red border-spacing-1">Get Started</button>
@@ -138,7 +140,6 @@
             </button>
         </div>
     </div>
-
 </section>
 </body>
 

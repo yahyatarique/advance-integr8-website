@@ -2,11 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Eurostile';
+    src: url('../assets/eurostile/Eurostile.ttf');
+}
+
 @layer base {
+    html {
+    font-family: 'Eurostile', sans-serif;
+
+    }
   .header-nav {
     @apply text-primary bg-white;
     @apply flex justify-between items-center;
     @apply w-full;
+    font-family: 'Eurostile', sans-serif;
     padding: 60px 80px 40px 80px;
     gap: 10px;
     color: var(--primary-blue, #102054);
@@ -44,11 +54,11 @@
     font-size: 110px;
     line-height: normal;
     color: var(--primary-blue, #102054);
-    font-size: 118px;
+    font-size: 136px;
     text-align: justify;
     font-style: normal;
     font-weight: 700;
-    line-height: 144px; /* 116.129% */
+    line-height: 150px; /* 116.129% */
     text-transform: uppercase;
   }
 
@@ -96,9 +106,11 @@
     text-transform: uppercase;
   }
 
-  .hero span:nth-last-child(1) {
+  .hero-item:nth-last-child(1) {
     font-size: 28px;
-    max-width: 50%;
+    margin: 0;
+    margin-left: auto;
+    max-width: 30%;
     line-height: normal;
     text-align: right;
     font-weight: lighter;

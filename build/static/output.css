@@ -434,6 +434,10 @@ video {
   display: none;
 }
 
+html {
+  font-family: 'Eurostile', sans-serif;
+}
+
 .header-nav {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -443,6 +447,7 @@ video {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  font-family: 'Eurostile', sans-serif;
   padding: 60px 80px 40px 80px;
   gap: 10px;
   color: var(--primary-blue, #102054);
@@ -481,11 +486,11 @@ video {
   padding-inline: 120px;
   line-height: normal;
   color: var(--primary-blue, #102054);
-  font-size: 118px;
+  font-size: 136px;
   text-align: justify;
   font-style: normal;
   font-weight: 700;
-  line-height: 144px;
+  line-height: 150px;
   /* 116.129% */
   text-transform: uppercase;
 }
@@ -537,6 +542,8 @@ video {
 
 .hero span:nth-last-child(1) {
   font-size: 28px;
+  margin: 0;
+  margin-left: auto;
   max-width: 50%;
   line-height: normal;
   text-align: right;
@@ -572,6 +579,28 @@ span {
   /* 38.4px */
   text-transform: uppercase;
   width: 60%;
+}
+
+.btn.btn-cta {
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 34 47 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(208 214 249 / var(--tw-text-opacity));
+  text-transform: uppercase;
+  border-radius: 9999px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  /* 33.6px */
+  letter-spacing: 2.88px;
 }
 
 *, ::before, ::after {
@@ -730,4 +759,14 @@ span {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+@font-face {
+  font-family: 'Eurostile';
+
+  src: url('../assets/eurostile/Eurostile.ttf');
 }
