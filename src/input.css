@@ -135,7 +135,7 @@
 
   .btn.btn-cta {
     @apply bg-primary-red;
-    @apply text-secondary-white;
+    @apply text-secondary;
     @apply uppercase;
     @apply font-bold;
     @apply rounded-full;
