@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/input.css -o ./build/static/output.css --watch",
-    "dev": "live-server ./build"
+    "dev": "live-server ./build",
+    "build-netlify": "npx tailwindcss -i ./src/input.css -o ./build/static/output.css --minify && npm run dev"
   },
   "dependencies": {
     "gsap": "^3.12.2",
