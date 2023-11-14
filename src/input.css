@@ -3,20 +3,19 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Eurostile';
-    src: url('../assets/eurostile/Eurostile.ttf');
+  font-family: "Eurostile";
+  src: url("../assets/eurostile/Eurostile.ttf");
 }
 
 @layer base {
-    html {
-    font-family: 'Eurostile', sans-serif;
-
-    }
+  html {
+    font-family: "Eurostile", sans-serif;
+  }
   .header-nav {
     @apply text-primary bg-white;
     @apply flex justify-between items-center;
     @apply w-full;
-    font-family: 'Eurostile', sans-serif;
+    font-family: "Eurostile", sans-serif;
     padding: 60px 80px 40px 80px;
     gap: 10px;
     color: var(--primary-blue, #102054);
@@ -43,7 +42,6 @@
     @apply bg-white;
     @apply uppercase;
     @apply relative;
-    @apply z-0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,9 +58,10 @@
     font-weight: 700;
     line-height: 150px; /* 116.129% */
     text-transform: uppercase;
+    overflow: hidden;
   }
 
-  .hero_cta {
+  .hero-cta {
     @apply uppercase;
     @apply font-bold;
     @apply m-40;
@@ -73,7 +72,7 @@
     flex-direction: column;
   }
 
-  .hero_cta svg {
+  .hero-cta svg {
     height: 1em;
     width: min-content;
     display: inline-block;
@@ -85,7 +84,7 @@
     bottom: 0;
     right: 0;
     border-radius: 50%;
-    z-index: -1;
+    z-index: -10000;
     border-radius: 1001px;
     background: rgba(225, 74, 107, 0.2);
     filter: blur(100px);
@@ -123,6 +122,8 @@
   .achievements {
     border-radius: 44px;
     background: var(--primary-blue, #102054);
+    top: 0;
+    right: 0;
     min-width: 100vh;
     height: 900px;
     flex-shrink: 0;
@@ -132,7 +133,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 76.8px */
-    padding: 40px 80px;
+    padding: 80px 120px;
   }
 
   .achievements_text {
@@ -163,6 +164,42 @@
     line-height: 140%;
     /* 33.6px */
     letter-spacing: 2.88px;
-
   }
+
+  .achievement-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.achievement-card {
+    border-right: 2px solid var(--secondary-white, #fff);
+    padding-right: 20px;
+}
+
+.achievement-card:nth-of-type(3) {
+    border-right: none;
+}
+.ach_text {
+    color: var(--secondary-white, #fff);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+
+  .about-us {
+    display: flex;
+    align-items: space-between;
+
+}
+img {
+    width: 100%;
+
+}
 }

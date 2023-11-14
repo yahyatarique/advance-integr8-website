@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Be Vietnam Pro', 'sans-serif'],
+        sans: ['Eurostile', 'sans-serif'],
       },
       // Custom Colors
       colors: {
@@ -20,7 +20,6 @@ module.exports = {
         'secondary-dark': '#232323',
         'secondary-grey': '#C1C1C1',
       }
-
     },
   },
   plugins: [
