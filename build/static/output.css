@@ -448,15 +448,15 @@ html {
   justify-content: space-between;
   width: 100%;
   font-family: "Eurostile", sans-serif;
-  padding: 60px 80px 40px 80px;
-  gap: 10px;
+  padding: 3rem 4rem 2rem 4rem;
+  /* gap: 10px; */
   color: var(--primary-blue, #102054);
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%;
-  /* 33.6px */
-  letter-spacing: 2.88px;
+  line-height: 100%;
+  letter-spacing: normal;
+  text-transform: uppercase;
 }
 
 .header-nav li {
@@ -470,35 +470,50 @@ html {
   color: rgb(230 34 47 / var(--tw-text-opacity));
 }
 
+.btn-cta::after {
+  content: url("../assets/button_corner.svg");
+  position: absolute;
+  top: 0.25em;
+  right: 1em;
+  transform: translate(50%, -25%);
+  z-index: -1;
+}
+
 .hero {
   height: 100vh;
   --tw-text-opacity: 1;
   color: rgb(11 13 23 / var(--tw-text-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   position: relative;
+  z-index: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-block: 160px;
-  padding-inline: 120px;
-  line-height: normal;
+  min-height: min(100vh, 900px);
+  padding-top: 15vh;
+  padding-inline: 10%;
   color: var(--primary-blue, #102054);
-  font-size: 136px;
+  font-size: 90px;
   text-align: justify;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150px;
+  font-weight: 1000;
+  line-height: 100px;
   /* 116.129% */
+  letter-spacing: -0.01em;
   text-transform: uppercase;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.hero > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5ch;
 }
 
 .hero-cta {
   text-transform: uppercase;
   font-weight: 700;
-  margin: 10rem;
+  margin: 2.5rem;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -518,36 +533,45 @@ html {
   bottom: 0;
   right: 0;
   border-radius: 50%;
-  z-index: -10000;
   border-radius: 1001px;
-  background: rgba(225, 74, 107, 0.2);
-  filter: blur(100px);
+  background: rgba(225, 74, 107, 0.25);
+  filter: blur(60px);
   width: 1001px;
   height: 1001px;
-  flex-shrink: 0;
   transform: translate(50%, 50%);
 }
 
+.hero > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
 .hero svg {
-  height: 1em;
-  width: -moz-min-content;
-  width: min-content;
+  height: 1.3em;
+  padding-block: 0.1em;
   display: inline-block;
+  margin-inline: 0;
+  aspect-ratio: 1/1;
 }
 
 .hero span {
   display: inline-block;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
-.hero-item:nth-last-child(1) {
-  font-size: 28px;
-  margin: 0;
-  margin-left: auto;
+.hero-item.hero-item-last {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-inline: 0 auto;
   max-width: 30%;
   line-height: normal;
   text-align: right;
-  font-weight: lighter;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 span {
@@ -556,13 +580,11 @@ span {
 
 .achievements {
   border-radius: 44px;
-  background: var(--primary-blue, #102054);
+  background-color: #102054;
   top: 0;
   right: 0;
-  min-width: 100vh;
-  height: 900px;
-  flex-shrink: 0;
-  z-index: 20;
+  min-width: 100vw;
+  height: min(100vh, 900px);
   color: var(--secondary-white, #fff);
   font-size: 56px;
   font-style: normal;
@@ -584,11 +606,8 @@ span {
 }
 
 .btn.btn-cta {
-  --tw-bg-opacity: 1;
-  background-color: rgb(230 34 47 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(208 214 249 / var(--tw-text-opacity));
   text-transform: uppercase;
+  position: relative;
   border-radius: 9999px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -618,6 +637,7 @@ span {
 .achievement-card {
   border-right: 2px solid var(--secondary-white, #fff);
   padding-right: 20px;
+  padding-top: 20px;
 }
 
 .achievement-card:nth-of-type(3) {
