@@ -455,7 +455,7 @@ html {
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
-  letter-spacing: normal;
+  letter-spacing: 2.4px;
   text-transform: uppercase;
 }
 
@@ -489,9 +489,11 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 2rem;
   min-height: min(100vh, 900px);
-  padding-top: 15vh;
-  padding-inline: 10%;
+  padding-top: 2rem;
+  padding-inline: 0%;
+  margin-block-end: 2rem;
   color: var(--primary-blue, #102054);
   font-size: 90px;
   text-align: justify;
@@ -579,6 +581,8 @@ span {
 }
 
 .achievements {
+  position: relative;
+  z-index: 0;
   border-radius: 44px;
   background-color: #102054;
   top: 0;
@@ -592,6 +596,22 @@ span {
   line-height: 120%;
   /* 76.8px */
   padding: 80px 120px;
+  overflow: hidden;
+}
+
+.achievements::after {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  right: 80%;
+  border-radius: 50%;
+  border-radius: 543px;
+  background: rgba(134, 113, 244, 0.60);
+  filter: blur(100px);
+  width: 543px;
+  height: 543px;
+  transform: translate(50%, 50%);
+  z-index: -1;
 }
 
 .achievements_text {
