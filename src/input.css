@@ -43,11 +43,10 @@
     top: 0.25em;
     right: 1em;
     transform: translate(50%, -25%);
-    z-index: -1;
+    z-index: 10;
   }
 
   .hero {
-    @apply h-screen;
     @apply text-primary;
     @apply uppercase;
     @apply relative;
@@ -57,7 +56,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
-    min-height: min(100vh, 900px);
+    /* min-height: min(100vh, 600px); */
     padding-top: 2rem;
     padding-inline: 0%;
     margin-block-end: 2rem;
@@ -112,8 +111,9 @@
   .hero > div {
     display: flex;
     align-items: center;
-    gap: 10px;
     flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: min(80%, 1200px);
   }
 
   .hero svg {
@@ -148,12 +148,11 @@
   }
 
   .achievements {
+
     position: relative;
     z-index: 0;
     border-radius: 44px;
     background-color: #102054;
-    top: 0;
-    right: 0;
     min-width: 100vw;
     height: min(100vh, 900px);
     color: var(--secondary-white, #fff);
@@ -163,9 +162,10 @@
     line-height: 120%; /* 76.8px */
     padding: 80px 120px;
     overflow: hidden;
+    scale: 1.02;
   }
 
-  .achievements::after {
+  /* .achievements::after {
     content: "";
     position: absolute;
     bottom: 25%;
@@ -178,11 +178,34 @@
     height: 543px;
     transform: translate(50%, 50%);
     z-index: -1;
+  } */
+
+  .blob {
+    content: "";
+    position: absolute;
+    bottom: 25%;
+    right: 80%;
+    border-radius: 50%;
+    border-radius: 543px;
+    background: #E14A6B;
+    filter: blur(100px);
+    width: 300px;
+    height: 300px;
+    transform: translate(50%, 50%);
+    z-index: -1;
+  }
+
+  .blob + .blob {
+    width: 200px;
+    height: 200px;
+    right: 10px;
+    bottom: 20%;
+    background: #8671F4;
   }
 
   .achievements_text {
     color: var(--secondary-white, #fff);
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%; /* 38.4px */
@@ -201,7 +224,7 @@
 
     display: inline-block;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
@@ -213,16 +236,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
+    gap: 0;
   }
 
   .achievement-card {
     border-right: 2px solid var(--secondary-white, #fff);
-    padding-right: 20px;
-    padding-top: 20px;
+    padding-inline: min(5%, 6rem);
+    padding-block: 4rem;
+    font-size: 6rem;
+
+    @apply flex;
+    @apply justify-end;
+    @apply items-start;
+    @apply flex-col;
   }
 
   .achievement-card:nth-of-type(3) {
@@ -230,11 +259,11 @@
   }
   .ach_text {
     color: var(--secondary-white, #fff);
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%;
-    text-transform: uppercase;
+    line-height: 100%;
+    margin-block-start: 16px;
   }
 
   .about-us {
