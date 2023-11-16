@@ -845,6 +845,19 @@ span {
 
 .partner-logo {
   opacity: 0.3;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  min-height: 100%;
+  mix-blend-mode: multiply !important;
 }
 
 .testimonial-section {

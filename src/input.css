@@ -392,6 +392,17 @@
 
   .partner-logo {
     @apply opacity-30;
+    @apply min-w-min;
+    @apply h-48;
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+  }
+
+  .partner-logo img {
+    @apply object-contain;
+    @apply min-h-full;
+    mix-blend-mode: multiply !important;
   }
 
   .testimonial-section {

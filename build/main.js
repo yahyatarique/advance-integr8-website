@@ -1,25 +1,38 @@
 gsap.registerPlugin(ScrollTrigger);
 
 function createHeaderTimeline(tl) {
-  tl.from(".logo", { y: -50, x: -100, opacity: 0, scale: 0, duration: 0.5 });
-  tl.from(".nav-item", { y: -50, opacity: 0, duration: 0.5, stagger: 0.1 });
+  tl.from(".logo", { y: -50, x: -100, opacity: 0, scale: 0});
+  tl.from(".nav-item", { y: -50, opacity: 0, stagger: 0.1});
 }
 
 function createHeroTimeline(tl) {
   tl.from(".hero-item", {
     y: 50,
     opacity: 0,
-    duration: 0.5,
     stagger: 0.1,
     ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".hero",
+      start: "top 80%",
+      end: "center -20%",
+      toggleActions: "play none none reverse",
+      scrub: 0.25,
+    }
   });
-  tl.from(".btn", {
+  tl.from(".hero-section .btn", {
     scale: 1.5,
     y: -50,
     opacity: 0,
     duration: 0.5,
     stagger: 0.1,
     ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".hero",
+      start: "top 75%",
+      end: "top 0%",
+      toggleActions: "play none none reverse",
+      scrub: 0.25,
+    }
   });
 }
 
@@ -28,14 +41,27 @@ function createAchievementTimeline(tl) {
     y: 250,
     opacity: 0,
     duration: 0.4,
-    stagger: 0.1,
-    ease: "power1.out"
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".achievements",
+      start: "top 80%",
+      end: "top 20%",
+      toggleActions: "play none none reverse",
+      scrub: true,
+    }
   });
   tl.from(".achievement-card", {
     y: 500,
     opacity: 0,
     stagger: 0.1,
     ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".achievement-card",
+      start: "top +=400%",
+      end: "bottom 100%",
+      toggleActions: "play none none reverse",
+      scrub: true,
+    }
   });
 }
 
@@ -46,13 +72,40 @@ function createAboutUsTimeline(tl) {
     opacity: 0,
     stagger: 0.1,
     ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".about-us-section",
+      start: "top 80%",
+      end: "top -20%",
+      toggleActions: "play none none reverse",
+      scrub: true,
+    }
   });
-  tl.from(".col", {
+  tl.from(".about-us-section .col", {
     y: 500,
     opacity: 0,
     stagger: 0.2,
     ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".about-us-section",
+      start: "top top",
+      end: "bottom 100%",
+      toggleActions: "play none none reverse",
+      scrub: true,
+    }
   });
+  tl.from(".about-us-section .col svg", {
+    y: 500,
+    opacity: 0,
+    stagger: 0.2,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".about-us-section",
+      start: "top top",
+      end: "bottom 100%",
+      toggleActions: "play none none reverse",
+      scrub: true,
+    }
+  })
 }
 
 const tl = gsap.timeline({
@@ -69,6 +122,35 @@ createHeroTimeline(tl);
 // });
 createAchievementTimeline(tl);
 createAboutUsTimeline(tl);
+
+const infiniteSlider = () => {
+  gsap.fromTo(".partner-logo", {
+    x: 100,
+    stagger: 0.02,
+    duration: 2,
+    ease: "power1.out",
+    repeat: -1,
+    yoyo: true,
+    scrollTrigger: {
+      trigger: ".partners-logos",
+      start: "top bottom",
+      end: "bottom top",
+    },
+  }, {
+    x: -100,
+    stagger: 0.02,
+    duration: 2,
+    ease: "power1.out",
+    repeat: -1,
+    yoyo: true,
+    scrollTrigger: {
+      trigger: ".partners-logos",
+      start: "top bottom",
+      end: "bottom top",
+    },
+  });
+}
+infiniteSlider();
 
 
 // gsap.from('.blob', {
