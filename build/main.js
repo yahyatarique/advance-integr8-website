@@ -1,27 +1,14 @@
 gsap.registerPlugin(ScrollTrigger);
 
 function createHeaderTimeline(tl) {
-  tl.from(".logo", { y: -50, x: -100, opacity: 0, scale: 0});
-  tl.from(".nav-item", { y: -50, opacity: 0, stagger: 0.1});
+  tl.from(".logo", { y: -50, x: -100, opacity: 0, scale: 0 });
+  tl.from(".nav-item", { y: -50, opacity: 0, stagger: 0.1 });
 }
 
 function createHeroTimeline(tl) {
-  tl.from(".hero-item", {
-    y: 50,
-    opacity: 0,
-    stagger: 0.1,
-    ease: "power1.out",
-    scrollTrigger: {
-      trigger: ".hero",
-      start: "top 80%",
-      end: "center -20%",
-      toggleActions: "play none none reverse",
-      scrub: 0.5,
-    }
-  });
   tl.from(".hero-section .btn", {
-    scale: 1.5,
-    y: -50,
+    scale: 1.75,
+    y: -100,
     opacity: 0,
     stagger: 0.1,
     ease: "power1.out",
@@ -30,8 +17,21 @@ function createHeroTimeline(tl) {
       start: "top 50%",
       end: "top 0%",
       toggleActions: "play none none reverse",
-      scrub: 0.5,
-    }
+      scrub: 1,
+    },
+  });
+  tl.from(".hero-item", {
+    y: 50,
+    opacity: 0,
+    stagger: 0.5,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".pin-1",
+      start: "top 0%",
+      end: "center 10%",
+      toggleActions: "play none none reverse",
+      scrub: 2,
+    },
   });
 }
 
@@ -41,13 +41,14 @@ function createAchievementTimeline(tl) {
     opacity: 0,
     duration: 0.4,
     ease: "power1.out",
+    boxShadow: "0px 0px 0px 0 rgba(0, 0, 0, 0.5)",
     scrollTrigger: {
       trigger: ".achievements",
-      start: "top 80%",
-      end: "top 40%",
+      start: "top 40%",
+      end: "top 20%",
       toggleActions: "play none none reverse",
-      scrub: true,
-    }
+      scrub: 0.5,
+    },
   });
   tl.from(".achievement-card", {
     y: 500,
@@ -59,24 +60,34 @@ function createAchievementTimeline(tl) {
       start: "top 100%",
       end: "top 10%",
       toggleActions: "play none none reverse",
-      scrub: 1,
-    }
+      scrub: 0.25,
+    },
+  });
+  tl.to(".achievements", {
+    boxShadow: "12px 12px 6px 0 rgba(0, 0, 0, 0.5)",
+    scrollTrigger: {
+      trigger: ".achievements",
+      start: "bottom 80%",
+      end: "top 10%",
+      toggleActions: "play none none reverse",
+      scrub: true,
+    },
   });
 }
 
 function createAboutUsTimeline(tl) {
-  tl.from('.about-us-section > img:nth-child(1)', {
+  tl.from(".about-us-section > img:nth-child(1)", {
     y: 250,
     opacity: 0,
     ease: "power1.out",
     scrollTrigger: {
       trigger: ".about-us-section",
-      start: "top 80%",
+      start: "top +120%",
       end: "top -20%",
       toggleActions: "play none none reverse",
       scrub: true,
-    }
-  })
+    },
+  });
   tl.from(".about-us-header", {
     y: 250,
     scale: 1.5,
@@ -88,8 +99,8 @@ function createAboutUsTimeline(tl) {
       start: "top 80%",
       end: "top -20%",
       toggleActions: "play none none reverse",
-      scrub: true,
-    }
+      scrub: 0.125,
+    },
   });
   tl.from(".about-us-section .col", {
     y: 500,
@@ -101,8 +112,8 @@ function createAboutUsTimeline(tl) {
       start: "top top",
       end: "bottom 100%",
       toggleActions: "play none none reverse",
-      scrub: true,
-    }
+      scrub: 0.0625,
+    },
   });
   tl.from(".about-us-section .col svg", {
     y: 50,
@@ -115,8 +126,8 @@ function createAboutUsTimeline(tl) {
       end: "bottom 40%",
       toggleActions: "play none none reverse",
       scrub: true,
-    }
-  })
+    },
+  });
 }
 
 function createTestimonialsTimeline(tl) {
@@ -131,9 +142,9 @@ function createTestimonialsTimeline(tl) {
       end: "center 20%",
       toggleActions: "play none none reverse",
       scrub: true,
-    }
+    },
   });
-  tl.from(".testimonial", {
+  tl.from(".testimonial-image", {
     y: 500,
     opacity: 0,
     stagger: 0.2,
@@ -144,21 +155,104 @@ function createTestimonialsTimeline(tl) {
       end: "bottom 100%",
       toggleActions: "play none none reverse",
       scrub: true,
-    }
+    },
   });
-  tl.from(".about-us-section .col svg", {
+  tl.from(".testimonial", {
+    borderBottom: "1px solid transparent",
     y: 500,
     opacity: 0,
     stagger: 0.2,
     ease: "power1.out",
     scrollTrigger: {
-      trigger: ".about-us-section",
-      start: "top top",
+      trigger: ".testimonial-section",
+      start: "top 50%",
       end: "bottom 100%",
       toggleActions: "play none none reverse",
       scrub: true,
-    }
-  })
+    },
+  });
+  tl.from(".testimonial-details .col", {
+    y: 200,
+    opacity: 0,
+    stagger: 0.25,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".testimonial-section",
+      start: "top top",
+      end: "bottom 120%",
+      toggleActions: "play none none reverse",
+      scrub: true,
+    },
+  });
+  tl.from(".slider-control .slider-button", {
+    y: 2000,
+    opacity: 0,
+    // stagger: 0.5,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".testimonial-section",
+      start: "top 100%",
+      end: "bottom 100%",
+      toggleActions: "play none none reverse",
+      scrub: true,
+    },
+  });
+}
+function createServicesTimeline(tl) {
+  tl.from(".services-section .row .col", {
+    y: 250,
+    opacity: 0,
+    stagger: 0.5,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".services-section",
+      start: "top 100%",
+      end: "center center",
+      toggleActions: "play none none reverse",
+      scrub: true,
+    },
+  });
+  tl.from(".services-card", {
+    y: 5000,
+    x: 5000,
+    opacity: 0,
+    stagger: 0.2,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".services-section",
+      start: "top 100px",
+      end: "bottom 100%",
+      toggleActions: "play none none reverse",
+      scrub: 2,
+    },
+  });
+  // tl.from(".testimonial", {
+  //   borderBottom: "1px solid transparent",
+  //   y: 500,
+  //   opacity: 0,
+  //   stagger: 0.2,
+  //   ease: "power1.out",
+  //   scrollTrigger: {
+  //     trigger: ".testimonial-section",
+  //     start: "top 50%",
+  //     end: "bottom 100%",
+  //     toggleActions: "play none none reverse",
+  //     scrub: true,
+  //   }
+  // });
+  // tl.from(".testimonial-details .col", {
+  //   y: 200,
+  //   opacity: 0,
+  //   stagger: 0.25,
+  //   ease: "power1.out",
+  //   scrollTrigger: {
+  //     trigger: ".testimonial-section",
+  //     start: "top top",
+  //     end: "bottom 100%",
+  //     toggleActions: "play none none reverse",
+  //     scrub: true,
+  //   }
+  // })
 }
 
 const tl = gsap.timeline({
@@ -176,36 +270,40 @@ createHeroTimeline(tl);
 createAchievementTimeline(tl);
 createAboutUsTimeline(tl);
 createTestimonialsTimeline(tl);
+createServicesTimeline(tl);
 
 const infiniteSlider = () => {
-  gsap.fromTo(".partner-logo", {
-    x: 100,
-    stagger: 0.02,
-    duration: 2,
-    ease: "power1.out",
-    repeat: -1,
-    yoyo: true,
-    scrollTrigger: {
-      trigger: ".partners-logos",
-      start: "top bottom",
-      end: "bottom top",
+  gsap.fromTo(
+    ".partner-logo",
+    {
+      x: 100,
+      stagger: 0.02,
+      duration: 2,
+      ease: "power1.out",
+      repeat: -1,
+      yoyo: true,
+      scrollTrigger: {
+        trigger: ".partners-logos",
+        start: "top bottom",
+        end: "bottom top",
+      },
     },
-  }, {
-    x: -100,
-    stagger: 0.02,
-    duration: 2,
-    ease: "power1.out",
-    repeat: -1,
-    yoyo: true,
-    scrollTrigger: {
-      trigger: ".partners-logos",
-      start: "top bottom",
-      end: "bottom top",
-    },
-  });
-}
+    {
+      x: -100,
+      stagger: 0.02,
+      duration: 2,
+      ease: "power1.out",
+      repeat: -1,
+      yoyo: true,
+      scrollTrigger: {
+        trigger: ".partners-logos",
+        start: "top bottom",
+        end: "bottom top",
+      },
+    }
+  );
+};
 infiniteSlider();
-
 
 // gsap.from('.blob', {
 //   scrollTrigger: {
@@ -226,8 +324,6 @@ infiniteSlider();
 //   ease: 'power1.in',
 //   stagger: 0.2
 // })
-
-
 
 // function createCounter(htmlEl, count) {
 //   htmlEl.innerText = 0;
