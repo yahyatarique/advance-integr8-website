@@ -78,6 +78,7 @@ function createAchievementTimeline(tl) {
 function createAboutUsTimeline(tl) {
   tl.from(".about-us-section > img:nth-child(1)", {
     y: 250,
+    scale: 1.5,
     opacity: 0,
     ease: "power1.out",
     scrollTrigger: {
@@ -147,7 +148,6 @@ function createTestimonialsTimeline(tl) {
   tl.from(".testimonial-image", {
     y: 500,
     opacity: 0,
-    stagger: 0.2,
     ease: "power1.out",
     scrollTrigger: {
       trigger: ".testimonial-section",
@@ -172,9 +172,8 @@ function createTestimonialsTimeline(tl) {
     },
   });
   tl.from(".testimonial-details .col", {
-    y: 200,
+    y: 500,
     opacity: 0,
-    stagger: 0.25,
     ease: "power1.out",
     scrollTrigger: {
       trigger: ".testimonial-section",
@@ -213,11 +212,12 @@ function createServicesTimeline(tl) {
     },
   });
   tl.from(".services-card", {
-    y: 5000,
-    x: 5000,
+    // y: 5000,
+    x: -500,
+    // scale: 1.2,
     opacity: 0,
-    stagger: 0.2,
-    ease: "power1.out",
+    stagger: 0.4,
+    ease: "power1",
     scrollTrigger: {
       trigger: ".services-section",
       start: "top 100px",

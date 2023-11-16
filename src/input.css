@@ -90,7 +90,6 @@
     font-weight: 1000;
     line-height: 100px; /* 116.129% */
     letter-spacing: -0.01em;
-    text-transform: uppercase;
     /* overflow: hidden; */
   }
 
@@ -507,7 +506,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all 0.2s var(--bezier, cubic-bezier(0.4, 0, 0.2, 1));
+    transition: all 0.5s var(--bezier, cubic-bezier(0.4, 0, 0.2, 1));
     transform-origin: top left;
   }
 }
