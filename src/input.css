@@ -452,4 +452,9 @@
   img {
     width: 100%;
   }
+
+  .services-section {
+    border-radius: 44px;
+background: var(--primary-blue, #102054);
+  }
 }

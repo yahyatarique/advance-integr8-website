@@ -911,6 +911,11 @@ img {
   width: 100%;
 }
 
+.services-section {
+  border-radius: 44px;
+  background: var(--primary-blue, #102054);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1109,6 +1114,10 @@ img {
   aspect-ratio: 1 / 1;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -1193,6 +1202,10 @@ img {
 
 .pl-0 {
   padding-left: 0px;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .text-justify {
