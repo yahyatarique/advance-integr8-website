@@ -436,6 +436,7 @@ video {
 
 html {
   font-family: "Eurostile", sans-serif;
+  overflow-x: hidden;
 }
 
 .row {
@@ -605,8 +606,8 @@ html {
 
 .hero-item.hero-item-last {
   font-size: 20px;
-  font-family: sans-serif;
-  margin-inline: 0 auto;
+  font-family: "Poppins", sans-serif;
+  margin-inline: auto 0;
   max-width: 30%;
   line-height: normal;
   text-align: right;
@@ -743,6 +744,12 @@ span {
   background: var(--Gray-6, #f2f2f2);
   position: relative;
   z-index: -1;
+}
+
+.about-us-section > img:nth-child(1) {
+  width: auto;
+  height: 100%;
+  margin-top: -24px;
 }
 
 .about-us-section::after {
@@ -1052,14 +1059,13 @@ img {
   margin-bottom: 0px;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .mr-5 {
@@ -1162,14 +1168,14 @@ img {
   padding-right: 0px;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pl-0 {

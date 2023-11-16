@@ -10,6 +10,7 @@
 @layer base {
   html {
     font-family: "Eurostile", sans-serif;
+    overflow-x: hidden;
   }
 
   .row {
@@ -155,8 +156,8 @@
 
   .hero-item.hero-item-last {
     font-size: 20px;
-    font-family: sans-serif;
-    margin-inline: 0 auto;
+    font-family: "Poppins", sans-serif;
+    margin-inline: auto 0;
     max-width: 30%;
     line-height: normal;
     text-align: right;
@@ -292,6 +293,12 @@
     background: var(--Gray-6, #f2f2f2);
     position: relative;
     z-index: -1;
+  }
+
+  .about-us-section > img:nth-child(1) {
+    width: auto;
+    height: 100%;
+    margin-top: -24px;
   }
 
   .about-us-section::after {
