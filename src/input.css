@@ -8,7 +8,7 @@
 }
 
 @layer base {
-  html {
+  html, body {
     font-family: "Eurostile", sans-serif;
     overflow-x: hidden;
     max-width: 100vw;
@@ -39,9 +39,12 @@
     @apply text-primary bg-white;
     @apply flex justify-between items-center;
     @apply w-full;
+    @apply mx-auto;
+    @apply container;
+    @apply px-10;
+    @apply py-6;
+    @apply relative;
     font-family: "Eurostile", sans-serif;
-    padding: 3rem 4rem 2rem 4rem;
-    /* gap: 10px; */
     color: var(--primary-blue, #102054);
     font-size: 22px;
     font-style: normal;
@@ -49,6 +52,7 @@
     line-height: 100%;
     letter-spacing: 2.4px;
     text-transform: uppercase;
+    max-width: min(100%, 1366px);
   }
 
   .header-nav li {
@@ -85,19 +89,22 @@
     padding-inline: 0%;
     margin-block-end: 2rem;
     color: var(--primary-blue, #102054);
-    font-size: 90px;
-    text-align: justify;
-    font-weight: 1000;
-    line-height: 100px; /* 116.129% */
-    letter-spacing: -0.01em;
-    /* overflow: hidden; */
+    font-size: 105px;
+    text-align: left;
+    font-weight: 900;
+    line-height: 115px; /* 116.129% */
+    letter-spacing: -0.005ch;
   }
 
   .hero > div > div {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.5ch;
+    justify-content: space-between;
+    width: 100%;
+    max-width: min(100%, 1366px);
+    margin-inline: 0;
+    gap: 0.25ch;
+    vertical-align: middle;
   }
 
   .hero-cta {
@@ -112,12 +119,12 @@
   }
 
   .hero-cta svg {
-    height: 1em;
+    aspect-ratio: 1/1;  
     width: min-content;
     display: inline-block;
   }
 
-  .hero::before {
+  .hero .blob {
     content: "";
     position: absolute;
     bottom: 0;
@@ -125,45 +132,50 @@
     border-radius: 50%;
     border-radius: 1001px;
     background: rgba(225, 74, 107, 0.25);
-    filter: blur(60px);
-    width: 1001px;
-    height: 1001px;
-    transform: translate(50%, 50%);
+    filter: blur(80px);
+    width: 800px;
+    height: 800px;
   }
 
   .hero > div {
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex-wrap: nowrap;
-    max-width: min(80%, 1200px);
   }
 
   .hero svg {
-    height: 1.3em;
-    padding-block: 0.1em;
-    display: inline-block;
-    margin-inline: 0;
+    height: 0.8em;
     aspect-ratio: 1/1;
   }
 
-  .hero span {
+  .hero > span {
     display: inline-block;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
   }
 
-  .hero-item.hero-item-last {
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    margin-inline: auto 0;
-    max-width: 30%;
-    line-height: normal;
-    text-align: right;
-    font-weight: 400;
+  .hero-item {
+    font-family: 'Eurostile', sans-serif;
+    min-width: max-content;
+    vertical-align: middle;
+  }
 
+  .hero-item img {
+    align-self: center;
+  }
+
+  .hero-item-last {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    margin-inline: auto 0;
+    line-height: normal;
     letter-spacing: normal;
+    text-align: right;
+    font-weight: 300;
+    margin-inline: 0;
+    max-width: 8rem;
+    text-transform: capitalize;
   }
 
   span {
@@ -184,7 +196,6 @@
     line-height: 120%; /* 76.8px */
     padding: 80px 120px;
     overflow: hidden;
-    scale: 1.02;
   }
 
   /* .achievements::after {
