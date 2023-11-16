@@ -81,6 +81,8 @@ function createAboutUsTimeline(tl) {
     ease: "power1.out",
     scrollTrigger: {
       trigger: ".about-us-section",
+      start: "top 100%",
+      end: "top 0%",
     },
   });
   tl.from(".about-us", {
@@ -91,20 +93,17 @@ function createAboutUsTimeline(tl) {
       trigger: ".achievement",
       start: "top top",
       end: "top 20%",
-      toggleActions: "play none none reverse",
     },
   });
   tl.from(".about-us-section .col", {
     y: 500,
     opacity: 0,
-    stagger: 0.2,
+    stagger: 0.5,
     ease: "power1.out",
     scrollTrigger: {
-      trigger: ".about-us-section",
-      start: "top 0",
+      trigger: ".about-us-card",
+      start: "top 100%",
       end: "bottom 20%",
-      toggleActions: "play none none reverse",
-      scrub: 0.0625,
     },
   });
   // tl.from(".about-us-section .col svg", {
