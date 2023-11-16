@@ -1074,6 +1074,10 @@ img {
   margin-top: 3rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1140,6 +1144,10 @@ img {
   gap: 5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .bg-fuchsia-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(232 121 249 / var(--tw-bg-opacity));
@@ -1157,6 +1165,11 @@ img {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pl-0 {
