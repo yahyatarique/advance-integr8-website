@@ -234,7 +234,8 @@
     z-index: -1;
   } */
 
-  .achievements .blob, .services-section .blob {
+  .achievements .blob,
+  .services-section .blob {
     position: absolute;
     border-radius: 50%;
     border-radius: 543px;
@@ -248,7 +249,8 @@
     bottom: 40%;
   }
 
-  .achievements .blob + .blob, .services-section .blob + .blob {
+  .achievements .blob + .blob,
+  .services-section .blob + .blob {
     width: 400px;
     bottom: 15%;
     right: 90%;
@@ -694,9 +696,16 @@
   }
 
   .sector-name {
+    @apply relative;
+    @apply z-0;
     @apply py-4;
     @apply px-6;
     font-family: "Poppins", sans-serif;
+    color: var(--secondary-white, #fff);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 33.6px */
     background: linear-gradient(
       108deg,
       transparent 3.15%,
@@ -707,8 +716,9 @@
     transition: all 0.2s var(--bezier, cubic-bezier(0.4, 0, 0.2, 1));
   }
 
-  .sector-name:hover {
-    @apply cursor-pointer;
+  .sector-name::before {
+    content: "";
+    position: absolute;
     background: linear-gradient(
       108deg,
       #f96e7c 3.15%,
@@ -716,6 +726,18 @@
       rgba(141, 116, 239, 0) 73.49%,
       rgba(141, 116, 239, 0) 89.49%
     );
+    width: 100%;
+    height: 100%;
+    scale: 0 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s var(--bezier, cubic-bezier(0.4, 0, 0.2, 1));
+    transform-origin: center left;
+  }
+
+  .sector-name:hover::before {
+    scale: 1;
   }
 
   .case-studies-section {
