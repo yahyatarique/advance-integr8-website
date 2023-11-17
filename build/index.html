@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,10 +14,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
 
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="static/output.css" />
@@ -25,683 +24,527 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
     <script src="main.js" defer></script>
     <title>Ai8 | Empowering Success</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <main class="experience">
-      <div class="hero-section pin-1">
-        <header>
-          <nav class="flex justify-between items-center header-nav">
-            <div class="logo cursor-pointer text-3xl">
-              <img src="assets/ai8-logo-dark.svg" alt="Ai8 Logo" preload/>
+        <div class="hero-section pin-1">
+            <header>
+                <nav class="flex justify-between items-center header-nav">
+                    <div class="logo cursor-pointer text-3xl">
+                        <img src="assets/ai8-logo-dark.svg" alt="Ai8 Logo" preload />
+                    </div>
+                    <ul class="flex gap-20 items-center text-xl font-bold">
+                        <li class="nav-item cursor-pointer">Work</li>
+                        <li class="nav-item cursor-pointer">Services</li>
+                        <li class="nav-item cursor-pointer">Our Story</li>
+                    </ul>
+                    <button class="btn text-xl uppercase font-bold text-primary-red border-spacing-1 btn-cta">
+                        Connect
+                    </button>
+                </nav>
+            </header>
+            <section class="hero">
+                <div class="blob"></div>
+                <div class="container flex my-10">
+                    <div class="row">
+                        <span class="hero-item">Empowering</span>
+                        <span class="hero-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="171" height="107" viewBox="0 0 171 107"
+                                fill="none">
+                                <path
+                                    d="M170.061 13.0607C170.646 12.4749 170.646 11.5251 170.061 10.9393L160.515 1.3934C159.929 0.807611 158.979 0.807611 158.393 1.3934C157.808 1.97919 157.808 2.92893 158.393 3.51472L166.879 12L158.393 20.4853C157.808 21.0711 157.808 22.0208 158.393 22.6066C158.979 23.1924 159.929 23.1924 160.515 22.6066L170.061 13.0607ZM3.5 67.5V47H0.5V67.5H3.5ZM37 13.5H169V10.5H37V13.5ZM3.5 47C3.5 28.4985 18.4985 13.5 37 13.5V10.5C16.8416 10.5 0.5 26.8416 0.5 47H3.5Z"
+                                    fill="url(#paint0_linear_396_295)" />
+                                <path
+                                    d="M0.939346 94.4393C0.353546 95.0251 0.353546 95.9749 0.939346 96.5607L10.4853 106.107C11.0711 106.692 12.0208 106.692 12.6066 106.107C13.1924 105.521 13.1924 104.571 12.6066 103.985L4.12132 95.5L12.6066 87.0147C13.1924 86.4289 13.1924 85.4792 12.6066 84.8934C12.0208 84.3076 11.0711 84.3076 10.4853 84.8934L0.939346 94.4393ZM167.5 40V60.5H170.5V40H167.5ZM134 94H2V97H134V94ZM167.5 60.5C167.5 79.0015 152.502 94 134 94V97C154.158 97 170.5 80.6584 170.5 60.5H167.5Z"
+                                    fill="url(#paint1_linear_396_295)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_396_295" x1="152.5" y1="12" x2="50.9478"
+                                        y2="-51.2931" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F96E7C" />
+                                        <stop offset="1" stop-color="#8D74EF" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_396_295" x1="160" y1="87" x2="44.4084"
+                                        y2="18.9568" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F96E7C" />
+                                        <stop offset="1" stop-color="#8D74EF" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span id="hero-text-2" class="hero-item">Success</span>
+                    </div>
+                    <div class="row">
+                        <span class="hero-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="189" height="90" viewBox="0 0 189 90"
+                                fill="none">
+                                <path d="M187 2L113 88" stroke="url(#paint0_linear_396_290)" stroke-width="5" />
+                                <path d="M150 2L76 88" stroke="url(#paint1_linear_396_290)" stroke-width="5" />
+                                <path d="M113 2L39 88" stroke="url(#paint2_linear_396_290)" stroke-width="5" />
+                                <path d="M76 2L2 88" stroke="url(#paint3_linear_396_290)" stroke-width="5" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_396_290" x1="150" y1="2" x2="125.568" y2="109.994"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F96E7C" />
+                                        <stop offset="1" stop-color="#8D74EF" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_396_290" x1="113" y1="2" x2="87.3893" y2="109.694"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F96E7C" />
+                                        <stop offset="1" stop-color="#8D74EF" />
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_396_290" x1="76" y1="2" x2="60.4813" y2="97.2065"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F96E7C" />
+                                        <stop offset="1" stop-color="#8D74EF" />
+                                    </linearGradient>
+                                    <linearGradient id="paint3_linear_396_290" x1="39" y1="2" x2="30.4334" y2="108.082"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F96E7C" />
+                                        <stop offset="1" stop-color="#8D74EF" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span id="hero-text-3" class="hero-item">Through&nbsp;&nbsp;&nbsp;Innovative
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="hero-item">Solutions</span>
+                        <span class="hero-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="190" height="93" viewBox="0 0 190 93"
+                                fill="none">
+                                <rect x="1.5" y="1.5" width="187" height="90" rx="45"
+                                    stroke="url(#paint0_linear_660_280)" stroke-width="3" />
+                                <circle cx="143.5" cy="46.5" r="37.5" fill="url(#paint0_linear_660_280)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_660_280" x1="143.5" y1="9" x2="196.585"
+                                        y2="60.8566" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F96E7C" class="hover:fill-none" />
+                                        <stop offset="1" stop-color="#8D74EF" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="hero-item flex-1 ml-auto mr-0 pl-auto max-w-fit">
+                            <span class="hero-item hero-item-last text-2xl">Turning Visions Into</span>
+                            <span class="hero-item hero-item-last text-2xl">IT-Enabled Success.</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="hero-cta btn">
+                    <button class="btn text-xl uppercase font-bold text-primary-red border-spacing-1">
+                        Get Started
+                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="71" viewBox="0 0 29 71" fill="none">
+                        <path opacity="0.4" d="M2.00059 13.5132L14.7285 26.1851L27.4564 13.5132"
+                            stroke="url(#paint0_linear_660_280)" stroke-width="3" />
+                        <path opacity="0.6" d="M2.00059 34.4207L14.7285 47.0925L27.4564 34.4207"
+                            stroke="url(#paint0_linear_660_280)" stroke-width="3" />
+                        <path d="M2.00059 55.3282L14.7285 68L27.4564 55.3282" stroke="url(#paint0_linear_660_280)"
+                            stroke-width="3" />
+                        <defs>
+                            <linearGradient id="paint0_linear_660_280" x1="143.5" y1="9" x2="196.585" y2="60.8566"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F96E7C" class="hover:fill-none" />
+                                <stop offset="1" stop-color="#8D74EF" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </section>
+        </div>
+        <section class="achievements text-white" id="achievements">
+            <div class="achievement flex justify-space-between items-center container">
+                <p class="achievements_text">Achievements</p>
+                <div class="flex-1">
+                    <h3>We bring effective solutions for businesses to scale.</h3>
+                    <button class="btn btn-cta">Know More</button>
+                </div>
             </div>
-            <ul class="flex gap-20 items-center text-xl font-bold">
-              <li class="nav-item cursor-pointer">Work</li>
-              <li class="nav-item cursor-pointer">Services</li>
-              <li class="nav-item cursor-pointer">Our Story</li>
-            </ul>
-            <button
-              class="btn text-xl uppercase font-bold text-primary-red border-spacing-1 btn-cta"
-            >
-              Connect
-            </button>
-          </nav>
-        </header>
-        <section class="hero">
             <div class="blob"></div>
-          <div class="container flex my-10">
-            <div class="row">
-              <span class="hero-item">Empowering</span>
-              <span class="hero-item">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="171"
-                  height="107"
-                  viewBox="0 0 171 107"
-                  fill="none"
-                >
-                  <path
-                    d="M170.061 13.0607C170.646 12.4749 170.646 11.5251 170.061 10.9393L160.515 1.3934C159.929 0.807611 158.979 0.807611 158.393 1.3934C157.808 1.97919 157.808 2.92893 158.393 3.51472L166.879 12L158.393 20.4853C157.808 21.0711 157.808 22.0208 158.393 22.6066C158.979 23.1924 159.929 23.1924 160.515 22.6066L170.061 13.0607ZM3.5 67.5V47H0.5V67.5H3.5ZM37 13.5H169V10.5H37V13.5ZM3.5 47C3.5 28.4985 18.4985 13.5 37 13.5V10.5C16.8416 10.5 0.5 26.8416 0.5 47H3.5Z"
-                    fill="url(#paint0_linear_396_295)"
-                  />
-                  <path
-                    d="M0.939346 94.4393C0.353546 95.0251 0.353546 95.9749 0.939346 96.5607L10.4853 106.107C11.0711 106.692 12.0208 106.692 12.6066 106.107C13.1924 105.521 13.1924 104.571 12.6066 103.985L4.12132 95.5L12.6066 87.0147C13.1924 86.4289 13.1924 85.4792 12.6066 84.8934C12.0208 84.3076 11.0711 84.3076 10.4853 84.8934L0.939346 94.4393ZM167.5 40V60.5H170.5V40H167.5ZM134 94H2V97H134V94ZM167.5 60.5C167.5 79.0015 152.502 94 134 94V97C154.158 97 170.5 80.6584 170.5 60.5H167.5Z"
-                    fill="url(#paint1_linear_396_295)"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_396_295"
-                      x1="152.5"
-                      y1="12"
-                      x2="50.9478"
-                      y2="-51.2931"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#F96E7C" />
-                      <stop offset="1" stop-color="#8D74EF" />
-                    </linearGradient>
-                    <linearGradient
-                      id="paint1_linear_396_295"
-                      x1="160"
-                      y1="87"
-                      x2="44.4084"
-                      y2="18.9568"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#F96E7C" />
-                      <stop offset="1" stop-color="#8D74EF" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </span>
-              <span id="hero-text-2" class="hero-item">Success</span>
+            <div class="blob"></div>
+            <div class="achievement-cards flex justify-around">
+                <div class="achievement-card">
+                    <div id="achievement_1">
+                        97<span class="text-6xl inline-block">%</span>
+                    </div>
+                    <span id="achievement_1_text" class="ach_text">Click Retention</span>
+                </div>
+                <div class="achievement-card">
+                    <div id="achievement_2">
+                        25<span class="text-6xl inline-block">+</span>
+                    </div>
+                    <span id="achievement_2_text" class="ach_text">Industries Served</span>
+                </div>
+                <div class="achievement-card">
+                    <div id="achievement_3">
+                        250<span class="text-6xl inline-block">+</span>
+                    </div>
+                    <span id="achievement_3_text" class="ach_text">experts</span>
+                </div>
             </div>
-            <div class="row">
-              <span class="hero-item">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="189"
-                  height="90"
-                  viewBox="0 0 189 90"
-                  fill="none"
-                >
-                  <path
-                    d="M187 2L113 88"
-                    stroke="url(#paint0_linear_396_290)"
-                    stroke-width="5"
-                  />
-                  <path
-                    d="M150 2L76 88"
-                    stroke="url(#paint1_linear_396_290)"
-                    stroke-width="5"
-                  />
-                  <path
-                    d="M113 2L39 88"
-                    stroke="url(#paint2_linear_396_290)"
-                    stroke-width="5"
-                  />
-                  <path
-                    d="M76 2L2 88"
-                    stroke="url(#paint3_linear_396_290)"
-                    stroke-width="5"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_396_290"
-                      x1="150"
-                      y1="2"
-                      x2="125.568"
-                      y2="109.994"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#F96E7C" />
-                      <stop offset="1" stop-color="#8D74EF" />
-                    </linearGradient>
-                    <linearGradient
-                      id="paint1_linear_396_290"
-                      x1="113"
-                      y1="2"
-                      x2="87.3893"
-                      y2="109.694"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#F96E7C" />
-                      <stop offset="1" stop-color="#8D74EF" />
-                    </linearGradient>
-                    <linearGradient
-                      id="paint2_linear_396_290"
-                      x1="76"
-                      y1="2"
-                      x2="60.4813"
-                      y2="97.2065"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#F96E7C" />
-                      <stop offset="1" stop-color="#8D74EF" />
-                    </linearGradient>
-                    <linearGradient
-                      id="paint3_linear_396_290"
-                      x1="39"
-                      y1="2"
-                      x2="30.4334"
-                      y2="108.082"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#F96E7C" />
-                      <stop offset="1" stop-color="#8D74EF" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </span>
-              <span id="hero-text-3" class="hero-item"
-                >Through&nbsp;&nbsp;&nbsp;Innovative
-              </span>
-            </div>
-            <div class="row">
-              <span class="hero-item">Solutions</span>
-              <span class="hero-item">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="190"
-                  height="93"
-                  viewBox="0 0 190 93"
-                  fill="none"
-                >
-                  <rect
-                    x="1.5"
-                    y="1.5"
-                    width="187"
-                    height="90"
-                    rx="45"
-                    stroke="url(#paint0_linear_660_280)"
-                    stroke-width="3"
-                  />
-                  <circle
-                    cx="143.5"
-                    cy="46.5"
-                    r="37.5"
-                    fill="url(#paint0_linear_660_280)"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_660_280"
-                      x1="143.5"
-                      y1="9"
-                      x2="196.585"
-                      y2="60.8566"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#F96E7C" class="hover:fill-none" />
-                      <stop offset="1" stop-color="#8D74EF" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </span>
-              <span class="hero-item flex-1 ml-auto mr-0 pl-auto max-w-fit">
-                <span class="hero-item hero-item-last text-2xl">Turning Visions Into</span>
-                <span class="hero-item hero-item-last text-2xl">IT-Enabled Success.</span>
-              </span>
-            </div>
-          </div>
-          <div class="hero-cta btn">
-            <button
-              class="btn text-xl uppercase font-bold text-primary-red border-spacing-1"
-            >
-              Get Started
-            </button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="29"
-              height="71"
-              viewBox="0 0 29 71"
-              fill="none"
-            >
-              <path
-                opacity="0.4"
-                d="M2.00059 13.5132L14.7285 26.1851L27.4564 13.5132"
-                stroke="url(#paint0_linear_660_280)"
-                stroke-width="3"
-              />
-              <path
-                opacity="0.6"
-                d="M2.00059 34.4207L14.7285 47.0925L27.4564 34.4207"
-                stroke="url(#paint0_linear_660_280)"
-                stroke-width="3"
-              />
-              <path
-                d="M2.00059 55.3282L14.7285 68L27.4564 55.3282"
-                stroke="url(#paint0_linear_660_280)"
-                stroke-width="3"
-              />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_660_280"
-                  x1="143.5"
-                  y1="9"
-                  x2="196.585"
-                  y2="60.8566"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F96E7C" class="hover:fill-none" />
-                  <stop offset="1" stop-color="#8D74EF" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
         </section>
-      </div>
-      <section class="achievements text-white">
-        <div
-          class="achievement flex justify-space-between items-center container"
-        >
-          <p class="achievements_text">Achievements</p>
-          <div class="flex-1">
-            <h3>We bring effective solutions for businesses to scale.</h3>
-            <button class="btn btn-cta">Know More</button>
-          </div>
-        </div>
-        <div class="blob bg-fuchsia-400"></div>
-        <div class="blob top-2 left-0"></div>
-        <div class="achievement-cards flex justify-between ">
-          <div class="achievement-card">
-            <div id="achievement_1">
-              97<span class="text-6xl inline-block">%</span>
+        <section class="about-us-section w-full">
+            <img src="/assets/homepage/Ai-8-Cover.jpg" class="mx-auto w-full"
+                alt="Two women talking to each other | AI8" preload style="width: 100%; border-radius: 24px" />
+            <div class="about-us container mx-auto">
+                <div class="about-us-header flex items-center justify-between w-screen container mx-auto row">
+                    <p class="text-primary text-xl col">About Us</p>
+                    <span class="text-secondary text-6xl col">
+                        Building Trust Through Service Excellence.
+                    </span>
+                </div>
             </div>
-            <span id="achievement_1_text" class="ach_text"
-              >Click Retention</span
-            >
-          </div>
-          <div class="achievement-card">
-            <div id="achievement_2">
-              25<span class="text-6xl inline-block">+</span>
+            <div class="container w-full mx-auto">
+                <div class="row flex justify-items-start">
+                    <div class="col">
+                        <p class="text-2xl opacity-60 max-w-md">
+                            Teaming up with industry leaders, we've harnessed valuable
+                            insights, fueling innovation to new heights. These partnerships
+                            not only elevate AI8 but also pave the path for our clients'
+                            success, showcasing the power of collaborative growth.
+                        </p>
+                        <button class="btn btn-cta text-primary-red my-6 mx-0 pl-0 px-0">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="col flex justify-around">
+                        <div class="about-us-card px-6 mr-5">
+                            <img src="assets/gifs/Bulb Growth .gif" alt="Bulb growing with a line">
+                            <h4 class="about-us-title text-primary-red text-2xl my-0 leading-2">
+                                Empowering Growth
+                            </h4>
+                            <p class="opacity-60">
+                                In a world of rapid technological evolution, AI8 is your
+                                steadfast partner in simplifying complex changes. We remain at
+                                the forefront of innovation, ensuring that you effortlessly
+                                adapt to the latest technology trends
+                            </p>
+                        </div>
+                        <div class="about-us-card px-6">
+                            <svg class="about-us-card-highlight aspect-square w-14 text-primary-red"
+                                xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
+                                fill="none" class="about-us-card-highlight aspect-square w-14 text-primary-red">
+                                <path
+                                    d="M45.6715 40.36C47.6739 39.1255 49.219 37.2714 50.072 35.079C50.925 32.8867 51.0394 30.4759 50.3978 28.2127C49.7562 25.9495 48.3938 23.9573 46.5172 22.5388C44.6406 21.1202 42.3524 20.3527 40 20.3527C37.6476 20.3527 35.3594 21.1202 33.4828 22.5388C31.6062 23.9573 30.2437 25.9495 29.6022 28.2127C28.9606 30.4759 29.075 32.8867 29.928 35.079C30.781 37.2714 32.326 39.1255 34.3285 40.36C31.5037 41.2466 28.927 42.785 26.8063 44.851C24.6856 46.9171 23.0805 49.4528 22.1204 52.2534C21.8346 53.082 21.7533 53.9673 21.8833 54.834C22.0132 55.7007 22.3507 56.5232 22.8668 57.2315C23.3958 57.9719 24.0936 58.5757 24.9024 58.9928C25.7112 59.41 26.6077 59.6284 27.5177 59.6301H52.4823C53.3923 59.6284 54.2888 59.41 55.0976 58.9928C55.9064 58.5757 56.6042 57.9719 57.1332 57.2315C57.6493 56.5232 57.9867 55.7007 58.1167 54.834C58.2467 53.9673 58.1653 53.082 57.8796 52.2534C56.9195 49.4528 55.3143 46.9171 53.1937 44.851C51.073 42.785 48.4963 41.2466 45.6715 40.36ZM31.6925 31.178C31.6924 29.5349 32.1795 27.9286 33.0923 26.5624C34.005 25.1961 35.3024 24.1313 36.8204 23.5024C38.3384 22.8735 40.0088 22.7089 41.6203 23.0294C43.2319 23.3499 44.7122 24.141 45.8741 25.3028C47.0359 26.4646 47.8272 27.9449 48.1478 29.5564C48.4684 31.1679 48.3039 32.8383 47.6752 34.3563C47.0464 35.8744 45.9816 37.1719 44.6155 38.0847C43.2493 38.9976 41.6431 39.4848 40 39.4848C37.7976 39.4823 35.6861 38.6063 34.1287 37.049C32.5713 35.4918 31.6952 33.3803 31.6925 31.178ZM55.0989 55.7788C54.8013 56.1955 54.4087 56.5354 53.9537 56.7703C53.4987 57.0053 52.9944 57.1286 52.4823 57.13H27.5177C27.0056 57.1286 26.5012 57.0053 26.0462 56.7703C25.5913 56.5354 25.1987 56.1955 24.9011 55.7788C24.6183 55.3932 24.4329 54.945 24.3606 54.4723C24.2883 53.9996 24.3314 53.5164 24.4861 53.0639C25.5953 49.831 27.6867 47.0253 30.4681 45.039C33.2496 43.0526 36.5821 41.9848 40 41.9848C43.4179 41.9848 46.7505 43.0526 49.5319 45.039C52.3134 47.0253 54.4048 49.831 55.5139 53.0639C55.6686 53.5164 55.7117 53.9996 55.6394 54.4723C55.5672 54.945 55.3817 55.3932 55.0989 55.7788Z"
+                                    fill="#C1C1C1" />
+                                <path
+                                    d="M73.075 41.25C73.4065 41.25 73.7244 41.1184 73.9589 40.8839C74.1933 40.6495 74.325 40.3316 74.325 40C74.325 39.6685 74.1933 39.3506 73.9589 39.1162C73.7244 38.8817 73.4065 38.75 73.075 38.75H69.5685C69.2464 31.343 66.1595 24.3257 60.9169 19.0833C55.6744 13.8408 48.657 10.754 41.25 10.4322V6.92505C41.25 6.59353 41.1183 6.27559 40.8839 6.04117C40.6494 5.80675 40.3315 5.67505 40 5.67505C39.6685 5.67505 39.3505 5.80675 39.1161 6.04117C38.8817 6.27559 38.75 6.59353 38.75 6.92505V10.4322C31.3429 10.754 24.3256 13.8408 19.083 19.0833C13.8405 24.3257 10.7535 31.343 10.4315 38.75H6.92499C6.59347 38.75 6.27552 38.8817 6.0411 39.1162C5.80668 39.3506 5.67499 39.6685 5.67499 40C5.67499 40.3316 5.80668 40.6495 6.0411 40.8839C6.27552 41.1184 6.59347 41.25 6.92499 41.25H10.4315C10.7535 48.6571 13.8405 55.6743 19.083 60.9168C24.3256 66.1593 31.3429 69.2461 38.75 69.5679V73.075C38.75 73.4066 38.8817 73.7245 39.1161 73.9589C39.3505 74.1933 39.6685 74.325 40 74.325C40.3315 74.325 40.6494 74.1933 40.8839 73.9589C41.1183 73.7245 41.25 73.4066 41.25 73.075V69.5679C48.657 69.2461 55.6744 66.1593 60.9169 60.9168C66.1595 55.6743 69.2464 48.6571 69.5685 41.25H73.075ZM63.6249 41.25H67.0685C66.7488 47.9944 63.926 54.3772 59.1516 59.1515C54.3772 63.9257 47.9943 66.7484 41.25 67.0679V63.6255C41.25 63.294 41.1183 62.9761 40.8839 62.7416C40.6494 62.5072 40.3315 62.3755 40 62.3755C39.6685 62.3755 39.3505 62.5072 39.1161 62.7416C38.8817 62.9761 38.75 63.294 38.75 63.6255V67.0679C32.0056 66.7484 25.6227 63.9257 20.8484 59.1515C16.074 54.3772 13.2512 47.9944 12.9315 41.25H16.3751C16.7066 41.25 17.0246 41.1184 17.259 40.8839C17.4934 40.6495 17.6251 40.3316 17.6251 40C17.6251 39.6685 17.4934 39.3506 17.259 39.1162C17.0246 38.8817 16.7066 38.75 16.3751 38.75H12.9315C13.2512 32.0057 16.074 25.6229 20.8484 20.8486C25.6227 16.0744 32.0056 13.2517 38.75 12.9322V16.3746C38.75 16.7061 38.8817 17.024 39.1161 17.2584C39.3505 17.4929 39.6685 17.6246 40 17.6246C40.3315 17.6246 40.6494 17.4929 40.8839 17.2584C41.1183 17.024 41.25 16.7061 41.25 16.3746V12.9322C47.9943 13.2517 54.3772 16.0744 59.1516 20.8486C63.926 25.6229 66.7488 32.0057 67.0685 38.75H63.6249C63.2933 38.75 62.9754 38.8817 62.741 39.1162C62.5066 39.3506 62.3749 39.6685 62.3749 40C62.3749 40.3316 62.5066 40.6495 62.741 40.8839C62.9754 41.1184 63.2933 41.25 63.6249 41.25Z"
+                                    fill="#C1C1C1" />
+                                <path
+                                    d="M12.6823 14.4495H10.3003C9.96877 14.4495 9.65083 14.5812 9.41641 14.8156C9.18199 15.05 9.05029 15.368 9.05029 15.6995C9.05029 16.031 9.18199 16.349 9.41641 16.5834C9.65083 16.8178 9.96877 16.9495 10.3003 16.9495H15.7001C15.8642 16.9495 16.0268 16.9172 16.1785 16.8544C16.3302 16.7916 16.468 16.6996 16.5841 16.5835C16.7001 16.4674 16.7922 16.3296 16.855 16.1779C16.9178 16.0262 16.9501 15.8637 16.9501 15.6995V10.3003C16.9501 9.9688 16.8184 9.65086 16.584 9.41644C16.3495 9.18202 16.0316 9.05032 15.7001 9.05032C15.3686 9.05032 15.0506 9.18202 14.8162 9.41644C14.5818 9.65086 14.4501 9.9688 14.4501 10.3003V12.6821L7.13376 5.36629C6.89865 5.1354 6.58187 5.0067 6.25235 5.00819C5.92283 5.00968 5.60723 5.14125 5.37422 5.37425C5.14122 5.60726 5.00965 5.92286 5.00816 6.25238C5.00667 6.5819 5.13537 6.89868 5.36626 7.13379L12.6823 14.4495Z"
+                                    fill="#E6222F" />
+                                <path
+                                    d="M15.7001 63.0505H10.3003C9.96876 63.0505 9.65082 63.1822 9.4164 63.4167C9.18198 63.6511 9.05028 63.969 9.05028 64.3005C9.05028 64.6321 9.18198 64.95 9.4164 65.1844C9.65082 65.4188 9.96876 65.5505 10.3003 65.5505H12.6823L5.36624 72.8662C5.24846 72.9819 5.15475 73.1198 5.09054 73.2719C5.02633 73.424 4.99289 73.5873 4.99214 73.7523C4.99139 73.9174 5.02336 74.081 5.08619 74.2337C5.14902 74.3864 5.24147 74.5251 5.3582 74.6418C5.47494 74.7585 5.61364 74.851 5.7663 74.9138C5.91897 74.9766 6.08256 75.0086 6.24765 75.0079C6.41273 75.0071 6.57604 74.9737 6.72812 74.9095C6.88021 74.8452 7.01807 74.7515 7.13374 74.6338L14.45 67.3179V69.6997C14.45 70.0312 14.5817 70.3491 14.8161 70.5836C15.0505 70.818 15.3685 70.9497 15.7 70.9497C16.0315 70.9497 16.3495 70.818 16.5839 70.5836C16.8183 70.3491 16.95 70.0312 16.95 69.6997V64.3005C16.95 64.1364 16.9177 63.9738 16.8549 63.8222C16.7921 63.6705 16.7001 63.5327 16.584 63.4166C16.4679 63.3005 16.3301 63.2084 16.1784 63.1456C16.0268 63.0828 15.8642 63.0505 15.7001 63.0505Z"
+                                    fill="#C1C1C1" />
+                                <path
+                                    d="M64.2999 16.9495H69.6997C70.0312 16.9495 70.3492 16.8178 70.5836 16.5834C70.818 16.349 70.9497 16.031 70.9497 15.6995C70.9497 15.368 70.818 15.0501 70.5836 14.8156C70.3492 14.5812 70.0312 14.4495 69.6997 14.4495H67.3177L74.6337 7.1338C74.7515 7.01813 74.8452 6.88027 74.9094 6.72818C74.9737 6.5761 75.0071 6.4128 75.0078 6.24771C75.0086 6.08263 74.9766 5.91903 74.9138 5.76636C74.851 5.6137 74.7585 5.475 74.6418 5.35826C74.525 5.24153 74.3863 5.14908 74.2337 5.08625C74.081 5.02342 73.9174 4.99145 73.7523 4.9922C73.5873 4.99295 73.4239 5.02639 73.2719 5.0906C73.1198 5.15481 72.9819 5.24852 72.8662 5.3663L65.55 12.6821V10.3003C65.55 9.96882 65.4183 9.65088 65.1839 9.41646C64.9495 9.18204 64.6315 9.05034 64.3 9.05034C63.9685 9.05034 63.6505 9.18204 63.4161 9.41646C63.1817 9.65088 63.05 9.96882 63.05 10.3003V15.6995C63.0499 15.8637 63.0822 16.0262 63.145 16.1779C63.2078 16.3296 63.2999 16.4674 63.416 16.5835C63.5321 16.6995 63.6699 16.7916 63.8215 16.8544C63.9732 16.9172 64.1358 16.9495 64.2999 16.9495Z"
+                                    fill="#C1C1C1" />
+                                <path
+                                    d="M67.3177 65.5505H69.6997C70.0312 65.5505 70.3492 65.4188 70.5836 65.1844C70.818 64.95 70.9497 64.6321 70.9497 64.3005C70.9497 63.969 70.818 63.6511 70.5836 63.4167C70.3492 63.1822 70.0312 63.0505 69.6997 63.0505H64.2999C64.1358 63.0505 63.9732 63.0828 63.8215 63.1456C63.6698 63.2084 63.532 63.3005 63.4159 63.4166C63.2999 63.5326 63.2078 63.6705 63.145 63.8221C63.0822 63.9738 63.0499 64.1364 63.0499 64.3005V69.6997C63.0499 70.0312 63.1816 70.3492 63.416 70.5836C63.6505 70.818 63.9684 70.9497 64.2999 70.9497C64.6314 70.9497 64.9494 70.818 65.1838 70.5836C65.4182 70.3492 65.5499 70.0312 65.5499 69.6997V67.318L72.8662 74.6337C73.1014 74.8646 73.4181 74.9933 73.7477 74.9918C74.0772 74.9904 74.3928 74.8588 74.6258 74.6258C74.8588 74.3928 74.9904 74.0772 74.9918 73.7477C74.9933 73.4181 74.8646 73.1014 74.6337 72.8662L67.3177 65.5505Z"
+                                    fill="#C1C1C1" />
+                            </svg>
+                            <h4 class="about-us-title text-primary-red text-2xl">
+                                Reliability Redefined
+                            </h4>
+                            <p class="opacity-60">
+                                Being a renowned service provider in the digital landscape for
+                                the last 10 years, we’ve managed to deliver satisfaction to
+                                our customers. AI8 has been the guiding force behind the
+                                success stories of clients across diverse industries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <span id="achievement_2_text" class="ach_text"
-              >Industries Served</span
-            >
-          </div>
-          <div class="achievement-card">
-            <div id="achievement_3">
-              250<span class="text-6xl inline-block">+</span>
+            <div class="container w-full mx-auto mt-12 text-justify">
+                <div class="row flex">
+                    <div class="col flex">
+                        <div class="about-us-card px-6 mr-5">
+                            <svg class="about-us-card-highlight aspect-square w-14 text-primary-red"
+                                xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81"
+                                fill="none">
+                                <g clip-path="url(#clip0_557_1457)">
+                                    <path
+                                        d="M71.1647 37.238L61.1434 26.3056C59.9754 25.0316 58.3144 24.3008 56.5859 24.3008H23.4142C21.6858 24.3008 20.0247 25.0316 18.8567 26.3056L8.83545 37.238C7.15248 39.0739 7.06764 41.9163 8.63826 43.8494L37.4186 79.2714C38.0531 80.0522 38.9939 80.5 40 80.5C41.0061 80.5 41.9469 80.0522 42.5814 79.2714L71.3617 43.8494C72.9325 41.9161 72.8476 39.0739 71.1647 37.238ZM57.1384 26.6856L54.4709 34.5103C54.262 35.123 54.5894 35.7889 55.202 35.9978C55.3273 36.0405 55.4548 36.0608 55.5801 36.0608C56.0678 36.0608 56.5231 35.7541 56.6892 35.2667L59.2589 27.7289C59.3125 27.7809 59.365 27.8341 59.4156 27.8892L69.4369 38.8216C69.5814 38.9791 69.7014 39.1516 69.8019 39.3327H54.2948L42.6639 26.6444H56.5858C56.7719 26.6445 56.9564 26.6589 57.1384 26.6856ZM51.1154 39.3327H28.8845L40 27.2069L51.1154 39.3327ZM37.3361 26.6445L26.7751 38.1655L22.8615 26.6856C23.0436 26.6591 23.2281 26.6445 23.414 26.6445H37.3361ZM20.5844 27.8894C20.635 27.8341 20.6875 27.7809 20.7411 27.7291L24.6969 39.3328H10.1981C10.2986 39.1519 10.4186 38.9794 10.5631 38.8217L20.5844 27.8894ZM10.0512 41.6764H52.0279L40 76.9584L29.3203 45.6313C29.1115 45.0187 28.4458 44.6913 27.8329 44.9002C27.2203 45.1091 26.8929 45.775 27.1019 46.3875L36.7753 74.763L10.4572 42.3714C10.2836 42.1577 10.1498 41.9225 10.0512 41.6764ZM43.2245 74.763L54.504 41.6764H69.9487C69.8501 41.9225 69.7164 42.1577 69.5428 42.3713L43.2245 74.763Z"
+                                        fill="#C1C1C1" />
+                                    <path
+                                        d="M40 19.1284C40.6472 19.1284 41.1719 18.6038 41.1719 17.9566V1.67188C41.1719 1.02469 40.6472 0.5 40 0.5C39.3528 0.5 38.8281 1.02469 38.8281 1.67188V17.9566C38.8281 18.6038 39.3528 19.1284 40 19.1284Z"
+                                        fill="#E6222F" />
+                                    <path
+                                        d="M27.6778 19.7332C27.8831 20.1439 28.2969 20.3814 28.7269 20.3814C28.903 20.3814 29.0817 20.3415 29.25 20.2573C29.8289 19.9678 30.0636 19.264 29.774 18.6851L24.7634 8.66371C24.474 8.0848 23.7701 7.85012 23.1912 8.13965C22.6123 8.42918 22.3776 9.13293 22.6672 9.71184L27.6778 19.7332Z"
+                                        fill="#C1C1C1" />
+                                    <path
+                                        d="M50.7499 20.2573C50.9182 20.3415 51.097 20.3814 51.2731 20.3814C51.7029 20.3814 52.1168 20.1439 52.3221 19.7332L57.3328 9.71184C57.6223 9.13293 57.3876 8.42918 56.8087 8.13965C56.2298 7.85012 55.526 8.0848 55.2365 8.66371L50.2259 18.6851C49.9364 19.264 50.171 19.9679 50.7499 20.2573Z"
+                                        fill="#E6222F" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_557_1457">
+                                        <rect width="80" height="80" fill="white" transform="translate(0 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <h4 class="about-us-title text-primary-red text-2xl capitalize">
+                                Your tech odyssey
+                            </h4>
+                            <p class="opacity-60">
+                                Our advanced tech expertise is a driving force. We harness
+                                cutting-edge technology and seamlessly integrate it into every
+                                service we offer. AI8 is committed to providing clients with
+                                the most innovative and efficient solutions
+                            </p>
+                        </div>
+                        <div class="about-us-card px-6">
+                            <svg class="about-us-card-highlight aspect-square text-primary-red"
+                                xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81"
+                                fill="none">
+                                <g clip-path="url(#clip0_557_1467)">
+                                    <path
+                                        d="M1.33671 63.1641C1.33514 64.2572 1.98772 65.2454 2.99385 65.6731L36.8871 79.8728C38.8786 80.7091 41.1228 80.7091 43.1143 79.8728L77.0129 65.6693C78.0149 65.2376 78.6631 64.2502 78.6611 63.1591C78.6591 62.068 78.0071 61.0831 77.0035 60.6552L55.9434 51.8322L77.0075 43.0053C78.0096 42.5736 78.6578 41.5862 78.6558 40.4951C78.6538 39.404 78.0018 38.4191 76.9982 37.9912L55.9393 29.1682L77.0035 20.3426C78.0101 19.917 78.6642 18.9304 78.6642 17.8375C78.6642 16.7447 78.0101 15.7581 77.0035 15.3325L43.1209 1.13285C41.1249 0.288888 38.8723 0.288888 36.8763 1.13285L2.99651 15.3311C1.98991 15.7567 1.33577 16.7433 1.33577 17.8361C1.33577 18.929 1.98991 19.9156 2.99651 20.3411L24.0607 29.1668L2.98448 37.9951C1.98241 38.4268 1.33421 39.4141 1.33624 40.5053C1.33827 41.5964 1.99022 42.5813 2.99385 43.0092L24.054 51.8322L2.98979 60.6591C1.986 61.0865 1.33499 62.073 1.33671 63.1641ZM4.02826 17.7896L37.9082 3.59271C39.2445 3.02746 40.7527 3.02746 42.0891 3.59271L75.9691 17.8816L42.0891 32.0799C40.753 32.6459 39.2445 32.6459 37.9082 32.0799L4.00967 17.7988L4.02826 17.7896ZM27.5082 30.6133L36.8765 34.5396C38.8728 35.3821 41.1247 35.3821 43.121 34.5396L52.4866 30.6147L75.9717 40.5509L42.0865 54.7478C40.7521 55.3063 39.2493 55.3063 37.9149 54.7478L4.02576 40.4495L27.5082 30.6133ZM27.5082 53.2773L36.8897 57.2075C38.8812 58.0438 41.1255 58.0438 43.117 57.2075L52.4932 53.28L75.9744 63.2147L42.0865 77.4116C40.7521 77.9701 39.2493 77.9701 37.9149 77.4116L4.02576 63.1133L27.5082 53.2773Z"
+                                        fill="#C1C1C1" />
+                                    <path d="M7.74193 20.8226L37.7419 33.4033" stroke="#E6222F" stroke-width="4" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_557_1467">
+                                        <rect width="80" height="80" fill="white" transform="translate(0 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <h4 class="about-us-title text-primary-red text-2xl">
+                                Our Accomplishments
+                            </h4>
+                            <p class="opacity-60">
+                                We have achieved remarkable success in the last few years,
+                                thanks to our wonderful clients and our pool of competent
+                                professionals - we’ve managed to become one of the most
+                                reliable service providers in the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-40">
+                        <svg width="737" height="406" viewBox="0 0 737 406" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M751 360H466.159C436.06 360 411.659 335.6 411.659 305.5V305.5C411.659 275.4 387.259 251 357.159 251H1.7941e-05"
+                                stroke="#C1C1C1" stroke-width="2" />
+                            <path
+                                d="M0 175H284.841C314.94 175 339.341 150.6 339.341 120.5V120.5C339.341 90.4005 363.741 66 393.841 66H751"
+                                stroke="#C1C1C1" stroke-width="2" />
+                            <path
+                                d="M611.333 400C611.333 402.946 608.946 405.333 606 405.333C603.054 405.333 600.667 402.946 600.667 400C600.667 397.054 603.054 394.667 606 394.667C608.946 394.667 611.333 397.054 611.333 400ZM606 401H392.178V399H606V401ZM272.178 281H0V279H272.178V281ZM331.178 340C331.178 307.415 304.763 281 272.178 281V279C305.867 279 333.178 306.311 333.178 340H331.178ZM392.178 401C358.488 401 331.178 373.689 331.178 340H333.178C333.178 372.585 359.593 399 392.178 399V401Z"
+                                fill="#C1C1C1" />
+                            <path
+                                d="M486.333 6C486.333 3.05448 483.946 0.666672 481 0.666672C478.054 0.666672 475.667 3.05448 475.667 6C475.667 8.94552 478.054 11.3333 481 11.3333C483.946 11.3333 486.333 8.94552 486.333 6ZM481 5H323.659V7H481V5ZM203.659 125H-3.05176e-05V127H203.659V125ZM262.659 66C262.659 98.5848 236.244 125 203.659 125V127C237.349 127 264.659 99.6894 264.659 66H262.659ZM323.659 5C289.97 5 262.659 32.3106 262.659 66H264.659C264.659 33.4152 291.074 7 323.659 7V5Z"
+                                fill="#C1C1C1" />
+                            <path
+                                d="M408.667 196C408.667 198.946 411.054 201.333 414 201.333C416.946 201.333 419.333 198.946 419.333 196C419.333 193.054 416.946 190.667 414 190.667C411.054 190.667 408.667 193.054 408.667 196ZM0 197H414V195H0V197Z"
+                                fill="#C1C1C1" />
+                            <path
+                                d="M651.667 220C651.667 222.946 654.055 225.333 657 225.333C659.946 225.333 662.333 222.946 662.333 220C662.333 217.054 659.946 214.667 657 214.667C654.055 214.667 651.667 217.054 651.667 220ZM0 221H657V219H0V221Z"
+                                fill="#E6222F" />
+                        </svg>
+                    </div>
+                </div>
             </div>
-            <span id="achievement_3_text" class="ach_text">experts</span>
-          </div>
-        </div>
-      </section>
-      <section class="about-us-section w-full">
-        <img
-          src="/assets/homepage/Ai-8-Cover.jpg"
-          class="mx-auto w-full"
-          alt="Two women talking to each other | AI8"
-          preload
-          style="width: 100%; border-radius: 24px"
-        />
-        <div class="about-us container mx-auto">
-          <div
-            class="about-us-header flex items-center justify-between w-screen container mx-auto row"
-          >
-            <p class="text-primary text-xl col">About Us</p>
-            <span class="text-secondary text-6xl col">
-              Building Trust Through Service Excellence.
-            </span>
-          </div>
-        </div>
-        <div class="container w-full mx-auto">
-          <div class="row flex justify-items-start">
-            <div class="col">
-              <p class="text-2xl opacity-60 max-w-md">
-                Teaming up with industry leaders, we've harnessed valuable
-                insights, fueling innovation to new heights. These partnerships
-                not only elevate AI8 but also pave the path for our clients'
-                success, showcasing the power of collaborative growth.
-              </p>
-              <button class="btn btn-cta text-primary-red my-6 mx-0 pl-0 px-0">
-                Learn More
-              </button>
+            <div class="container w-full mx-auto flex partners-logos">
+                <div class="partner-logo">
+                    <img src="assets/homepage/brands/solutions-sic.jpg" alt="Solutions Sic" />
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/homepage/brands/solutions-sic.jpg" alt="Solutions Sic" />
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/homepage/brands/solutions-sic.jpg" alt="Solutions Sic" />
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/homepage/brands/hewlett-packard.png" alt="Hewlett Packard" />
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/homepage/brands/SBM.png" alt="SBM" />
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/homepage/brands/aram-co.png" alt="Aram Co." />
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/homepage/brands/ministry-cit.png"
+                        alt="Ministry Of Communications And Information Technology" />
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/homepage/brands/alrajhi-bank.png" alt="Alrajhi Bank" />
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/homepage/brands/aram-co.png" alt="Aram Co." />
+                </div>
             </div>
-            <div class="col flex justify-around">
-              <div class="about-us-card px-6 mr-5">
-                <img src="assets/gifs/Bulb Growth .gif" alt="Bulb growing with a line">
-                <h4
-                  class="about-us-title text-primary-red text-2xl my-0 leading-2"
-                >
-                  Empowering Growth
-                </h4>
-                <p class="opacity-60">
-                  In a world of rapid technological evolution, AI8 is your
-                  steadfast partner in simplifying complex changes. We remain at
-                  the forefront of innovation, ensuring that you effortlessly
-                  adapt to the latest technology trends
-                </p>
-              </div>
-              <div class="about-us-card px-6">
-                <svg
-                  class="about-us-card-highlight aspect-square w-14 text-primary-red"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="80"
-                  height="80"
-                  viewBox="0 0 80 80"
-                  fill="none"
-                  class="about-us-card-highlight aspect-square w-14 text-primary-red"
-                >
-                  <path
-                    d="M45.6715 40.36C47.6739 39.1255 49.219 37.2714 50.072 35.079C50.925 32.8867 51.0394 30.4759 50.3978 28.2127C49.7562 25.9495 48.3938 23.9573 46.5172 22.5388C44.6406 21.1202 42.3524 20.3527 40 20.3527C37.6476 20.3527 35.3594 21.1202 33.4828 22.5388C31.6062 23.9573 30.2437 25.9495 29.6022 28.2127C28.9606 30.4759 29.075 32.8867 29.928 35.079C30.781 37.2714 32.326 39.1255 34.3285 40.36C31.5037 41.2466 28.927 42.785 26.8063 44.851C24.6856 46.9171 23.0805 49.4528 22.1204 52.2534C21.8346 53.082 21.7533 53.9673 21.8833 54.834C22.0132 55.7007 22.3507 56.5232 22.8668 57.2315C23.3958 57.9719 24.0936 58.5757 24.9024 58.9928C25.7112 59.41 26.6077 59.6284 27.5177 59.6301H52.4823C53.3923 59.6284 54.2888 59.41 55.0976 58.9928C55.9064 58.5757 56.6042 57.9719 57.1332 57.2315C57.6493 56.5232 57.9867 55.7007 58.1167 54.834C58.2467 53.9673 58.1653 53.082 57.8796 52.2534C56.9195 49.4528 55.3143 46.9171 53.1937 44.851C51.073 42.785 48.4963 41.2466 45.6715 40.36ZM31.6925 31.178C31.6924 29.5349 32.1795 27.9286 33.0923 26.5624C34.005 25.1961 35.3024 24.1313 36.8204 23.5024C38.3384 22.8735 40.0088 22.7089 41.6203 23.0294C43.2319 23.3499 44.7122 24.141 45.8741 25.3028C47.0359 26.4646 47.8272 27.9449 48.1478 29.5564C48.4684 31.1679 48.3039 32.8383 47.6752 34.3563C47.0464 35.8744 45.9816 37.1719 44.6155 38.0847C43.2493 38.9976 41.6431 39.4848 40 39.4848C37.7976 39.4823 35.6861 38.6063 34.1287 37.049C32.5713 35.4918 31.6952 33.3803 31.6925 31.178ZM55.0989 55.7788C54.8013 56.1955 54.4087 56.5354 53.9537 56.7703C53.4987 57.0053 52.9944 57.1286 52.4823 57.13H27.5177C27.0056 57.1286 26.5012 57.0053 26.0462 56.7703C25.5913 56.5354 25.1987 56.1955 24.9011 55.7788C24.6183 55.3932 24.4329 54.945 24.3606 54.4723C24.2883 53.9996 24.3314 53.5164 24.4861 53.0639C25.5953 49.831 27.6867 47.0253 30.4681 45.039C33.2496 43.0526 36.5821 41.9848 40 41.9848C43.4179 41.9848 46.7505 43.0526 49.5319 45.039C52.3134 47.0253 54.4048 49.831 55.5139 53.0639C55.6686 53.5164 55.7117 53.9996 55.6394 54.4723C55.5672 54.945 55.3817 55.3932 55.0989 55.7788Z"
-                    fill="#C1C1C1"
-                  />
-                  <path
-                    d="M73.075 41.25C73.4065 41.25 73.7244 41.1184 73.9589 40.8839C74.1933 40.6495 74.325 40.3316 74.325 40C74.325 39.6685 74.1933 39.3506 73.9589 39.1162C73.7244 38.8817 73.4065 38.75 73.075 38.75H69.5685C69.2464 31.343 66.1595 24.3257 60.9169 19.0833C55.6744 13.8408 48.657 10.754 41.25 10.4322V6.92505C41.25 6.59353 41.1183 6.27559 40.8839 6.04117C40.6494 5.80675 40.3315 5.67505 40 5.67505C39.6685 5.67505 39.3505 5.80675 39.1161 6.04117C38.8817 6.27559 38.75 6.59353 38.75 6.92505V10.4322C31.3429 10.754 24.3256 13.8408 19.083 19.0833C13.8405 24.3257 10.7535 31.343 10.4315 38.75H6.92499C6.59347 38.75 6.27552 38.8817 6.0411 39.1162C5.80668 39.3506 5.67499 39.6685 5.67499 40C5.67499 40.3316 5.80668 40.6495 6.0411 40.8839C6.27552 41.1184 6.59347 41.25 6.92499 41.25H10.4315C10.7535 48.6571 13.8405 55.6743 19.083 60.9168C24.3256 66.1593 31.3429 69.2461 38.75 69.5679V73.075C38.75 73.4066 38.8817 73.7245 39.1161 73.9589C39.3505 74.1933 39.6685 74.325 40 74.325C40.3315 74.325 40.6494 74.1933 40.8839 73.9589C41.1183 73.7245 41.25 73.4066 41.25 73.075V69.5679C48.657 69.2461 55.6744 66.1593 60.9169 60.9168C66.1595 55.6743 69.2464 48.6571 69.5685 41.25H73.075ZM63.6249 41.25H67.0685C66.7488 47.9944 63.926 54.3772 59.1516 59.1515C54.3772 63.9257 47.9943 66.7484 41.25 67.0679V63.6255C41.25 63.294 41.1183 62.9761 40.8839 62.7416C40.6494 62.5072 40.3315 62.3755 40 62.3755C39.6685 62.3755 39.3505 62.5072 39.1161 62.7416C38.8817 62.9761 38.75 63.294 38.75 63.6255V67.0679C32.0056 66.7484 25.6227 63.9257 20.8484 59.1515C16.074 54.3772 13.2512 47.9944 12.9315 41.25H16.3751C16.7066 41.25 17.0246 41.1184 17.259 40.8839C17.4934 40.6495 17.6251 40.3316 17.6251 40C17.6251 39.6685 17.4934 39.3506 17.259 39.1162C17.0246 38.8817 16.7066 38.75 16.3751 38.75H12.9315C13.2512 32.0057 16.074 25.6229 20.8484 20.8486C25.6227 16.0744 32.0056 13.2517 38.75 12.9322V16.3746C38.75 16.7061 38.8817 17.024 39.1161 17.2584C39.3505 17.4929 39.6685 17.6246 40 17.6246C40.3315 17.6246 40.6494 17.4929 40.8839 17.2584C41.1183 17.024 41.25 16.7061 41.25 16.3746V12.9322C47.9943 13.2517 54.3772 16.0744 59.1516 20.8486C63.926 25.6229 66.7488 32.0057 67.0685 38.75H63.6249C63.2933 38.75 62.9754 38.8817 62.741 39.1162C62.5066 39.3506 62.3749 39.6685 62.3749 40C62.3749 40.3316 62.5066 40.6495 62.741 40.8839C62.9754 41.1184 63.2933 41.25 63.6249 41.25Z"
-                    fill="#C1C1C1"
-                  />
-                  <path
-                    d="M12.6823 14.4495H10.3003C9.96877 14.4495 9.65083 14.5812 9.41641 14.8156C9.18199 15.05 9.05029 15.368 9.05029 15.6995C9.05029 16.031 9.18199 16.349 9.41641 16.5834C9.65083 16.8178 9.96877 16.9495 10.3003 16.9495H15.7001C15.8642 16.9495 16.0268 16.9172 16.1785 16.8544C16.3302 16.7916 16.468 16.6996 16.5841 16.5835C16.7001 16.4674 16.7922 16.3296 16.855 16.1779C16.9178 16.0262 16.9501 15.8637 16.9501 15.6995V10.3003C16.9501 9.9688 16.8184 9.65086 16.584 9.41644C16.3495 9.18202 16.0316 9.05032 15.7001 9.05032C15.3686 9.05032 15.0506 9.18202 14.8162 9.41644C14.5818 9.65086 14.4501 9.9688 14.4501 10.3003V12.6821L7.13376 5.36629C6.89865 5.1354 6.58187 5.0067 6.25235 5.00819C5.92283 5.00968 5.60723 5.14125 5.37422 5.37425C5.14122 5.60726 5.00965 5.92286 5.00816 6.25238C5.00667 6.5819 5.13537 6.89868 5.36626 7.13379L12.6823 14.4495Z"
-                    fill="#E6222F"
-                  />
-                  <path
-                    d="M15.7001 63.0505H10.3003C9.96876 63.0505 9.65082 63.1822 9.4164 63.4167C9.18198 63.6511 9.05028 63.969 9.05028 64.3005C9.05028 64.6321 9.18198 64.95 9.4164 65.1844C9.65082 65.4188 9.96876 65.5505 10.3003 65.5505H12.6823L5.36624 72.8662C5.24846 72.9819 5.15475 73.1198 5.09054 73.2719C5.02633 73.424 4.99289 73.5873 4.99214 73.7523C4.99139 73.9174 5.02336 74.081 5.08619 74.2337C5.14902 74.3864 5.24147 74.5251 5.3582 74.6418C5.47494 74.7585 5.61364 74.851 5.7663 74.9138C5.91897 74.9766 6.08256 75.0086 6.24765 75.0079C6.41273 75.0071 6.57604 74.9737 6.72812 74.9095C6.88021 74.8452 7.01807 74.7515 7.13374 74.6338L14.45 67.3179V69.6997C14.45 70.0312 14.5817 70.3491 14.8161 70.5836C15.0505 70.818 15.3685 70.9497 15.7 70.9497C16.0315 70.9497 16.3495 70.818 16.5839 70.5836C16.8183 70.3491 16.95 70.0312 16.95 69.6997V64.3005C16.95 64.1364 16.9177 63.9738 16.8549 63.8222C16.7921 63.6705 16.7001 63.5327 16.584 63.4166C16.4679 63.3005 16.3301 63.2084 16.1784 63.1456C16.0268 63.0828 15.8642 63.0505 15.7001 63.0505Z"
-                    fill="#C1C1C1"
-                  />
-                  <path
-                    d="M64.2999 16.9495H69.6997C70.0312 16.9495 70.3492 16.8178 70.5836 16.5834C70.818 16.349 70.9497 16.031 70.9497 15.6995C70.9497 15.368 70.818 15.0501 70.5836 14.8156C70.3492 14.5812 70.0312 14.4495 69.6997 14.4495H67.3177L74.6337 7.1338C74.7515 7.01813 74.8452 6.88027 74.9094 6.72818C74.9737 6.5761 75.0071 6.4128 75.0078 6.24771C75.0086 6.08263 74.9766 5.91903 74.9138 5.76636C74.851 5.6137 74.7585 5.475 74.6418 5.35826C74.525 5.24153 74.3863 5.14908 74.2337 5.08625C74.081 5.02342 73.9174 4.99145 73.7523 4.9922C73.5873 4.99295 73.4239 5.02639 73.2719 5.0906C73.1198 5.15481 72.9819 5.24852 72.8662 5.3663L65.55 12.6821V10.3003C65.55 9.96882 65.4183 9.65088 65.1839 9.41646C64.9495 9.18204 64.6315 9.05034 64.3 9.05034C63.9685 9.05034 63.6505 9.18204 63.4161 9.41646C63.1817 9.65088 63.05 9.96882 63.05 10.3003V15.6995C63.0499 15.8637 63.0822 16.0262 63.145 16.1779C63.2078 16.3296 63.2999 16.4674 63.416 16.5835C63.5321 16.6995 63.6699 16.7916 63.8215 16.8544C63.9732 16.9172 64.1358 16.9495 64.2999 16.9495Z"
-                    fill="#C1C1C1"
-                  />
-                  <path
-                    d="M67.3177 65.5505H69.6997C70.0312 65.5505 70.3492 65.4188 70.5836 65.1844C70.818 64.95 70.9497 64.6321 70.9497 64.3005C70.9497 63.969 70.818 63.6511 70.5836 63.4167C70.3492 63.1822 70.0312 63.0505 69.6997 63.0505H64.2999C64.1358 63.0505 63.9732 63.0828 63.8215 63.1456C63.6698 63.2084 63.532 63.3005 63.4159 63.4166C63.2999 63.5326 63.2078 63.6705 63.145 63.8221C63.0822 63.9738 63.0499 64.1364 63.0499 64.3005V69.6997C63.0499 70.0312 63.1816 70.3492 63.416 70.5836C63.6505 70.818 63.9684 70.9497 64.2999 70.9497C64.6314 70.9497 64.9494 70.818 65.1838 70.5836C65.4182 70.3492 65.5499 70.0312 65.5499 69.6997V67.318L72.8662 74.6337C73.1014 74.8646 73.4181 74.9933 73.7477 74.9918C74.0772 74.9904 74.3928 74.8588 74.6258 74.6258C74.8588 74.3928 74.9904 74.0772 74.9918 73.7477C74.9933 73.4181 74.8646 73.1014 74.6337 72.8662L67.3177 65.5505Z"
-                    fill="#C1C1C1"
-                  />
-                </svg>
-                <h4 class="about-us-title text-primary-red text-2xl">
-                  Reliability Redefined
-                </h4>
-                <p class="opacity-60">
-                  Being a renowned service provider in the digital landscape for
-                  the last 10 years, we’ve managed to deliver satisfaction to
-                  our customers. AI8 has been the guiding force behind the
-                  success stories of clients across diverse industries.
-                </p>
-              </div>
+        </section>
+        <section class="testimonial-section">
+            <div class="container w-full h-full mx-auto">
+                <div
+                    class="testimonial-header about-us-header flex items-center justify-between w-screen container mx-auto row">
+                    <p class="text-primary text-xl col">Partners And Clients</p>
+                    <h3 class="text-primary-red text-4xl col">In the Ai8 Spotlight</h3>
+                </div>
+                <div class="slider flex mt-20">
+                    <div class="slider-image col p-20">
+                        <img src="assets/dewitte-faiser.png" alt="Dewitte Faiser, CEO, HP Enterprise"
+                            class="testimonial-image" />
+                    </div>
+                    <div class="slider-content col">
+                        <p class="text-2xl testimonial">
+                            Offering this key quantum-generated resource is a significant
+                            advantage for both our internal and external customers. It is
+                            especially important for our enterprise customers with demands
+                            for high quality and high-performance random numbers, who will
+                            benefit from this unique feature.
+                        </p>
+                        <div class="row testimonial-details">
+                            <div class="col">
+                                <p class="text-xl testimonial-name">Dewitte Faiser</p>
+                                <p class="text-sm testimonial-company">
+                                    CEO, Hewlett Packard Enterprise
+                                </p>
+                            </div>
+                            <div class="col">
+                                <img src="assets/homepage/brands/hewlett-packard.png" alt="Hewlett Packard" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-control flex gap-4 px-20">
+                    <div class="slider-button">
+                        <img src="assets/profile-1.png" alt="Profile 1" />
+                    </div>
+                    <div class="slider-button">
+                        <img src="assets/profile-2.png" alt="Profile 2" />
+                    </div>
+                    <div class="slider-button">
+                        <img src="assets/profile-3.png" alt="Profile 3" />
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="container w-full mx-auto mt-12 text-justify">
-          <div class="row flex">
-            <div class="col flex">
-              <div class="about-us-card px-6 mr-5">
-                <svg
-                  class="about-us-card-highlight aspect-square w-14 text-primary-red"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="80"
-                  height="81"
-                  viewBox="0 0 80 81"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_557_1457)">
-                    <path
-                      d="M71.1647 37.238L61.1434 26.3056C59.9754 25.0316 58.3144 24.3008 56.5859 24.3008H23.4142C21.6858 24.3008 20.0247 25.0316 18.8567 26.3056L8.83545 37.238C7.15248 39.0739 7.06764 41.9163 8.63826 43.8494L37.4186 79.2714C38.0531 80.0522 38.9939 80.5 40 80.5C41.0061 80.5 41.9469 80.0522 42.5814 79.2714L71.3617 43.8494C72.9325 41.9161 72.8476 39.0739 71.1647 37.238ZM57.1384 26.6856L54.4709 34.5103C54.262 35.123 54.5894 35.7889 55.202 35.9978C55.3273 36.0405 55.4548 36.0608 55.5801 36.0608C56.0678 36.0608 56.5231 35.7541 56.6892 35.2667L59.2589 27.7289C59.3125 27.7809 59.365 27.8341 59.4156 27.8892L69.4369 38.8216C69.5814 38.9791 69.7014 39.1516 69.8019 39.3327H54.2948L42.6639 26.6444H56.5858C56.7719 26.6445 56.9564 26.6589 57.1384 26.6856ZM51.1154 39.3327H28.8845L40 27.2069L51.1154 39.3327ZM37.3361 26.6445L26.7751 38.1655L22.8615 26.6856C23.0436 26.6591 23.2281 26.6445 23.414 26.6445H37.3361ZM20.5844 27.8894C20.635 27.8341 20.6875 27.7809 20.7411 27.7291L24.6969 39.3328H10.1981C10.2986 39.1519 10.4186 38.9794 10.5631 38.8217L20.5844 27.8894ZM10.0512 41.6764H52.0279L40 76.9584L29.3203 45.6313C29.1115 45.0187 28.4458 44.6913 27.8329 44.9002C27.2203 45.1091 26.8929 45.775 27.1019 46.3875L36.7753 74.763L10.4572 42.3714C10.2836 42.1577 10.1498 41.9225 10.0512 41.6764ZM43.2245 74.763L54.504 41.6764H69.9487C69.8501 41.9225 69.7164 42.1577 69.5428 42.3713L43.2245 74.763Z"
-                      fill="#C1C1C1"
-                    />
-                    <path
-                      d="M40 19.1284C40.6472 19.1284 41.1719 18.6038 41.1719 17.9566V1.67188C41.1719 1.02469 40.6472 0.5 40 0.5C39.3528 0.5 38.8281 1.02469 38.8281 1.67188V17.9566C38.8281 18.6038 39.3528 19.1284 40 19.1284Z"
-                      fill="#E6222F"
-                    />
-                    <path
-                      d="M27.6778 19.7332C27.8831 20.1439 28.2969 20.3814 28.7269 20.3814C28.903 20.3814 29.0817 20.3415 29.25 20.2573C29.8289 19.9678 30.0636 19.264 29.774 18.6851L24.7634 8.66371C24.474 8.0848 23.7701 7.85012 23.1912 8.13965C22.6123 8.42918 22.3776 9.13293 22.6672 9.71184L27.6778 19.7332Z"
-                      fill="#C1C1C1"
-                    />
-                    <path
-                      d="M50.7499 20.2573C50.9182 20.3415 51.097 20.3814 51.2731 20.3814C51.7029 20.3814 52.1168 20.1439 52.3221 19.7332L57.3328 9.71184C57.6223 9.13293 57.3876 8.42918 56.8087 8.13965C56.2298 7.85012 55.526 8.0848 55.2365 8.66371L50.2259 18.6851C49.9364 19.264 50.171 19.9679 50.7499 20.2573Z"
-                      fill="#E6222F"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_557_1457">
-                      <rect
-                        width="80"
-                        height="80"
-                        fill="white"
-                        transform="translate(0 0.5)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-                <h4 class="about-us-title text-primary-red text-2xl capitalize">
-                  Your tech odyssey
-                </h4>
-                <p class="opacity-60">
-                  Our advanced tech expertise is a driving force. We harness
-                  cutting-edge technology and seamlessly integrate it into every
-                  service we offer. AI8 is committed to providing clients with
-                  the most innovative and efficient solutions
-                </p>
-              </div>
-              <div class="about-us-card px-6">
-                <svg
-                  class="about-us-card-highlight aspect-square text-primary-red"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="80"
-                  height="81"
-                  viewBox="0 0 80 81"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_557_1467)">
-                    <path
-                      d="M1.33671 63.1641C1.33514 64.2572 1.98772 65.2454 2.99385 65.6731L36.8871 79.8728C38.8786 80.7091 41.1228 80.7091 43.1143 79.8728L77.0129 65.6693C78.0149 65.2376 78.6631 64.2502 78.6611 63.1591C78.6591 62.068 78.0071 61.0831 77.0035 60.6552L55.9434 51.8322L77.0075 43.0053C78.0096 42.5736 78.6578 41.5862 78.6558 40.4951C78.6538 39.404 78.0018 38.4191 76.9982 37.9912L55.9393 29.1682L77.0035 20.3426C78.0101 19.917 78.6642 18.9304 78.6642 17.8375C78.6642 16.7447 78.0101 15.7581 77.0035 15.3325L43.1209 1.13285C41.1249 0.288888 38.8723 0.288888 36.8763 1.13285L2.99651 15.3311C1.98991 15.7567 1.33577 16.7433 1.33577 17.8361C1.33577 18.929 1.98991 19.9156 2.99651 20.3411L24.0607 29.1668L2.98448 37.9951C1.98241 38.4268 1.33421 39.4141 1.33624 40.5053C1.33827 41.5964 1.99022 42.5813 2.99385 43.0092L24.054 51.8322L2.98979 60.6591C1.986 61.0865 1.33499 62.073 1.33671 63.1641ZM4.02826 17.7896L37.9082 3.59271C39.2445 3.02746 40.7527 3.02746 42.0891 3.59271L75.9691 17.8816L42.0891 32.0799C40.753 32.6459 39.2445 32.6459 37.9082 32.0799L4.00967 17.7988L4.02826 17.7896ZM27.5082 30.6133L36.8765 34.5396C38.8728 35.3821 41.1247 35.3821 43.121 34.5396L52.4866 30.6147L75.9717 40.5509L42.0865 54.7478C40.7521 55.3063 39.2493 55.3063 37.9149 54.7478L4.02576 40.4495L27.5082 30.6133ZM27.5082 53.2773L36.8897 57.2075C38.8812 58.0438 41.1255 58.0438 43.117 57.2075L52.4932 53.28L75.9744 63.2147L42.0865 77.4116C40.7521 77.9701 39.2493 77.9701 37.9149 77.4116L4.02576 63.1133L27.5082 53.2773Z"
-                      fill="#C1C1C1"
-                    />
-                    <path
-                      d="M7.74193 20.8226L37.7419 33.4033"
-                      stroke="#E6222F"
-                      stroke-width="4"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_557_1467">
-                      <rect
-                        width="80"
-                        height="80"
-                        fill="white"
-                        transform="translate(0 0.5)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-                <h4 class="about-us-title text-primary-red text-2xl">
-                  Our Accomplishments
-                </h4>
-                <p class="opacity-60">
-                  We have achieved remarkable success in the last few years,
-                  thanks to our wonderful clients and our pool of competent
-                  professionals - we’ve managed to become one of the most
-                  reliable service providers in the industry.
-                </p>
-              </div>
-            </div>
-            <div class="col-40">
-              <svg
-                width="737"
-                height="406"
-                viewBox="0 0 737 406"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M751 360H466.159C436.06 360 411.659 335.6 411.659 305.5V305.5C411.659 275.4 387.259 251 357.159 251H1.7941e-05"
-                  stroke="#C1C1C1"
-                  stroke-width="2"
-                />
-                <path
-                  d="M0 175H284.841C314.94 175 339.341 150.6 339.341 120.5V120.5C339.341 90.4005 363.741 66 393.841 66H751"
-                  stroke="#C1C1C1"
-                  stroke-width="2"
-                />
-                <path
-                  d="M611.333 400C611.333 402.946 608.946 405.333 606 405.333C603.054 405.333 600.667 402.946 600.667 400C600.667 397.054 603.054 394.667 606 394.667C608.946 394.667 611.333 397.054 611.333 400ZM606 401H392.178V399H606V401ZM272.178 281H0V279H272.178V281ZM331.178 340C331.178 307.415 304.763 281 272.178 281V279C305.867 279 333.178 306.311 333.178 340H331.178ZM392.178 401C358.488 401 331.178 373.689 331.178 340H333.178C333.178 372.585 359.593 399 392.178 399V401Z"
-                  fill="#C1C1C1"
-                />
-                <path
-                  d="M486.333 6C486.333 3.05448 483.946 0.666672 481 0.666672C478.054 0.666672 475.667 3.05448 475.667 6C475.667 8.94552 478.054 11.3333 481 11.3333C483.946 11.3333 486.333 8.94552 486.333 6ZM481 5H323.659V7H481V5ZM203.659 125H-3.05176e-05V127H203.659V125ZM262.659 66C262.659 98.5848 236.244 125 203.659 125V127C237.349 127 264.659 99.6894 264.659 66H262.659ZM323.659 5C289.97 5 262.659 32.3106 262.659 66H264.659C264.659 33.4152 291.074 7 323.659 7V5Z"
-                  fill="#C1C1C1"
-                />
-                <path
-                  d="M408.667 196C408.667 198.946 411.054 201.333 414 201.333C416.946 201.333 419.333 198.946 419.333 196C419.333 193.054 416.946 190.667 414 190.667C411.054 190.667 408.667 193.054 408.667 196ZM0 197H414V195H0V197Z"
-                  fill="#C1C1C1"
-                />
-                <path
-                  d="M651.667 220C651.667 222.946 654.055 225.333 657 225.333C659.946 225.333 662.333 222.946 662.333 220C662.333 217.054 659.946 214.667 657 214.667C654.055 214.667 651.667 217.054 651.667 220ZM0 221H657V219H0V221Z"
-                  fill="#E6222F"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="container w-full mx-auto flex partners-logos">
-          <div class="partner-logo">
-            <img
-              src="assets/homepage/brands/solutions-sic.jpg"
-              alt="Solutions Sic"
-            />
-          </div>
-          <div class="partner-logo">
-            <img
-              src="assets/homepage/brands/solutions-sic.jpg"
-              alt="Solutions Sic"
-            />
-          </div>
-          <div class="partner-logo">
-            <img
-              src="assets/homepage/brands/solutions-sic.jpg"
-              alt="Solutions Sic"
-            />
-          </div>
-          <div class="partner-logo">
-            <img
-              src="assets/homepage/brands/hewlett-packard.png"
-              alt="Hewlett Packard"
-            />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/homepage/brands/SBM.png" alt="SBM" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/homepage/brands/aram-co.png" alt="Aram Co." />
-          </div>
-          <div class="partner-logo">
-            <img
-              src="assets/homepage/brands/ministry-cit.png"
-              alt="Ministry Of Communications And Information Technology"
-            />
-          </div>
-          <div class="partner-logo">
-            <img
-              src="assets/homepage/brands/alrajhi-bank.png"
-              alt="Alrajhi Bank"
-            />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/homepage/brands/aram-co.png" alt="Aram Co." />
-          </div>
-        </div>
-      </section>
-      <section class="testimonial-section">
-        <div class="container w-full h-full mx-auto">
-          <div
-            class="testimonial-header about-us-header flex items-center justify-between w-screen container mx-auto row"
-          >
-            <p class="text-primary text-xl col">Partners And Clients</p>
-            <h3 class="text-primary-red text-4xl col">In the Ai8 Spotlight</h3>
-          </div>
-          <div class="slider flex mt-20">
-            <div class="slider-image col p-20">
-              <img
-                src="assets/dewitte-faiser.png"
-                alt="Dewitte Faiser, CEO, HP Enterprise"
-                class="testimonial-image"
-              />
-            </div>
-            <div class="slider-content col">
-              <p class="text-2xl testimonial">
-                Offering this key quantum-generated resource is a significant
-                advantage for both our internal and external customers. It is
-                especially important for our enterprise customers with demands
-                for high quality and high-performance random numbers, who will
-                benefit from this unique feature.
-              </p>
-              <div class="row testimonial-details">
+        </section>
+        <section class="services-section w-full h-full mx-auto text-white py-12 px-12`">
+            <div class="row container mx-auto">
                 <div class="col">
-                  <p class="text-xl testimonial-name">Dewitte Faiser</p>
-                  <p class="text-sm testimonial-company">
-                    CEO, Hewlett Packard Enterprise
-                  </p>
+                    <p class="text-xl uppercase services-header-title">Services</p>
                 </div>
                 <div class="col">
-                  <img
-                    src="assets/homepage/brands/hewlett-packard.png"
-                    alt="Hewlett Packard"
-                  />
+                    <p class="text-4xl text-white services-header-description">
+                        Turning Visions Into IT-Enabled Success.
+                    </p>
+                    <button class="btn btn-cta px-0 mx-0 my-10">Learn More</button>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="slider-control flex gap-4 px-20">
-            <div class="slider-button">
-              <img src="assets/profile-1.png" alt="Profile 1" />
+            <div class="row container grid grid-cols-4 gap-4 py-12 relative mx-auto">
+                <div class="services-card">
+                    <span class="text-4xl text-white font-light">
+                        Digital Transformation
+                    </span>
+                    <img src="assets/accent-btn.svg" alt="accent-btn-image" class="w-6 h-6" />
+                </div>
+                <div class="services-card">
+                    <span class="text-white">Cyber Security</span>
+                    <img src="assets/accent-btn.svg" alt="accent-btn-image" class="w-6 h-6" />
+                </div>
+                <div class="services-card">
+                    <span class="text-white">Staffing Solutions</span>
+                    <img src="assets/accent-btn.svg" alt="accent-btn-image" class="w-6 h-6" />
+                </div>
+                <div class="services-card row-span-2">
+                    <span class="text-white">Product Development</span>
+                    <img src="assets/accent-btn.svg" alt="accent-btn-image" class="w-6 h-6" />
+                </div>
+                <div class="services-card">
+                    <span class="text-white">Cloud Services</span>
+                    <img src="assets/accent-btn.svg" alt="accent-btn-image" class="w-6 h-6" />
+                </div>
+                <div class="services-card col-span-2">
+                    <span class="text-white">Artificial Intelligence</span>
+                    <img src="assets/accent-btn.svg" alt="accent-btn-image" class="w-6 h-6" />
+                </div>
+                <div class="blob"></div>
+                <div class="blob"></div>
             </div>
-            <div class="slider-button">
-              <img src="assets/profile-2.png" alt="Profile 2" />
+        </section>
+        <section class="sectors-section w-full mx-auto text-white relative">
+            <div class="row container mx-auto">
+                <div class="col-40 flex items-start justify-start self-start">
+                    <p class="text-3xl text-white block h-full">Sectors</p>
+                </div>
+                <div class="col-60 flex flex-col">
+                    <p class="text-5xl text-white mb-10">
+                        Joining Hands, Reaching Heights.
+                    </p>
+                    <button class="btn btn-cta text-white max-w-fit">Read More</button>
+                    <div class="sectors-list my-10">
+                        <a href="#"><span class="sector-name">Oil and Gas</span></a>
+                        <a href="#"><span class="sector-name">Banking Sector</span></a>
+                        <a href=""><span class="sector-name">Education Sector</span></a>
+                        <a href="#"><span class="sector-name">IT System Integrators and Solutions Providers</span></a>
+                        <a href="#"><span class="sector-name">Telecom Utilities</span></a>
+                        <a href="#"><span class="sector-name">Government and Security Agencies</span></a>
+                    </div>
+                </div>
             </div>
-            <div class="slider-button">
-              <img src="assets/profile-3.png" alt="Profile 3" />
+            <img src="assets/homepage/sectors-illustration.svg" alt="Sectors Illustration"
+                class="absolute w-80 top-1/2" />
+        </section>
+        <section class="case-studies-section w-full mx-auto text-primary relative container flex py-12 flex-col">
+            <div class="row">
+                <div class="col-40">
+                    <span class="text-3xl text-primary block h-full">Case Studies</span>
+                </div>
+                <div class="col-60">
+                    <p class="text-5xl text-primary-red mb-10">
+                        What we’ve done so far.
+                    </p>
+                    <button class="btn btn-cta text-primary-red max-w-fit">View All</button>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="services-section w-full h-full mx-auto text-white py-12 px-12`"
-      >
-        <div class="row container mx-auto">
-          <div class="col">
-            <p class="text-xl uppercase services-header-title">Services</p>
-          </div>
-          <div class="col">
-            <p class="text-4xl text-white services-header-description">
-              Turning Visions Into IT-Enabled Success.
-            </p>
-            <button class="btn btn-cta px-0 mx-0 my-10">Learn More</button>
-          </div>
-        </div>
-        <div class="row container grid grid-cols-4 gap-4 py-12 relative mx-auto">
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="services-card">
-            <span class="text-4xl text-white font-light">
-              Digital Transformation
-            </span>
-            <img
-              src="assets/accent-btn.svg"
-              alt="accent-btn-image"
-              class="w-6 h-6"
-            />
-          </div>
-          <div class="services-card">
-            <span class="text-white">Cyber Security</span>
-            <img
-              src="assets/accent-btn.svg"
-              alt="accent-btn-image"
-              class="w-6 h-6"
-            />
-          </div>
-          <div class="services-card">
-            <span class="text-white">Staffing Solutions</span>
-            <img
-              src="assets/accent-btn.svg"
-              alt="accent-btn-image"
-              class="w-6 h-6"
-            />
-          </div>
-          <div class="services-card row-span-2">
-            <span class="text-white">Product Development</span>
-            <img
-              src="assets/accent-btn.svg"
-              alt="accent-btn-image"
-              class="w-6 h-6"
-            />
-          </div>
-          <div class="services-card">
-            <span class="text-white">Cloud Services</span>
-            <img
-              src="assets/accent-btn.svg"
-              alt="accent-btn-image"
-              class="w-6 h-6"
-            />
-          </div>
-          <div class="services-card col-span-2">
-            <span class="text-white">Artificial Intelligence</span>
-            <img
-              src="assets/accent-btn.svg"
-              alt="accent-btn-image"
-              class="w-6 h-6"
-            />
-          </div>
-        </div>
-      </section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-33">
+                        <div class="case-study-card">
+                            <img src="assets/case/efficiency.png" alt="Streamlining Software: A Case Study in Efficiency" />
+                            <div class="case-study-details">
+                                <h5>Streamlining Software: A Case Study in Efficiency</h5>
+                                <div class="flex items-center justify-between">
+                                    <p class="case-study-date">September 23, 2023</p>
+                                    <button>View Case Study</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-33">
+                        <div class="case-study-card">
+                            <img src="assets/case/eff.png" alt="Streamlining Software: A Case Study in Efficiency" />
+                            <div class="case-study-details">
+                                <h5>Streamlining Software: A Case Study in Efficiency</h5>
+                                <div class="flex items-center justify-between">
+                                    <p class="case-study-date">September 23, 2023</p>
+                                    <button>View Case Study</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-33">
+                        <div class="case-study-card">
+                            <img src="assets/case/eff0ciency-2.png" alt="Streamlining Software: A Case Study in Efficiency" />
+                            <div class="case-study-details">
+                                <h5>Streamlining Software: A Case Study in Efficiency</h5>
+                                <div class="flex items-center justify-between">
+                                    <p class="case-study-date">September 23, 2023</p>
+                                    <button>View Case Study</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
-  </body>
+</body>
+
 </html>

@@ -8,7 +8,8 @@
 }
 
 @layer base {
-  html, body {
+  html,
+  body {
     font-family: "Eurostile", sans-serif;
     overflow-x: hidden;
     max-width: 100vw;
@@ -116,10 +117,11 @@
     align-items: center;
     gap: 10px;
     flex-direction: column;
+    text-transform: uppercase;
   }
 
   .hero-cta svg {
-    aspect-ratio: 1/1;  
+    aspect-ratio: 1/1;
     width: min-content;
     display: inline-block;
   }
@@ -156,7 +158,7 @@
   }
 
   .hero-item {
-    font-family: 'Eurostile', sans-serif;
+    font-family: "Eurostile", sans-serif;
     min-width: max-content;
     vertical-align: middle;
   }
@@ -167,7 +169,7 @@
 
   .hero-item-last {
     font-size: 24px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-inline: auto 0;
     line-height: normal;
     letter-spacing: normal;
@@ -213,10 +215,8 @@
     z-index: -1;
   } */
 
-  .blob {
+  .achievements .blob {
     position: absolute;
-    bottom: 25%;
-    right: 80%;
     border-radius: 50%;
     border-radius: 543px;
     background: #e14a6b;
@@ -225,13 +225,15 @@
     height: 300px;
     transform: translate(50%, 50%);
     z-index: -1;
+    right: 70%;
+    bottom: 50%;
   }
 
-  .blob + .blob {
+  .achievements .blob + .blob {
     width: 200px;
+    bottom: 25%;
+    right: 80%;
     height: 200px;
-    right: 10px;
-    bottom: 20%;
     background: #8671f4;
   }
 
@@ -383,7 +385,7 @@
 
   .about-us-title {
     color: var(--primary-red, #e6222f);
-    font-family: 'Eurostile', sans-serif;
+    font-family: "Eurostile", sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -467,7 +469,7 @@
   }
 
   .services-section {
-    border-radius: 44px;
+    border-radius: 44px 44px 0 0;
     background: var(--primary-blue, #102054);
   }
 
@@ -522,5 +524,43 @@
     z-index: -1;
     transition: all 0.5s var(--bezier, cubic-bezier(0.4, 0, 0.2, 1));
     transform-origin: top left;
+  }
+
+  .sectors-section {
+    /* border-radius: 0px 0px 44px 44px; */
+    background: var(--primary-blue, #102054);
+  }
+
+  .sectors-section .row + img {
+    max-width: 525px;
+    max-height: 450px;
+    flex-shrink: 0;
+    transform-origin: bottom left;
+    scale: 1.8;
+  }
+
+  .sectors-list {
+    @apply grid;
+    @apply grid-cols-1;
+    @apply gap-4;
+    @apply px-0;
+  }
+
+  .sector-name {
+    @apply py-4;
+    @apply px-6;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(108deg,
+    transparent 3.15%,
+    transparent 45.78%,
+    transparent 73.49%,
+    transparent 89.49%
+    );
+    transition: all 0.2s var(--bezier, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  .sector-name:hover {
+    @apply cursor-pointer;
+    background: linear-gradient(108deg, #F96E7C 3.15%, #8D74EF 45.78%, rgba(141, 116, 239, 0.00) 73.49%, rgba(141, 116, 239, 0.00) 89.49%);
   }
 }
