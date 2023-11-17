@@ -549,6 +549,11 @@ html,
   color: rgb(230 34 47 / var(--tw-text-opacity));
 }
 
+.btn-cta:hover::after {
+  top: 0.5em;
+  right: 2rem;
+}
+
 .btn-cta::after {
   content: url("../assets/icons/button_corner.svg");
   position: absolute;
@@ -556,6 +561,7 @@ html,
   right: 1em;
   transform: translate(50%, -25%);
   z-index: 10;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-cta.text-white::after {

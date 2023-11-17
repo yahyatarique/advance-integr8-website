@@ -75,6 +75,11 @@
     @apply text-primary-red;
   }
 
+  .btn-cta:hover::after {
+    top: 0.5em;
+    right: 2rem;
+  }
+
   .btn-cta::after {
     content: url("../assets/icons/button_corner.svg");
     position: absolute;
@@ -82,6 +87,7 @@
     right: 1em;
     transform: translate(50%, -25%);
     z-index: 10;
+    transition: all 0.2s ease-in-out;
   }
 
   .btn-cta.text-white::after {
