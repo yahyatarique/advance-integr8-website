@@ -262,3 +262,111 @@ createHeroTimeline(tl);
 // createAboutUsTimeline(tl);
 // createTestimonialsTimeline(tl);
 // createServicesTimeline(tl);
+
+
+gsap.from('.blob', {
+  scrollTrigger: {
+    trigger: '.blob',
+    start: '-=100 80%',
+    end: '-=10 60%',
+    scrub: 0.3,
+    triggerAction: 'play none none reverse',
+    ease: "power1.in",
+  },
+  y: 500,
+  x: 500, 
+  scale: 1.2
+})
+
+gsap.from('.achievement ', {
+  scrollTrigger: {
+    trigger: '.achievements',
+    start: 'top 80%',
+    end: 'top 20%',
+    scrub: 0.3,
+    triggerAction: 'play none none reverse',
+    ease: "power1.in",
+  },
+  y: Math.random() * 100,
+})
+
+
+// Skew with mouse move
+gsap.from('.achievement-card', {
+  scrollTrigger: {
+    trigger: '.achievement',
+    start: 'top 80%',
+    end: 'top 10%',
+    scrub: 0.5,
+    triggerAction: 'play none none reverse',
+  },
+  y: 100,
+  skewY: 25,
+})
+gsap.from('.slider-image .image .shadow', {
+  scrollTrigger: {
+    trigger: '.slider-image',
+    start: 'top 80%',
+    end: 'top 10%',
+    scrub: 0.5,
+    triggerAction: 'play none none reverse',
+  },
+  opacity: 0,
+  right: 0,
+  bottom: 0,
+  skewX: 0,
+})
+gsap.from('.slider-image img', {
+  scrollTrigger: {
+    trigger: '.slider-image',
+    start: 'top 80%',
+    end: 'top 10%',
+    scrub: 0.5,
+    triggerAction: 'play none none reverse',
+  },
+  // Parallax move
+  y: 100,
+  skewY: 10,
+})
+
+gsap.from('.slider-control .slider-button', {
+  scrollTrigger: {
+    trigger: '.slider',
+    start: 'top 80%',
+    end: 'top 20%',
+    scrub: 0.5,
+    triggerAction: 'play none none reverse',
+  },
+  ease: "power1.in",
+  y: 1000,
+  skewY: 10,
+  opacity: 0,
+})
+gsap.from('.testimonial', {
+  scrollTrigger: {
+    trigger: '.testimonial-section',
+    start: 'top 80%',
+    end: 'top 10%',
+    scrub: 0.5,
+    triggerAction: 'play none none reverse',
+  },
+  ease: "power1.in",
+  y: 1000,
+  skewY: 10,
+  opacity: 0,
+})
+gsap.from('.testimonial-details', {
+  
+})
+
+gsap.from('.services-cards', {
+  scrollTrigger: {
+    trigger: '.services-cards',
+    start: 'top 100%',
+    end: 'bottom 0%',
+    scrub: 0.5,
+    triggerAction: 'play none none reverse',
+  },
+  y: 100,
+  skewY: 25,
+})
