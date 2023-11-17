@@ -863,14 +863,17 @@ span {
 }
 
 .about-us-card-highlight {
-  width: 36px;
-  height: 36px;
-  margin-block-end: 10px;
+  min-width: 64px;
+  min-height: 64px;
+  max-width: 64px;
+  max-height: 64px;
+  scale: 4;
+  margin-block-end: 8px;
 }
 
 .about-us-title {
   color: var(--primary-red, #e6222f);
-  font-family: Eurostile;
+  font-family: 'Eurostile', sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -1216,6 +1219,10 @@ img {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .inline-block {
