@@ -630,12 +630,13 @@ html,
   position: absolute;
   bottom: 0;
   right: 0;
+  transform: translate(50%, 50%);
   border-radius: 50%;
   border-radius: 1001px;
   background: rgba(225, 74, 107, 0.25);
   filter: blur(80px);
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
 }
 
 .hero > div {
@@ -730,7 +731,7 @@ span {
   bottom: 40%;
 }
 
-.achievements .blob, .services-section .blob + .blob {
+.achievements .blob + .blob, .services-section .blob + .blob {
   width: 400px;
   bottom: 15%;
   right: 90%;
