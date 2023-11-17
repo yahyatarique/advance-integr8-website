@@ -492,9 +492,10 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    aspect-ratio: 1/1;
     width: min(800px, 100%);
     height: 100%;
-    min-height: 400px;
+    max-height: 800px;
     padding: 36px;
     position: relative;
     z-index: 0;
@@ -504,6 +505,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 52.8px */
+  }
+
+  .services-card.col-span-2,
+  .services-card.row-span-2 {
+    aspect-ratio: unset;
   }
 
   .services-card:hover::before {
@@ -532,7 +538,8 @@
   }
 
   .sectors-section {
-    /* border-radius: 0px 0px 44px 44px; */
+    padding-block-end: 36px;
+    border-radius: 0px 0px 36px 36px;
     background: var(--primary-blue, #102054);
   }
 
@@ -577,7 +584,7 @@
   }
 
   .case-studies-section {
-    background: var(--Gray-6, #F2F2F2);
+    background: var(--Gray-6, #f2f2f2);
   }
 
   .case-study-card {
@@ -603,5 +610,53 @@
     line-height: 110%; /* 38.4px */
     text-transform: capitalize;
     margin-block-end: 0.75rem;
+  }
+
+  .contact-us-section {
+    background: linear-gradient(0deg, #102054 0 50%, #f2f2f2 50% 100%);
+  }
+
+  .contact-us-card {
+    padding: 152px 131px;
+    background: var(--primary-blue, #102054);
+
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+    @apply flex-col;
+    @apply gap-10;
+  }
+
+  .contact-us-text {
+    color: var(--secondary-white, #fff);
+    text-align: center;
+    font-family: "Eurostile", sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 96px */
+    text-transform: uppercase;
+    max-width: 50%;
+    letter-spacing: 1px;
+    @apply mx-auto;
+  }
+
+  .footer-logo {
+    width: 300.287px;
+    height: 100px;
+    flex-shrink: 0;
+  }
+
+  .footer-column span {
+    margin-block-end: 36px;
+    margin-inline: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-copyright-bar {
+    @apply py-10;
+    @apply mt-5;
+    border-top: 1px solid white;
   }
 }
