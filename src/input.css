@@ -371,7 +371,6 @@
 
   .about-us-header .text-secondary {
     color: var(--secondary-dark, #232323);
-    font-family: "Poppins", sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
