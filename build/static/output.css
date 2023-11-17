@@ -462,6 +462,11 @@ html,
   max-width: 60%;
 }
 
+.col-33 {
+  min-width: 33%;
+  max-width: 33%;
+}
+
 .about-us-header .header-nav {
   color: var(--secondary-dark, #232323);
   font-family: "Eurostile";
@@ -1054,19 +1059,57 @@ img {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(108deg,
-    transparent 3.15%,
-    transparent 45.78%,
-    transparent 73.49%,
-    transparent 89.49%
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+      108deg,
+      transparent 3.15%,
+      transparent 45.78%,
+      transparent 73.49%,
+      transparent 89.49%
     );
   transition: all 0.2s var(--bezier, cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 .sector-name:hover {
   cursor: pointer;
-  background: linear-gradient(108deg, #F96E7C 3.15%, #8D74EF 45.78%, rgba(141, 116, 239, 0.00) 73.49%, rgba(141, 116, 239, 0.00) 89.49%);
+  background: linear-gradient(
+      108deg,
+      #f96e7c 3.15%,
+      #8d74ef 45.78%,
+      rgba(141, 116, 239, 0) 73.49%,
+      rgba(141, 116, 239, 0) 89.49%
+    );
+}
+
+.case-studies-section {
+  background: var(--Gray-6, #F2F2F2);
+}
+
+.case-study-card {
+  margin-block: 16px;
+  margin-inline-end: 8px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.case-study-card:nth-of-type(3) {
+  margin-inline-end: 0;
+}
+
+.case-study-details {
+  padding: 18px 28px;
+}
+
+.case-study-details h5 {
+  color: var(--primary-blue, #102054);
+  font-family: Eurostile;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  /* 38.4px */
+  text-transform: capitalize;
+  margin-block-end: 0.75rem;
 }
 
 *, ::before, ::after {
