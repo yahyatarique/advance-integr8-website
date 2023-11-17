@@ -716,26 +716,28 @@ span {
     z-index: -1;
   } */
 
-.achievements .blob {
+.achievements .blob, .services-section .blob {
   position: absolute;
   border-radius: 50%;
   border-radius: 543px;
   background: #e14a6b;
-  filter: blur(100px);
+  filter: blur(90px);
   width: 300px;
   height: 300px;
   transform: translate(50%, 50%);
   z-index: -1;
   right: 70%;
-  bottom: 50%;
+  bottom: 40%;
 }
 
-.achievements .blob + .blob {
-  width: 200px;
-  bottom: 25%;
-  right: 80%;
-  height: 200px;
+.achievements .blob, .services-section .blob + .blob {
+  width: 400px;
+  bottom: 15%;
+  right: 90%;
+  height: 400px;
+  filter: blur(100px);
   background: #8671f4;
+  z-index: -2;
 }
 
 .achievements_text {
@@ -747,6 +749,16 @@ span {
   /* 38.4px */
   text-transform: uppercase;
   width: 60%;
+}
+
+.services-section .blob {
+  right: 10%;
+  bottom: 99%;
+}
+
+.services-section .blob + .blob {
+  right: 0%;
+  bottom: 80%;
 }
 
 .btn.btn-cta {
@@ -762,7 +774,6 @@ span {
   display: inline-block;
   text-align: center;
   font-size: 20px;
-  font-style: normal;
   font-weight: 900 !important;
   line-height: 140%;
   margin-block: 32px;
@@ -1351,6 +1362,10 @@ img {
 
 .top-1\/2 {
   top: 50%;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .col-span-2 {
