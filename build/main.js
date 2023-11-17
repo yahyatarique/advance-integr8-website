@@ -287,22 +287,79 @@ gsap.from('.achievement ', {
     triggerAction: 'play none none reverse',
     ease: "power1.in",
   },
-  y: Math.random() * 100,
+  y: 100,
 })
-
 
 // Skew with mouse move
 gsap.from('.achievement-card', {
   scrollTrigger: {
     trigger: '.achievement',
     start: 'top 80%',
-    end: 'top 10%',
-    scrub: 0.5,
+    end: 'top 5%',
+    scrub: 0.3,
     triggerAction: 'play none none reverse',
   },
   y: 100,
   skewY: 25,
 })
+gsap.from('.about-us-section > img', {
+  scrollTrigger: {
+    trigger: '.about-us-section',
+    start: 'top 80%',
+    end: 'top 5%',
+    scrub: true,
+    triggerAction: 'play none none reverse',
+  },
+  y: -200,
+})
+gsap.from('.about-us-header', {
+  scrollTrigger: {
+    trigger: '.about-us',
+    start: 'top 80%',
+    end: 'top 20%',
+    triggerAction: 'play none none reverse',
+  },
+  ease: 'power1.in',
+  y: 200,
+  opacity: 0
+})
+gsap.from('.about-us-section .about-us-desc', {
+  scrollTrigger: {
+    trigger: '.about-us-header',
+    start: 'top 80%',
+    end: 'top 0%',
+    triggerAction: 'play none none reverse',
+  },
+  ease: 'power1.in',
+  y: 80,
+  opacity: 0
+})
+gsap.from('.about-us-section .about-us-card', {
+  scrollTrigger: {
+    trigger: '.about-us-card',
+    start: 'top 80%',
+    end: 'top 0%',
+    triggerAction: 'play none none reverse',
+  },
+  stagger: 0.5,
+  ease: 'power1.in',
+  y: 40,
+  opacity: 0
+})
+gsap.from('.lines-illustration', {
+  scrollTrigger: {
+    trigger: '.about-us-section',
+    start: 'bottom 240%',
+    end: 'bottom 80%',
+    scrub: 0.2,
+    triggerAction: 'play none none reverse',
+  },
+  ease: 'power1.in',
+  y: 20,
+  opacity: 0
+})
+
+
 gsap.from('.slider-image .image .shadow', {
   scrollTrigger: {
     trigger: '.slider-image',
@@ -325,22 +382,8 @@ gsap.from('.slider-image img', {
     triggerAction: 'play none none reverse',
   },
   // Parallax move
-  y: 100,
+  y: 80,
   skewY: 10,
-})
-
-gsap.from('.slider-control .slider-button', {
-  scrollTrigger: {
-    trigger: '.slider',
-    start: 'top 80%',
-    end: 'top 20%',
-    scrub: 0.5,
-    triggerAction: 'play none none reverse',
-  },
-  ease: "power1.in",
-  y: 1000,
-  skewY: 10,
-  opacity: 0,
 })
 gsap.from('.testimonial', {
   scrollTrigger: {
@@ -351,12 +394,49 @@ gsap.from('.testimonial', {
     triggerAction: 'play none none reverse',
   },
   ease: "power1.in",
+  y: 800,
+  opacity: 0,
+})
+
+gsap.from('.testimonial-section .testimonial-header .col', {
+  scrollTrigger: {
+    trigger: '.testimonial-section',
+    start: 'top 100%',
+    end: 'top 80%',
+    scrub: 0.5,
+    triggerAction: 'play none none reverse',
+  },
+  ease: "power1.in",
+  y: 800,
+  opacity: 0,
+})
+
+gsap.from('.slider-control .slider-button', {
+  scrollTrigger: {
+    trigger: '.testimonial-section',
+    start: 'top 80%',
+    end: 'top 5%',
+    scrub: 0.5,
+    triggerAction: 'play none none reverse',
+  },
+  stagger: 0.05,
+  ease: "power1.in",
   y: 1000,
   skewY: 10,
   opacity: 0,
 })
 gsap.from('.testimonial-details', {
-  
+  scrollTrigger: {
+    trigger: '.testimonial-section',
+    start: 'top 80%',
+    end: 'top 0%',
+    scrub: 0.5,
+    triggerAction: 'play none none reverse',
+  },
+  ease: "power1.in",
+  y: 1000,
+  skewY: 10,
+  opacity: 0,
 })
 
 gsap.from('.services-cards', {
