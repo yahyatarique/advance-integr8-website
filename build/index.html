@@ -154,43 +154,49 @@
                 </div>
             </section>
         </div>
-        <section class="achievements text-white" id="achievements">
+        <section class="section achievements text-white container mx-auto" id="achievements">
             <div class="achievement flex justify-space-between items-center container">
-                <p class="achievements_text">Achievements</p>
-                <div class="flex-1">
+                <p class="achievements_text items-start justify-start self-start text-3xl col-40">Achievements</p>
+                <div class="col-60">
                     <h3>We bring effective solutions for businesses to scale.</h3>
-                    <button class="btn btn-cta">Know More</button>
+                    <button class="btn btn-cta text-white">Know More</button>
                 </div>
             </div>
             <div class="blob"></div>
             <div class="blob"></div>
-            <div class="achievement-cards flex justify-around">
+            <div class="achievement-cards flex justify-around container mx-auto">
                 <div class="achievement-card">
-                    <div id="achievement_1">
-                        97<span class="text-6xl inline-block">%</span>
+                    <div class="stat">
+                        <div id="achievement_1">
+                            97<span class="text-6xl inline-block">%</span>
+                        </div>
+                        <span id="achievement_1_text" class="ach_text">click retention</span>
                     </div>
-                    <span id="achievement_1_text" class="ach_text">Click Retention</span>
                 </div>
                 <div class="achievement-card">
-                    <div id="achievement_2">
-                        25<span class="text-6xl inline-block">+</span>
+                    <div class="stat">
+                        <div id="achievement_2">
+                            25<span class="text-6xl inline-block">+</span>
+                        </div>
+                        <span id="achievement_2_text" class="ach_text">industries served</span>
                     </div>
-                    <span id="achievement_2_text" class="ach_text">Industries Served</span>
                 </div>
                 <div class="achievement-card">
-                    <div id="achievement_3">
-                        250<span class="text-6xl inline-block">+</span>
+                    <div class="stat">
+                        <div id="achievement_3">
+                            250<span class="text-6xl inline-block">+</span>
+                        </div>
+                        <span id="achievement_3_text" class="ach_text">experts</span>
                     </div>
-                    <span id="achievement_3_text" class="ach_text">experts</span>
                 </div>
             </div>
         </section>
-        <section class="about-us-section w-full">
+        <section class="about-us-section w-full mx-auto">
             <img src="/assets/homepage/Ai-8-Cover.jpg" class="mx-auto w-full"
                 alt="Two women talking to each other | AI8" preload style="width: 100%; border-radius: 24px" />
             <div class="about-us container mx-auto">
-                <div class="about-us-header flex items-center justify-between w-screen container mx-auto row">
-                    <p class="text-primary text-xl col">About Us</p>
+                <div class="about-us-header items-center justify-between w-screen container mx-auto row">
+                    <p class="text-primary text-xl col items-start justify-start self-start">About Us</p>
                     <span class="text-secondary text-6xl col">
                         Building Trust Through Service Excellence.
                     </span>
@@ -198,7 +204,7 @@
             </div>
             <div class="container w-full mx-auto">
                 <div class="row flex justify-items-start">
-                    <div class="col">
+                    <div class="col-40">
                         <p class="text-2xl opacity-60 max-w-md">
                             Teaming up with industry leaders, we've harnessed valuable
                             insights, fueling innovation to new heights. These partnerships
@@ -209,9 +215,27 @@
                             Learn More
                         </button>
                     </div>
-                    <div class="col flex justify-around">
+                    <div class="col-60 flex justify-around">
                         <div class="about-us-card px-6 mr-5">
-                            <img src="assets/gifs/Bulb Growth .gif" alt="Bulb growing with a line">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81"
+                                fill="none" class="about-us-card-highlight aspect-square w-14 text-primary-red">
+                                <g clip-path="url(#clip0_746_747)">
+                                    <path
+                                        d="M55.4722 24.1397C51.4385 20.2074 45.9442 18.0417 40.0016 18.0417C34.0591 18.0417 28.5647 20.2074 24.531 24.1397C20.4982 28.0711 18.2773 33.4166 18.2773 39.1915C18.2773 45.3549 21.0177 51.2359 25.7958 55.3268C28.2996 57.4703 29.8799 60.4347 30.4076 63.941C29.1233 64.6947 28.2597 66.0817 28.2597 67.6656V68.9619C28.2597 70.9316 29.5951 72.5971 31.415 73.1178C31.172 73.6561 31.0358 74.2515 31.0358 74.8783V76.1745C31.0358 78.5597 32.9929 80.5002 35.3984 80.5002H44.605C47.0105 80.5002 48.9676 78.5597 48.9676 76.1745V74.8783C48.9676 74.2515 48.8314 73.6559 48.5885 73.1178C50.4083 72.5971 51.7437 70.9318 51.7437 68.9619V67.6656C51.7437 66.0817 50.8801 64.6947 49.5958 63.941C50.1237 60.4347 51.704 57.4703 54.2076 55.3268C58.9857 51.2361 61.7261 45.355 61.7261 39.1915C61.7261 33.4166 59.505 28.0711 55.4722 24.1397ZM46.2326 76.1744C46.2326 77.0515 45.5025 77.765 44.605 77.765H35.3982C34.5008 77.765 33.7707 77.0515 33.7707 76.1744V74.8781C33.7707 74.001 34.5008 73.2874 35.3982 73.2874H44.6049C45.5023 73.2874 46.2324 74.0009 46.2324 74.8781L46.2326 76.1744ZM49.0085 68.9617C49.0085 69.8388 48.2784 70.5523 47.3809 70.5523H44.6049H35.3982H32.6221C31.7247 70.5523 30.9946 69.8388 30.9946 68.9617V67.6655C30.9946 66.7884 31.7247 66.0749 32.6221 66.0749H47.3809C48.2784 66.0749 49.0085 66.7884 49.0085 67.6655V68.9617ZM35.7604 46.1833H33.0479C31.951 46.1833 31.0587 45.3092 31.0587 44.235C31.0587 43.1609 31.951 42.2867 33.0479 42.2867H33.7712C34.8681 42.2867 35.7604 43.1607 35.7604 44.235V46.1833ZM41.6057 63.3398H38.4955V48.9183H41.6057V63.3398ZM52.4288 53.2491C49.4611 55.7897 47.5763 59.2597 46.922 63.3398H44.3406V48.9183H47.0977C49.7026 48.9183 51.822 46.8173 51.822 44.235C51.822 41.6527 49.7026 39.5516 47.0977 39.5516H46.3298C43.7249 39.5516 41.6056 41.6527 41.6056 44.235V46.1833H38.4953V44.235C38.4953 41.6527 36.376 39.5516 33.771 39.5516H33.0478C30.4428 39.5516 28.3235 41.6527 28.3235 44.235C28.3235 46.8174 30.4428 48.9183 33.0478 48.9183H35.7603V63.3398H33.0809C32.4266 59.2597 30.5418 55.7897 27.5741 53.2491C23.4038 49.6786 21.0119 44.5547 21.0119 39.1915C21.0119 28.6933 29.1755 20.7768 40.0013 20.7768C50.8271 20.7768 58.9907 28.6933 58.9907 39.1915C58.991 44.5547 56.5992 49.6785 52.4288 53.2491ZM44.3408 46.1833V44.235C44.3408 43.1607 45.2331 42.2867 46.33 42.2867H47.0979C48.1948 42.2867 49.0871 43.1607 49.0871 44.235C49.0871 45.3094 48.1948 46.1833 47.0979 46.1833H44.3408Z"
+                                        fill="#E0E0E0" />
+                                    <path
+                                        d="M61.9016 69.6513C60.8869 69.6513 59.9028 69.2675 59.1444 68.5111L55.2987 64.6761L57.23 62.7395L61.0756 66.5745C61.5977 67.095 62.2965 66.9424 62.7692 66.6381L67.4832 62.0938C67.9907 61.5805 67.8438 60.8971 67.5456 60.4306L63.7912 56.6865C63.3242 56.2209 63.2562 55.4884 63.6291 54.9446C65.6755 51.9621 67.1539 48.486 67.9047 44.8923C68.0372 44.2585 68.5958 43.8044 69.2433 43.8044H74.5924C75.0445 43.7258 75.7273 43.4017 75.7273 42.6152V36.0032C75.6683 35.6641 75.4177 34.8745 74.3709 34.8745H68.9228C68.2546 34.8745 67.6842 34.3916 67.5739 33.7325C67.0066 30.3374 65.5808 26.8156 63.4509 23.5475C63.0975 23.0053 63.1726 22.2896 63.6309 21.8325L67.4765 17.9974C67.995 17.4803 67.8433 16.7877 67.5401 16.3191L62.9833 11.6183C62.4654 11.1089 61.7756 11.2564 61.3052 11.5561L57.5507 15.3002C57.0857 15.7639 56.3567 15.8315 55.8143 15.4615C52.8228 13.4203 49.3363 11.9455 45.7315 11.1966C45.097 11.0648 44.6421 10.5056 44.6421 9.8576V4.42427C44.6421 3.71299 44.1064 3.23504 43.6061 3.23504H36.975C36.5228 3.3135 35.8401 3.63778 35.8401 4.42427V10.0171C35.8401 10.6858 35.3565 11.2564 34.6968 11.3662C31.2912 11.9323 27.7586 13.3545 24.4808 15.4791C23.9399 15.8297 23.2276 15.755 22.7714 15.3L18.9257 11.465C18.4037 10.9446 17.7049 11.0971 17.2322 11.4014L12.518 15.9458C12.0107 16.459 12.1577 17.1424 12.456 17.6087L16.2103 21.3528C16.6774 21.8185 16.7454 22.5511 16.3724 23.0947C14.3261 26.0773 12.8476 29.5533 12.0968 33.1472C11.9644 33.781 11.4057 34.235 10.7582 34.235H5.40915C4.95701 34.3135 4.27411 34.6378 4.27411 35.4243V42.0359C4.35308 42.486 4.67889 43.165 5.47034 43.165H10.9182C11.5864 43.165 12.1568 43.6479 12.2671 44.307C12.8344 47.7022 14.2603 51.2241 16.3903 54.492C16.7437 55.0342 16.6686 55.7499 16.2103 56.207L12.3647 60.0421C11.8462 60.5591 11.9979 61.2518 12.3013 61.7203L16.858 66.4214C17.3762 66.9306 18.0657 66.7831 18.5362 66.4836L22.2907 62.7393L24.222 64.6759L20.3763 68.5109C20.323 68.5641 20.2656 68.6128 20.2042 68.6564C18.4944 69.8744 16.3215 69.7489 14.9199 68.3511C14.9144 68.3456 14.9091 68.3402 14.9037 68.3345L10.2568 63.541C10.2098 63.4925 10.1664 63.4405 10.1269 63.3856C8.90316 61.6771 9.02915 59.5058 10.4333 58.1055L13.5057 55.0415C11.7204 52.0938 10.451 48.9721 9.78829 45.9H5.47034C3.45958 45.9 1.81069 44.3884 1.54966 42.3056C1.54265 42.2492 1.53906 42.1925 1.53906 42.1356V35.4243C1.53906 33.4168 3.05376 31.7708 5.14094 31.5104C5.19701 31.5034 5.25359 31.4998 5.31017 31.4998H9.66778C10.4558 28.3179 11.7609 25.245 13.4893 22.5017L10.4334 19.4542C10.3799 19.401 10.3312 19.3434 10.2873 19.2822C9.06351 17.5737 9.18949 15.4024 10.5936 14.0022C10.5991 13.9968 10.6045 13.9915 10.6102 13.986L15.4172 9.35196C15.4659 9.30513 15.5179 9.26188 15.5729 9.22273C17.2825 8.00478 19.4556 8.13025 20.8572 9.5282L23.9336 12.5961C26.891 10.8138 30.0233 9.54701 33.1054 8.88581V4.42427C33.1054 2.41658 34.6201 0.770596 36.7073 0.510596C36.763 0.503588 36.8196 0.499998 36.876 0.499998H43.6059C45.6852 0.499998 47.377 2.26034 47.377 4.42427V8.76564C50.5697 9.55179 53.6526 10.8544 56.4047 12.5798L59.4649 9.5282C59.5182 9.47504 59.5756 9.42632 59.637 9.38273C61.3466 8.16478 63.5196 8.29025 64.9213 9.68803C64.9268 9.6935 64.9322 9.69897 64.9375 9.70461L69.5844 14.4985C69.6314 14.547 69.6748 14.599 69.7143 14.654C70.938 16.3626 70.8119 18.5338 69.408 19.934L66.3356 22.9979C68.1208 25.9456 69.3902 29.0677 70.0531 32.1395H74.371C76.5085 32.1395 78.1866 33.6174 78.4519 35.7338C78.4589 35.7903 78.4625 35.8472 78.4625 35.9039V42.6152C78.4625 44.6227 76.9478 46.2687 74.8606 46.5291C74.8045 46.5361 74.748 46.5397 74.6914 46.5397H70.3338C69.5457 49.7215 68.2406 52.7945 66.5122 55.5378L69.5681 58.5853C69.6216 58.6385 69.6703 58.6961 69.7143 58.7573C70.938 60.4658 70.8121 62.6371 69.408 64.0374C69.4025 64.0429 69.397 64.0482 69.3914 64.0537L64.5844 68.6877C64.5356 68.7345 64.4837 68.7778 64.4286 68.8169C63.644 69.3752 62.7618 69.6513 61.9016 69.6513Z"
+                                        fill="#E0E0E0" />
+                                    <path
+                                        d="M11.2903 32.7581C11.4598 31.0638 12.6036 26.7132 14.4695 23.9339C15.1797 22.876 15.2329 21.3111 14.2834 20.4616L11.6081 18.0679C10.7404 17.2915 10.7167 15.941 11.5567 15.1346L16.6886 10.208C17.4588 9.46856 18.674 9.46454 19.4491 10.1989L22.4705 13.0612C23.3708 13.9141 24.8893 13.7843 25.887 13.0477C27.4926 11.8624 29.8563 10.7238 32.2259 10.3176C33.4233 10.1123 34.4329 9.09581 34.3397 7.88447L34.0366 3.94371C33.9473 2.78213 34.8657 1.79032 36.0307 1.79032H43.4839C44.5884 1.79032 45.4839 2.68575 45.4839 3.79032V8.5C45.4839 9.60457 46.3848 10.4944 47.4715 10.6925C50.9312 11.3231 54.7269 13.3985 56.4516 15.3387"
+                                        stroke="#E6222F" stroke-width="2" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_746_747">
+                                        <rect width="80" height="80" fill="white" transform="translate(0 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
                             <h4 class="about-us-title text-primary-red text-2xl my-0 leading-2">
                                 Empowering Growth
                             </h4>
@@ -258,9 +282,9 @@
                     </div>
                 </div>
             </div>
-            <div class="container w-full mx-auto mt-12 text-justify">
+            <div class="container w-full mx-auto mt-12 ">
                 <div class="row flex">
-                    <div class="col flex">
+                    <div class="col-60 flex">
                         <div class="about-us-card px-6 mr-5">
                             <svg class="about-us-card-highlight aspect-square w-14 text-primary-red"
                                 xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81"
@@ -323,7 +347,7 @@
                         </div>
                     </div>
                     <div class="col-40">
-                        <svg width="737" height="406" viewBox="0 0 737 406" fill="none"
+                        <svg width="737" height="406" viewBox="0 0 737 406" fill="none" class="lines-illustration"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M751 360H466.159C436.06 360 411.659 335.6 411.659 305.5V305.5C411.659 275.4 387.259 251 357.159 251H1.7941e-05"
@@ -378,12 +402,17 @@
                 </div>
             </div>
         </section>
-        <section class="testimonial-section">
+        <section class="section testimonial-section">
             <div class="container w-full h-full mx-auto">
                 <div
                     class="testimonial-header about-us-header flex items-center justify-between w-screen container mx-auto row">
-                    <p class="text-primary text-xl col">Partners And Clients</p>
-                    <h3 class="text-primary-red text-4xl col">In the Ai8 Spotlight</h3>
+                    <div class="about-us-header items-center justify-between w-screen container mx-auto row">
+                        <p class="text-primary text-xl col items-start justify-start self-start">Partners And Clients
+                        </p>
+                        <span class="text-primary-red text-6xl col">
+                            In the Ai8 Spotlight.
+                        </span>
+                    </div>
                 </div>
                 <div class="slider flex mt-20">
                     <div class="slider-image col p-20">
@@ -405,7 +434,7 @@
                                     CEO, Hewlett Packard Enterprise
                                 </p>
                             </div>
-                            <div class="col">
+                            <div class="col items-end justify-end">
                                 <img src="assets/homepage/brands/hewlett-packard.png" alt="Hewlett Packard" />
                             </div>
                         </div>
@@ -424,16 +453,16 @@
                 </div>
             </div>
         </section>
-        <section class="services-section w-full h-full mx-auto text-white py-12 px-12`">
+        <section class="section services-section w-full h-full mx-auto text-white">
             <div class="row container mx-auto">
-                <div class="col">
-                    <p class="text-xl uppercase services-header-title">Services</p>
+                <div class="col-40 items-start justify-start self-start">
+                    <p class="text-3xl services-header-title uppercase">Services</p>
                 </div>
-                <div class="col">
-                    <p class="text-4xl text-white services-header-description">
+                <div class="col-60">
+                    <p class="text-6xl text-white services-header-description">
                         Turning Visions Into IT-Enabled Success.
                     </p>
-                    <button class="btn btn-cta px-0 mx-0 my-10">Learn More</button>
+                    <button class="btn btn-cta px-0 mx-0 my-10 text-white">Learn More</button>
                 </div>
             </div>
             <div class="row container grid grid-cols-4 gap-4 py-12 relative mx-auto">
@@ -467,13 +496,13 @@
                 <div class="blob"></div>
             </div>
         </section>
-        <section class="sectors-section w-full mx-auto text-white relative">
+        <section class="section sectors-section w-full mx-auto text-white relative">
             <div class="row container mx-auto">
                 <div class="col-40 flex items-start justify-start self-start">
-                    <p class="text-3xl text-white block h-full">Sectors</p>
+                    <p class="text-3xl text-white block h-full uppercase">Sectors</p>
                 </div>
                 <div class="col-60 flex flex-col">
-                    <p class="text-5xl text-white mb-10">
+                    <p class="text-6xl text-white mb-10" style="letter-spacing: -0.035em;">
                         Joining Hands, Reaching Heights.
                     </p>
                     <button class="btn btn-cta text-white max-w-fit">Read More</button>
@@ -490,7 +519,7 @@
             <img src="assets/homepage/sectors-illustration.svg" alt="Sectors Illustration"
                 class="absolute w-80 top-1/2" />
         </section>
-        <section class="case-studies-section w-full mx-auto text-primary relative flex py-12 flex-col">
+        <section class="section case-studies-section w-full mx-auto text-primary relative flex flex-col">
             <div class="row container mx-auto">
                 <div class="col-40 flex items-start justify-start self-start">
                     <span class="text-3xl text-primary block h-full">Case Studies</span>
@@ -502,7 +531,7 @@
                     <button class="btn btn-cta text-primary-red max-w-fit">View All</button>
                 </div>
             </div>
-            <div class="container mx-auto">
+            <div class="container mx-auto mt-20">
                 <div class="row">
                     <div class="col-33">
                         <div class="case-study-card">
@@ -545,7 +574,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-us-section text-white ">
+        <section class="section contact-us-section text-white ">
             <div class="contact-us-card container relative mx-auto bg-primary-red">
                 <svg width="431" height="557" viewBox="0 0 431 557" fill="none" xmlns="http://www.w3.org/2000/svg"
                     class="absolute left-0 bottom-0">
@@ -790,5 +819,4 @@
         </footer>
     </main>
 </body>
-
 </html>

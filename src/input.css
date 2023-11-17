@@ -15,6 +15,10 @@
     max-width: 100vw;
   }
 
+  .text-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+
   .row {
     display: flex;
     max-width: min(100%, 1728px);
@@ -72,12 +76,16 @@
   }
 
   .btn-cta::after {
-    content: url("../assets/button_corner.svg");
+    content: url("../assets/icons/button_corner.svg");
     position: absolute;
     top: 0.25em;
     right: 1em;
     transform: translate(50%, -25%);
     z-index: 10;
+  }
+
+  .btn-cta.text-white::after {
+    content: url("../assets/icons/button_corner_white.svg");
   }
 
   .hero {
@@ -258,6 +266,7 @@
     @apply font-bold;
     @apply rounded-full;
     @apply px-10;
+    @apply pl-0;
     @apply py-3;
     @apply cursor-pointer;
 
@@ -267,7 +276,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
-    /* 33.6px */
+    margin-block: 32px;
     letter-spacing: 2.88px;
   }
 
@@ -284,25 +293,26 @@
   .achievement-card {
     border-right: 2px solid var(--secondary-white, #fff);
     padding-inline: min(5%, 6rem);
-    padding-block: 4rem;
-    font-size: 6rem;
+    font-size: 100px;
+    min-width: 33%;
+  }
 
-    @apply flex;
-    @apply justify-end;
-    @apply items-start;
-    @apply flex-col;
+  .stat {
+    width: 100%;
+    margin-inline: auto;
   }
 
   .achievement-card:nth-of-type(3) {
     border-right: none;
   }
+
   .ach_text {
     color: var(--secondary-white, #fff);
-    font-size: 16px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
-    margin-block-start: 16px;
+    margin-block: 16px;
   }
 
   .about-us-section {
@@ -384,8 +394,7 @@
     min-height: 64px;
     max-width: 64px;
     max-height: 64px;
-    scale: 4;
-    margin-block-end: 8px;
+    margin-block-end: 20px;
   }
 
   .about-us-title {
@@ -397,6 +406,10 @@
     line-height: 110%;
     text-transform: capitalize;
     margin-block-start: 6px;
+  }
+
+  .lines-illustration {
+    max-width: 42vw;
   }
 
   .partners-logos {
@@ -468,6 +481,11 @@
     font-style: normal;
     font-weight: 300;
     line-height: 120%; /* 38.4px */
+    min-width: 100%;
+  }
+
+  .testimonial-details img {
+    max-width: 120px;
   }
   img {
     width: 100%;
@@ -588,13 +606,8 @@
   }
 
   .case-study-card {
-    margin-block: 16px;
-    margin-inline-end: 8px;
+    margin-inline-end: 12px;
     @apply bg-white;
-  }
-
-  .case-study-card:nth-of-type(3) {
-    margin-inline-end: 0;
   }
 
   .case-study-details {
@@ -658,5 +671,9 @@
     @apply py-10;
     @apply mt-5;
     border-top: 1px solid white;
+  }
+
+  .section {
+    @apply pt-24;
   }
 }
