@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
+
 function createHeaderTimeline(tl) {
   tl.from(".logo", {
     y: -50,
