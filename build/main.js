@@ -323,7 +323,7 @@ gsap.from('.about-us-section > img', {
   },
   y: -500,
 })
-gsap.from('.about-us-header ', {
+gsap.from('.about-us-header', {
   scrollTrigger: {
     trigger: '.about-us-header',
     start: 'top 80%',
@@ -349,13 +349,13 @@ gsap.from('.about-us-section .about-us-desc', {
 gsap.from('.about-us-section .about-us-card', {
   scrollTrigger: {
     trigger: '.about-us-card',
-    start: 'top 80%',
-    end: 'top 20%',
+    start: 'top 60%',
+    end: 'top 10%',
     triggerAction: 'play none none reverse',
   },
   stagger: 0.5,
   ease: 'power1.in',
-  y: 40,
+  y: 80,
   opacity: 0
 })
 gsap.from('.lines-illustration', {
@@ -372,7 +372,7 @@ gsap.from('.lines-illustration', {
 })
 gsap.from('.testimonial-header', {
   scrollTrigger: {
-    trigger: '.testimonial-header',
+    trigger: '.testimonial-section',
     start: 'top 80%',
     end: 'top 20%',
     scrub: 0.3,
@@ -384,26 +384,24 @@ gsap.from('.testimonial-header', {
 })
 gsap.from('.slider-image img', {
   scrollTrigger: {
-    trigger: '.slider-image',
-    start: 'top 80%',
-    end: 'top 60%',
+    trigger: '.testimonial-section',
+    start: 'top 40%',
     triggerAction: 'play none none reverse',
   },
   // Parallax move
   y: 100,
   skewY: 25,
-  scale: 0, 
   opacity: 0
 })
 gsap.from('.testimonial', {
   scrollTrigger: {
     trigger: '.testimonial-section',
-    start: 'top 80%',
-    end: 'top 10%',
+    start: 'top 40%',
+    markers: true,
     triggerAction: 'play none none reverse',
   },
   ease: "power1.in",
-  y: 800,
+  y: 200,
   opacity: 0,
 })
 

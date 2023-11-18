@@ -642,6 +642,14 @@
     border: 1px solid transparent;
   }
 
+  .services-card img {
+    transition: all 0.25s var(--bezier, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  .services-card:hover > img {
+    transform: translate(50%, -50%) scale(0.9);
+  }
+
   .services-card {
     border: 1px solid white;
   }
