@@ -8,25 +8,25 @@ const testimonials = [
     testimonial:
       "Offering this key quantum-generated resource is a significant advantage for both our internal and external customers. It is especially important for our enterprise customers with demands for high quality and high-performance random numbers, who will benefit from this unique feature.",
     image_company: "assets/homepage/brands/hewlett-packard.png",
-    image_profile: "assets/dewitte-faiser.png",
+    image_profile: "assets/homepage/testimonials/dewitte-faiser.png",
   },
   {
-    name: "John Doe",
-    company: "Hewlett Packard Enterprise",
-    role: "CEO",
+    name: "Jack Wilson",
+    company: "Aram Co.",
+    role: "Programme Manager",
     testimonial:
-"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis a, culpa corrupti earum iure ex atque placeat rerum! Vel eaque incidunt asperiores ad minus laborum sit corrupti maxime nobis laboriosam quo architecto corporis, soluta ducimus? Optio aliquam soluta ut iusto! Enim amet assumenda recusandae consequatur minus error dicta fuga officiis.",
-    image_company: "assets/homepage/brands/ejada.png",
-    image_profile: "assets/dewitte-faiser.png",
+"AI8 played a pivotal role in our company's digital transformation journey. Their expertise in implementing cutting-edge technologies and seamless integration of AI solutions truly set them apart. We experienced a significant boost in efficiency and productivity. AI8 is a reliable partner for any organization looking to stay ahead in the rapidly evolving digital landscape.",
+    image_company: "assets/homepage/brands/aram-co-color.png",
+    image_profile: "assets/homepage/testimonials/jack-wilson.jpg",
   },
   {
-    name: "John Doe Faiser",
-    company: "The White Pencil",
-    role: "Design",
+    name: "Marcus Short",
+    company: "Mobily",
+    role: "Operations Lead",
     testimonial:
-      "Offering this key quantum-generated resource is a significant advantage for both our internal and external customers. It is especially important for our enterprise customers with demands for high quality and high-performance random numbers, who will benefit from this unique feature.",
-    image_company: "assets/homepage/brands/national-cybersecurity-authority.png",
-    image_profile: "assets/dewitte-faiser.png",
+      "As a startup, we needed a technology partner that could bring our ideas to life. AI8's app and web development team exceeded our expectations. They not only delivered high-quality products but also provided valuable insights throughout the development process. AI8 is the perfect choice for anyone looking to turn their tech dreams into reality.",
+    image_company: "assets/homepage/brands/mobily-color.png",
+    image_profile: "assets/homepage/testimonials/marcus-short.jpg",
   },
 ];
 
@@ -41,14 +41,108 @@ function onClickSlide(index) {
   );
   const testimonialEl = document.getElementById("testimonial");
   const testimonialDetailsEl = document.getElementById("testimonial-details");
+  const sliderButtonArrEl = document.querySelectorAll(".slider-button");
 
-  testimonialNameEl.textContent = testimonials[index].name;
-  testimonialRoleEl.textContent = testimonials[index].role + ", " +
-    testimonials[index].company;
-  testimonialImageCompanyEl.src = testimonials[index].image_company;
-  testimonialImageProfileEl.src = testimonials[index].image_profile;
-  testimonialEl.textContent = testimonials[index].testimonial;
-  testimonialDetailsEl.classList.remove("hidden");
+  gsap.to(testimonialNameEl, {
+    opacity: 0,
+    y: 20,
+    duration: 0.25,
+    onComplete: () => {
+      testimonialNameEl.innerText = testimonials[index].name;
+      gsap.to(testimonialNameEl, {
+        opacity: 1,
+        duration: 0.25,
+        y: 0,
+      })
+    }
+  })
+
+  gsap.to(testimonialImageCompanyEl, {
+    opacity: 0,
+    y: 20,
+    duration: 0.25,
+    onComplete: () => {
+      testimonialImageCompanyEl.src = testimonials[index].image_company;
+      gsap.to(testimonialImageCompanyEl, {
+        opacity: 1,
+        duration: 0.25,
+        y: 0,
+      })
+    }
+  })
+
+  gsap.to(testimonialRoleEl, {
+    opacity: 0,
+    y: 20,
+    duration: 0.25,
+    onComplete: () => {
+      testimonialRoleEl.innerText = testimonials[index].role + ", " +
+        testimonials[index].company;
+      gsap.to(testimonialRoleEl, {
+        opacity: 1,
+        duration: 0.25,
+        y: 0,
+      })
+    }
+  })
+
+  gsap.to(testimonialImageProfileEl, {
+    opacity: 0,
+    y: 20,
+    duration: 0.25,
+    onComplete: () => {
+      testimonialImageProfileEl.src = testimonials[index].image_profile;
+      gsap.to(testimonialImageProfileEl, {
+        opacity: 1,
+        duration: 0.25,
+        y: 0,
+      })
+    }
+  })
+
+  gsap.to(testimonialEl, {
+    opacity: 0.5,
+    y: 20,
+    duration: 0.25,
+    onComplete: () => {
+      testimonialEl.innerText = testimonials[index].testimonial;
+      gsap.to(testimonialEl, {
+        opacity: 1,
+        duration: 0.25,
+        y: 0,
+      })
+    }
+  })
+  gsap.to(testimonialDetailsEl, {
+    opacity: 0,
+    y: 20,
+    duration: 0.25,
+    onComplete: () => {
+      gsap.to(testimonialDetailsEl, {
+        opacity: 1,
+        duration: 0.25,
+        y: 0,
+      })
+    }
+  })
+
+  gsap.to(sliderButtonArrEl, {
+    opacity: 0,
+    y: 20,
+    duration: 0.25,
+    stagger: 0.1,
+    onComplete: () => {
+      sliderButtonArrEl.forEach((el) => {
+        el.classList.remove("active");
+      })
+      sliderButtonArrEl[index].classList.add("active");
+      gsap.to(sliderButtonArrEl, {
+        opacity: 1,
+        duration: 0.25,
+        y: 0,
+      })
+    }
+  })
 }
 
 function createHeaderTimeline(tl) {
@@ -75,20 +169,20 @@ function createHeroTimeline(tl) {
     opacity: 0,
     stagger: 0.075,
     duration: 0.2,
-    ease: "power1.out",
+    ease: "power1.in",
   });
   tl.from(".hero-section .btn", {
     y: 50,
     opacity: 0,
     stagger: 0.25,
     duration: 0.25,
-    ease: "power1.out",
+    ease: "power1.in",
   });
   tl.from(".hero-section .btn svg", {
     scale: 0,
     y: -125,
     opacity: 0,
-    ease: "power1.out",
+    ease: "power1.in",
     scrollTrigger: {
       trigger: ".hero",
       start: "top 50%",

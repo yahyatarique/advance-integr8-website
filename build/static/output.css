@@ -1042,6 +1042,11 @@ span {
   position: relative;
 }
 
+.slider-button::after {
+  scale: 0;
+  transition: all 0.2s ease-in-out;
+}
+
 .slider-button.active::after {
   content: "";
   position: absolute;
@@ -1053,12 +1058,17 @@ span {
   bottom: -1rem;
   right: 50%;
   transform: translateX(50%);
+  scale: 1;
 }
 
 .slider-button img {
   width: auto;
   aspect-ratio: 1/1;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .testimonial-image {
@@ -1117,7 +1127,9 @@ span {
 }
 
 .testimonial-details img {
+  width: auto;
   max-width: 120px;
+  max-height: 80px;
 }
 
 img {
@@ -1631,10 +1643,6 @@ img {
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .aspect-square {
