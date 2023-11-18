@@ -78,6 +78,7 @@
   .btn-cta:hover::after {
     top: 0.5em;
     right: 2rem;
+    scale: 0.75;
   }
 
   .btn-cta::after {
