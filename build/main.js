@@ -88,13 +88,16 @@ function onClickSlide(index) {
 
   gsap.to(testimonialImageProfileEl, {
     opacity: 0,
-    y: 20,
+    y: 50,
+    delay: 0.25,
+    skewY: 5,
     duration: 0.25,
     onComplete: () => {
       testimonialImageProfileEl.src = testimonials[index].image_profile;
       gsap.to(testimonialImageProfileEl, {
         opacity: 1,
         duration: 0.25,
+        skewY: 0,
         y: 0,
       })
     }
