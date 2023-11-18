@@ -33,19 +33,19 @@
                 <div class="logo cursor-pointer text-3xl">
                     <img src="assets/ai8-logo-dark.svg" alt="Ai8 Logo" preload />
                 </div>
-                <ul class="flex gap-20 items-center text-xl font-bold">
+                <ul class="flex gap-20 items-center text-xl font-bold xs:hidden md:flex">
                     <li class="nav-item cursor-pointer">Work</li>
                     <li class="nav-item cursor-pointer">Services</li>
                     <li class="nav-item cursor-pointer">Our Story</li>
                 </ul>
-                <button class="btn text-xl uppercase font-bold text-primary-red border-spacing-1 btn-cta">
+                <button class="btn text-xl uppercase font-bold text-primary-red border-spacing-1 btn-cta xs:hidden">
                     Connect
                 </button>
             </nav>
         </header>
         <div class="hero-section pin-1">
             <section class="hero">
-                <div class="container flex my-10">
+                <div class="container flex my-10 xs:my-2 md:my-10">
                     <div class="row">
                         <span class="hero-item">Empowering</span>
                         <span class="hero-item">
@@ -74,7 +74,7 @@
                         <span id="hero-text-2" class="hero-item">Success</span>
                     </div>
                     <div class="row">
-                        <span class="hero-item">
+                        <span class="hero-item md:block xs:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" width="189" height="90" viewBox="0 0 189 90"
                                 fill="none">
                                 <path d="M187 2L113 88" stroke="url(#paint0_linear_396_290)" stroke-width="5" />
@@ -105,7 +105,38 @@
                                 </defs>
                             </svg>
                         </span>
-                        <span id="hero-text-3" class="hero-item">Through&nbsp;&nbsp;&nbsp;Innovative
+                        <span id="hero-text-3" class="hero-item">Through&nbsp;&nbsp;
+                            <span class="hero-item xs:block md:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="189" height="90" viewBox="0 0 189 90"
+                                    fill="none">
+                                    <path d="M187 2L113 88" stroke="url(#paint0_linear_396_290)" stroke-width="5" />
+                                    <path d="M150 2L76 88" stroke="url(#paint1_linear_396_290)" stroke-width="5" />
+                                    <path d="M113 2L39 88" stroke="url(#paint2_linear_396_290)" stroke-width="5" />
+                                    <path d="M76 2L2 88" stroke="url(#paint3_linear_396_290)" stroke-width="5" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_396_290" x1="150" y1="2" x2="125.568" y2="109.994"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#F96E7C" />
+                                            <stop offset="1" stop-color="#8D74EF" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_396_290" x1="113" y1="2" x2="87.3893" y2="109.694"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#F96E7C" />
+                                            <stop offset="1" stop-color="#8D74EF" />
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_396_290" x1="76" y1="2" x2="60.4813" y2="97.2065"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#F96E7C" />
+                                            <stop offset="1" stop-color="#8D74EF" />
+                                        </linearGradient>
+                                        <linearGradient id="paint3_linear_396_290" x1="39" y1="2" x2="30.4334" y2="108.082"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#F96E7C" />
+                                            <stop offset="1" stop-color="#8D74EF" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg></span>
+                            &nbsp;Innovative
                         </span>
                     </div>
                     <div class="row">
