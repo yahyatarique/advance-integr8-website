@@ -1,5 +1,55 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const testimonials = [
+  {
+    name: "Dewitte Faiser",
+    company: "Hewlett Packard Enterprise",
+    role: "CEO",
+    testimonial:
+      "Offering this key quantum-generated resource is a significant advantage for both our internal and external customers. It is especially important for our enterprise customers with demands for high quality and high-performance random numbers, who will benefit from this unique feature.",
+    image_company: "assets/homepage/brands/hewlett-packard.png",
+    image_profile: "assets/dewitte-faiser.png",
+  },
+  {
+    name: "John Doe",
+    company: "Hewlett Packard Enterprise",
+    role: "CEO",
+    testimonial:
+"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis a, culpa corrupti earum iure ex atque placeat rerum! Vel eaque incidunt asperiores ad minus laborum sit corrupti maxime nobis laboriosam quo architecto corporis, soluta ducimus? Optio aliquam soluta ut iusto! Enim amet assumenda recusandae consequatur minus error dicta fuga officiis.",
+    image_company: "assets/homepage/brands/ejada.png",
+    image_profile: "assets/dewitte-faiser.png",
+  },
+  {
+    name: "John Doe Faiser",
+    company: "The White Pencil",
+    role: "Design",
+    testimonial:
+      "Offering this key quantum-generated resource is a significant advantage for both our internal and external customers. It is especially important for our enterprise customers with demands for high quality and high-performance random numbers, who will benefit from this unique feature.",
+    image_company: "assets/homepage/brands/national-cybersecurity-authority.png",
+    image_profile: "assets/dewitte-faiser.png",
+  },
+];
+
+function onClickSlide(index) {
+  const testimonialNameEl = document.getElementById("testimonial-name");
+  const testimonialRoleEl = document.getElementById("testimonial-role");
+  const testimonialImageCompanyEl = document.getElementById(
+    "testimonial-image-company"
+  );
+  const testimonialImageProfileEl = document.getElementById(
+    "testimonial-image-profile"
+  );
+  const testimonialEl = document.getElementById("testimonial");
+  const testimonialDetailsEl = document.getElementById("testimonial-details");
+
+  testimonialNameEl.textContent = testimonials[index].name;
+  testimonialRoleEl.textContent = testimonials[index].role + ", " +
+    testimonials[index].company;
+  testimonialImageCompanyEl.src = testimonials[index].image_company;
+  testimonialImageProfileEl.src = testimonials[index].image_profile;
+  testimonialEl.textContent = testimonials[index].testimonial;
+  testimonialDetailsEl.classList.remove("hidden");
+}
 
 function createHeaderTimeline(tl) {
   tl.from(".logo", {
@@ -211,20 +261,20 @@ function createServicesTimeline(tl) {
       scrub: true,
     },
   });
-  tl.from(".services-card", {
-    // y: 5000,
-    x: -500,
-    // scale: 1.2,
-    opacity: 0,
-    stagger: 0.4,
-    ease: "power1",
-    scrollTrigger: {
-      trigger: ".services-section",
-      start: "center 100%",
-      end: "top 0px",
-      toggleActions: "play play play complete",
-    },
-  });
+  // tl.from(".services-card", {
+  //   // y: 5000,
+  //   x: -500,
+  //   // scale: 1.2,
+  //   opacity: 0,
+  //   stagger: 0.4,
+  //   ease: "power1",
+  //   scrollTrigger: {
+  //     trigger: ".services-section",
+  //     start: "center 100%",
+  //     end: "top 0px",
+  //     toggleActions: "play play play complete",
+  //   },
+  // });
   // tl.from(".testimonial", {
   //   borderBottom: "1px solid transparent",
   //   y: 500,
@@ -264,182 +314,181 @@ createHeroTimeline(tl);
 // createTestimonialsTimeline(tl);
 // createServicesTimeline(tl);
 
-
-gsap.from('.blob', {
+gsap.from(".blob", {
   scrollTrigger: {
-    trigger: '.blob',
-    start: '-=100 80%',
-    end: '-=10 60%',
+    trigger: ".blob",
+    start: "-=100 80%",
+    end: "-=10 60%",
     scrub: 0.3,
-    triggerAction: 'play none none reverse',
+    triggerAction: "play none none reverse",
     ease: "power1.in",
   },
   y: 500,
-  x: 500, 
-  scale: 1.2
-})
-gsap.from('.achievements', {
+  x: 500,
+  scale: 1.2,
+});
+gsap.from(".achievements", {
   scrollTrigger: {
-    trigger: '.hero',
-    start: 'top 80%',
-    end: 'bottom 40%',
+    trigger: ".hero",
+    start: "top 80%",
+    end: "bottom 40%",
     scrub: true,
-    triggerAction: 'play none none reverse',
+    triggerAction: "play none none reverse",
     ease: "power1.in",
   },
   y: -600,
-})
-gsap.from('.achievement ', {
+});
+gsap.from(".achievement ", {
   scrollTrigger: {
-    trigger: '.achievements',
-    start: 'top 80%',
-    end: 'top 20%',
+    trigger: ".achievements",
+    start: "top 80%",
+    end: "top 20%",
     scrub: 0.3,
-    triggerAction: 'play none none reverse',
+    triggerAction: "play none none reverse",
     ease: "power1.in",
   },
   y: 100,
-})
+});
 
 // Skew with mouse move
-gsap.from('.achievement-card', {
+gsap.from(".achievement-card", {
   scrollTrigger: {
-    trigger: '.achievement',
-    start: 'top 80%',
-    end: 'top 5%',
+    trigger: ".achievement",
+    start: "top 80%",
+    end: "top 5%",
     scrub: 0.3,
-    triggerAction: 'play none none reverse',
+    triggerAction: "play none none reverse",
   },
   y: 100,
   skewY: 25,
-})
-gsap.from('.about-us-section > img', {
+});
+gsap.from(".about-us-section > img", {
   scrollTrigger: {
-    trigger: '.about-us-section',
-    start: 'top 80%',
-    end: 'top 5%',
+    trigger: ".about-us-section",
+    start: "top 80%",
+    end: "top 5%",
     scrub: true,
-    triggerAction: 'play none none reverse',
+    triggerAction: "play none none reverse",
   },
   y: -500,
-})
-gsap.from('.about-us-header', {
+});
+gsap.from(".about-us-header", {
   scrollTrigger: {
-    trigger: '.about-us-header',
-    start: 'top 80%',
-    end: 'top 20%',
+    trigger: ".about-us-header",
+    start: "top 80%",
+    end: "top 20%",
     scrub: 0.3,
-    triggerAction: 'play none none reverse',
+    triggerAction: "play none none reverse",
     ease: "power1.in",
   },
   y: 100,
-  opacity: 0
-})
-gsap.from('.about-us-section .about-us-desc', {
+  opacity: 0,
+});
+gsap.from(".about-us-section .about-us-desc", {
   scrollTrigger: {
-    trigger: '.about-us-header',
-    start: 'top 60%',
-    end: 'top 20%',
-    triggerAction: 'play none none reverse',
+    trigger: ".about-us-header",
+    start: "top 60%",
+    end: "top 20%",
+    triggerAction: "play none none reverse",
   },
-  ease: 'power1.in',
+  ease: "power1.in",
   y: 120,
-  opacity: 0
-})
-gsap.from('.about-us-section .about-us-card', {
+  opacity: 0,
+});
+gsap.from(".about-us-section .about-us-card", {
   scrollTrigger: {
-    trigger: '.about-us-card',
-    start: 'top 60%',
-    end: 'top 10%',
-    triggerAction: 'play none none reverse',
+    trigger: ".about-us-card",
+    start: "top 60%",
+    end: "top 10%",
+    triggerAction: "play none none reverse",
   },
   stagger: 0.5,
-  ease: 'power1.in',
+  ease: "power1.in",
   y: 80,
-  opacity: 0
-})
-gsap.from('.lines-illustration', {
+  opacity: 0,
+});
+gsap.from(".lines-illustration", {
   scrollTrigger: {
-    trigger: '.lines-illustration',
-    start: 'top 80%',
-    end: 'top 20%',
+    trigger: ".lines-illustration",
+    start: "top 80%",
+    end: "top 20%",
     scrub: 0.2,
-    triggerAction: 'play none none reverse',
+    triggerAction: "play none none reverse",
   },
-  ease: 'power1.in',
+  ease: "power1.in",
   y: 120,
-  opacity: 0
-})
-gsap.from('.testimonial-header', {
+  opacity: 0,
+});
+gsap.from(".testimonial-header", {
   scrollTrigger: {
-    trigger: '.testimonial-section',
-    start: 'top 80%',
-    end: 'top 20%',
+    trigger: ".testimonial-section",
+    start: "top 80%",
+    end: "top 20%",
     scrub: 0.3,
-    triggerAction: 'play none none reverse',
-  },
-  ease: 'power1.in',
-  y: 200,
-  opacity: 0
-})
-gsap.from('.slider-image img', {
-  scrollTrigger: {
-    trigger: '.testimonial-section',
-    start: 'top 40%',
-    triggerAction: 'play none none reverse',
-  },
-  // Parallax move
-  y: 100,
-  skewY: 25,
-  opacity: 0
-})
-gsap.from('.testimonial', {
-  scrollTrigger: {
-    trigger: '.testimonial-section',
-    start: 'top 40%',
-    markers: true,
-    triggerAction: 'play none none reverse',
+    triggerAction: "play none none reverse",
   },
   ease: "power1.in",
   y: 200,
   opacity: 0,
-})
-
-gsap.from('.slider-control .slider-button', {
+});
+gsap.from(".slider-image img", {
   scrollTrigger: {
-    trigger: '.testimonial-section',
-    start: 'top 80%',
-    end: 'top 5%',
-    triggerAction: 'play none none reverse',
+    trigger: ".testimonial-section",
+    start: "top 40%",
+    triggerAction: "play none none reverse",
+  },
+  // Parallax move
+  y: 100,
+  skewY: 25,
+  opacity: 0,
+});
+gsap.from(".testimonial", {
+  scrollTrigger: {
+    trigger: ".testimonial-section",
+    start: "top 40%",
+    markers: true,
+    triggerAction: "play none none reverse",
+  },
+  ease: "power1.in",
+  y: 200,
+  opacity: 0,
+});
+
+gsap.from(".slider-control .slider-button", {
+  scrollTrigger: {
+    trigger: ".testimonial-section",
+    start: "top 80%",
+    end: "top 5%",
+    triggerAction: "play none none reverse",
   },
   stagger: 0.05,
   ease: "power1.in",
   y: 1000,
   skewY: 10,
   opacity: 0,
-})
-gsap.from('.testimonial-details', {
+});
+gsap.from(".testimonial-details", {
   scrollTrigger: {
-    trigger: '.testimonial-section',
-    start: 'top 80%',
-    end: 'top 0%',
+    trigger: ".testimonial-section",
+    start: "top 80%",
+    end: "top 0%",
     scrub: 0.5,
-    triggerAction: 'play none none reverse',
+    triggerAction: "play none none reverse",
   },
   ease: "power1.in",
   y: 1000,
   skewY: 10,
   opacity: 0,
-})
+});
 
-gsap.from('.services-cards', {
-  scrollTrigger: {
-    trigger: '.services-cards',
-    start: 'top 100%',
-    end: 'bottom 0%',
-    scrub: 0.5,
-    triggerAction: 'play none none reverse',
-  },
-  y: 100,
-  skewY: 25,
-})
+// gsap.from('.services-cards', {
+//   scrollTrigger: {
+//     trigger: '.services-cards',
+//     start: 'top 100%',
+//     end: 'bottom 0%',
+//     scrub: 0.5,
+//     triggerAction: 'play none none reverse',
+//   },
+//   y: 100,
+//   skewY: 25,
+// })

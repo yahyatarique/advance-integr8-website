@@ -403,22 +403,22 @@
                     <div class="slider-image col-40 p-20 pr-40">
                         <div class="image">
                             <img src="assets/dewitte-faiser.png" alt="Dewitte Faiser, CEO, HP Enterprise"
-                                class="testimonial-image" />
+                                class="testimonial-image" id="testimonial-image-profile"/>
                         </div>
                         <div class="slider-control flex gap-2 my-4">
-                            <div class="slider-button active" id="slide_1">
+                            <button class="slider-button active" id="slide_1" onclick="onClickSlide('0')">
                                 <img src="assets/profile-1.png" alt="Profile 1" />
-                            </div>
-                            <div class="slider-button" id="slide_2">
+                            </button>
+                            <button class="slider-button" id="slide_2" onclick="onClickSlide('1')">
                                 <img src="assets/profile-2.png" alt="Profile 2" />
-                            </div>
-                            <div class="slider-button" id="slide_3">
+                            </button>
+                            <button class="slider-button" id="slide_3" onclick="onClickSlide('2')">
                                 <img src="assets/profile-3.png" alt="Profile 3" />
-                            </div>
+                            </button>
                         </div>
                     </div>
                     <div class="slider-content col-60">
-                        <p class="text-2xl testimonial">
+                        <p class="text-2xl testimonial" id="testimonial">
                             Offering this key quantum-generated resource is a significant
                             advantage for both our internal and external customers. It is
                             especially important for our enterprise customers with demands
@@ -427,13 +427,13 @@
                         </p>
                         <div class="row testimonial-details">
                             <div class="col">
-                                <p class="text-xl testimonial-name">Dewitte Faiser</p>
-                                <p class="text-sm testimonial-company">
+                                <p class="text-xl testimonial-name" id="testimonial-name">Dewitte Faiser</p>
+                                <p class="text-sm testimonial-company" id="testimonial-role">
                                     CEO, Hewlett Packard Enterprise
                                 </p>
                             </div>
                             <div class="col flex items-end justify-end">
-                                <img src="assets/homepage/brands/hewlett-packard.png" alt="Hewlett Packard" />
+                                <img src="assets/homepage/brands/hewlett-packard.png" alt="Hewlett Packard" id="testimonial-image-company"/>
                             </div>
                         </div>
                     </div>
@@ -525,7 +525,7 @@
                             <img src="assets/case/efficiency.png"
                                 alt="Streamlining Software: A Case Study in Efficiency" class="case-study-card-image"/>
                             <div class="case-study-details">
-                                <h5>Streamlining Software: A Case Study in Efficiency</h5>
+                                <h5>SNB's Breakthrough: Banking Transformation for Maximum Impact</h5>
                                 <div class="flex items-center justify-between">
                                     <p class="case-study-date">September 23, 2023</p>
                                     <button class="text-primary-red">View Case Study</button>
@@ -535,9 +535,9 @@
                     </div>
                     <div class="col-33">
                         <div class="case-study-card">
-                            <img src="assets/case/eff.png" alt="Streamlining Software: A Case Study in Efficiency" class="case-study-card-image" />
+                            <img src="assets/case/eff0ciency-2.png" alt="Streamlining Software: A Case Study in Efficiency" class="case-study-card-image" />
                             <div class="case-study-details">
-                                <h5>Streamlining Software: A Case Study in Efficiency</h5>
+                                <h5>Kuwait Finance House Soars with IBM Aspera 4.41 Upgrade</h5>
                                 <div class="flex items-center justify-between">
                                     <p class="case-study-date">September 23, 2023</p>
                                     <button class="text-primary-red">View Case Study</button>
@@ -547,10 +547,10 @@
                     </div>
                     <div class="col-33">
                         <div class="case-study-card">
-                            <img src="assets/case/eff0ciency-2.png"
+                            <img src="assets/case/eff.png"
                                 alt="Streamlining Software: A Case Study in Efficiency" class="case-study-card-image" />
                             <div class="case-study-details">
-                                <h5>Streamlining Software: A Case Study in Efficiency</h5>
+                                <h5>Powering Excellence: Saudi Federation's Advanced Compliance Solution</h5>
                                 <div class="flex items-center justify-between">
                                     <p class="case-study-date">September 23, 2023</p>
                                     <button class="text-primary-red">View Case Study</button>
