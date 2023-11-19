@@ -498,7 +498,12 @@ html,
   .case-studies-section .header-nav .row {
     flex-direction: column;
     gap: 24px;
+    margin-block-start: 0;
   }
+
+  /* .contact-us svg {
+
+    } */
 
   /* .section {
       padding: 0;
@@ -572,6 +577,31 @@ html,
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+@media screen and (max-width: 425px) {
+  .btn.btn-cta.header-nav li:hover {
+    padding-block: 12px;
+    padding-inline: 30px;
+    margin-block: 0;
+    color: var(--primary-red, #e6222f);
+    font-family: "Eurostile", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 22.4px */
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+  }
+
+  /* .contact-us svg {
+
+    } */
+
+  /* .section {
+      padding: 0;
+    } */
 }
 
 .header-nav li:hover {
@@ -913,6 +943,34 @@ span {
   /* 38.4px */
   margin-inline: 0;
   margin-block: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .btn.btn-cta.about-us-header .text-secondary {
+    padding-block: 12px;
+    padding-inline: 30px;
+    margin-block: 0;
+    color: var(--primary-red, #e6222f);
+    font-family: "Eurostile", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 22.4px */
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+  }
+
+  /* .contact-us svg {
+
+    } */
+
+  /* .section {
+      padding: 0;
+    } */
+}
+
+.about-us-header .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(230 34 47 / var(--tw-text-opacity));
 }
@@ -969,7 +1027,12 @@ span {
   .case-studies-section .partners-logos .row {
     flex-direction: column;
     gap: 24px;
+    margin-block-start: 0;
   }
+
+  /* .contact-us svg {
+
+    } */
 
   /* .section {
       padding: 0;
@@ -1576,6 +1639,29 @@ img {
     margin-block-end: 8px;
   }
 
+  .case-studies-section .col-40 span {
+    color: var(--secondary-dark, #232323);
+    font-family: "Eurostile", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 21.6px */
+    text-transform: uppercase;
+  }
+
+  .case-studies-section .col-60 p {
+    color: var(--primary-red, #e6222f);
+    text-align: center;
+    /* font-family: 'Euro', sans-serif; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 28.8px */
+    text-transform: capitalize;
+  }
+
   .case-studies-section .col-60 {
     font-family: "Eurostile", sans-serif;
     font-size: 24px;
@@ -1583,16 +1669,29 @@ img {
     line-height: 120%;
     text-align: center;
     justify-content: center;
+    padding-block: 0;
+    margin-block: 24px;
   }
 
-  .case-studies-section .btn.btn-cta {
+  .btn.btn-cta.text-primary-red {
     padding-block: 12px;
     padding-inline: 30px;
+    margin-block: 0;
+    color: var(--primary-red, #e6222f);
+    font-family: "Eurostile", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 22.4px */
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
   }
 
   .case-studies-section .container .row {
     flex-direction: column;
     gap: 24px;
+    margin-block-start: 0;
   }
 
   .case-study-card {
@@ -1602,9 +1701,44 @@ img {
     justify-content: center;
     min-width: 100%;
     width: 430px;
+    text-align: left;
+    color: var(--primary-blue, #102054);
+    font-family: "Eurostile", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 21.6px */
+    text-transform: capitalize;
   }
 
-  .contact-us .contact-us-text {
+  .case-study-card .case-study-date {
+    color: var(--Gray-3, #828282);
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 12px */
+    text-transform: capitalize;
+  }
+
+  .case-study-card button {
+    color: var(--primary-red, #e6222f);
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 14.4px */
+    text-transform: capitalize;
+  }
+
+  .case-study-card .case-study-details {
+    padding: 12px;
+  }
+
+  .contact-us-section .contact-us-text {
     color: var(--secondary-white, #fff);
     text-align: center;
     font-family: "Eurostile", sans-serif;
@@ -1614,13 +1748,53 @@ img {
     line-height: 120%;
     /* 38.4px */
     text-transform: uppercase;
-    max-width: none;
+    max-width: 60%;
   }
+
+  .contact-us-card {
+    padding: 72px 16px;
+    overflow: hidden;
+  }
+
+  .contact-us-section .btn.btn-cta {
+    padding-block: 12px;
+    padding-inline: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  .contact-us-section .contact-us-card-svg-left {
+    max-width: 207px;
+    max-height: 232px;
+    inset: auto auto 0 -75px;
+    /* top right bottom left */
+  }
+
+  .contact-us-section .contact-us-card-svg-right-bottom {
+    max-width: 164px;
+    max-height: 124px;
+    bottom: 10px;
+    right: -36px;
+  }
+
+  .contact-us-section .contact-us-card-svg-right-top {
+    max-height: 40px;
+    max-width: 100px;
+    right: -20px;
+    top: 0;
+  }
+
+  /* .contact-us svg {
+
+    } */
 
   /* .section {
       padding: 0;
     } */
 }
+
+/* Needs to be commented in production, until it's fixed. */
 
 .blob {
   display: none;
