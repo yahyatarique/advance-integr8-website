@@ -7,7 +7,7 @@ module.exports = {
       'xs': '320px',
       // => @media (min-width: 320px) { ... }
 
-      'sm': '640px',
+      'sm': '425px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',
@@ -21,6 +21,9 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+
+      '3xl': '1728px',
+      // => @media (min-width: 1728px) { ... }
     },
     extend: {
       fontFamily: {
