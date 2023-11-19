@@ -815,7 +815,6 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   gap: 0;
@@ -843,7 +842,7 @@ span {
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
-  margin-block: 16px;
+  margin-block: 8px;
 }
 
 .about-us-section {
@@ -1427,6 +1426,10 @@ img {
     max-width: 70px;
   }
 
+  .hero .blob {
+    display: none !important;
+  }
+
   .row {
     flex-wrap: wrap;
     align-items: start;
@@ -1450,7 +1453,8 @@ img {
   }
 
   .achievements {
-    padding: 0;
+    padding-block: 72px 16px;
+    padding-inline: 0;
   }
 
   .achievements .row {
@@ -1488,7 +1492,7 @@ img {
     letter-spacing: 0em;
     text-align: center;
     border: 0;
-    margin-block: 36px;
+    margin-block: 36px 0;
   }
 
   .achievement-card .ach_text {
@@ -1500,9 +1504,24 @@ img {
     text-align: center;
   }
 
-  .section {
-    padding: 0;
+  .achievements .blob {
+    background: #e14a6b;
+    filter: blur(100px);
+    width: 165px;
+    height: 166px;
+    flex-shrink: 0;
+    top: 0;
   }
+
+  .hero .spacer {
+    height: 0;
+    max-height: 0;
+    min-height: 0;
+  }
+
+  /* .section {
+      padding: 0;
+    } */
 }
 
 *, ::before, ::after {
@@ -2028,6 +2047,10 @@ img {
 
   .xs\:flex-col {
     flex-direction: column;
+  }
+
+  .xs\:justify-start {
+    justify-content: flex-start;
   }
 }
 

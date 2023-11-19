@@ -448,17 +448,32 @@ gsap.from(".achievement ", {
 });
 
 // Skew with mouse move
-gsap.from(".achievement-card", {
-  scrollTrigger: {
-    trigger: ".achievement",
-    start: "top 80%",
-    end: "top 5%",
-    scrub: 0.3,
-    triggerAction: "play none none reverse",
-  },
-  y: 100,
-  skewY: 25,
-});
+// Only when on desktop
+
+if (window.innerWidth > 768) {
+  gsap.from(".achievement-card", {
+    scrollTrigger: {
+      trigger: ".achievement",
+      start: "top 80%",
+      end: "top 5%",
+      scrub: 0.3,
+      triggerAction: "play none none reverse",
+    },
+    y: 100,
+    skewY: 25,
+  });
+} else {
+  gsap.from(".achievement-card", {
+    scrollTrigger: {
+      trigger: ".achievement",
+      start: "top 80%",
+      end: "top 5%",
+      scrub: 0.3,
+      triggerAction: "play none none reverse",
+    },
+    y: 20,
+  });
+}
 gsap.from(".about-us-section > img", {
   scrollTrigger: {
     trigger: ".about-us-section",
