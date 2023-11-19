@@ -543,7 +543,6 @@ gsap.from(".testimonial", {
   scrollTrigger: {
     trigger: ".testimonial-section",
     start: "top 40%",
-    markers: true,
     triggerAction: "play none none reverse",
   },
   ease: "power1.in",
