@@ -2382,3 +2382,15 @@ img {
     align-self: flex-start;
   }
 }
+
+@media (min-width: 1536px) {
+  .\32xl\:justify-start {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1728px) {
+  .\33xl\:justify-start {
+    justify-content: flex-start;
+  }
+}
