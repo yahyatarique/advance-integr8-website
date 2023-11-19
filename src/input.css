@@ -884,6 +884,7 @@
       font-weight: 300;
       line-height: 100%;
       text-align: center;
+      margin-inline: 0;
     }
 
     .achievements {
@@ -953,8 +954,41 @@
       min-height: 0;
     }
 
+    .case-studies-section {
+      padding: 40px 16px;
+    }
+
+    .case-studies-section .row {
+      flex-direction: column;
+    }
+
+    .case-studies-section .col-60, .case-studies-section .col-40, .col-33 {
+      max-width: 100%;
+      min-width: 100%;
+    }
+
+    .case-studies-section .container .row {
+      flex-direction: column;
+    }
+
+    .case-study-card {
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 100%;
+      width: 430px;
+    }
+
     /* .section {
       padding: 0;
     } */
+  }
+
+  .blob {
+    display: none;
+  }
+  .about-us-section {
+    overflow-x: hidden;
   }
 }
