@@ -30,9 +30,9 @@
         <header>
             <nav class="flex justify-between items-center header-nav">
                 <div class="logo cursor-pointer text-3xl">
-                    <img src="assets/ai8-logo-dark.svg" alt="Ai8 Logo" preload />
+                    <img src="assets/ai8-logo-dark.svg" alt="Ai8 Logo" loading="lazy" />
                 </div>
-                <ul class="flex gap-20 items-center text-xl font-bold xs:hidden md:flex sm:gap-0">
+                <ul class="flex md:gap-20 items-center text-xl font-bold xs:hidden md:flex sm:gap-0">
                     <li class="nav-item cursor-pointer">Work</li>
                     <li class="nav-item cursor-pointer">Services</li>
                     <li class="nav-item cursor-pointer">Our Story</li>
@@ -105,7 +105,7 @@
                             </svg>
                         </span>
                         <span id="hero-text-3" class="hero-item">Through
-                            <span class="hero-item md:block xs:hidden">
+                            <!-- <span class="hero-item md:block xs:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="189" height="90" viewBox="0 0 189 90"
                                     fill="none">
                                     <path d="M187 2L113 88" stroke="url(#paint0_linear_396_290)" stroke-width="5" />
@@ -134,8 +134,8 @@
                                             <stop offset="1" stop-color="#8D74EF" />
                                         </linearGradient>
                                     </defs>
-                                </svg></span>
-                            Innovative
+                                </svg></span> -->
+                            &nbsp;Innovative
                         </span>
                     </div>
                     <div class="row">
@@ -186,16 +186,16 @@
             </section>
         </div>
         <section class="section achievements text-white container mx-auto" id="achievements">
-            <div class="achievement flex xs:flex-col justify-space-between items-center container mx-auto">
-                <p class="achievements_text items-start justify-start self-start text-3xl col-40">Achievements</p>
+            <div class="achievement flex xs:flex-col md:flex-row justify-space-between items-center container mx-auto">
+                <p class="achievements_text md:items-start md:justify-start md:self-start text-3xl col-40">Achievements</p>
                 <div class="col-60">
                     <h3>We bring effective solutions for businesses to scale.</h3>
                     <button class="btn btn-cta text-white">Know More</button>
                 </div>
             </div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="achievement-cards flex justify-around container mx-auto">
+            <div class="blob absolute"></div>
+            <div class="blob absolute"></div>
+            <div class="achievement-cards flex xs:flex-col md:flex-row md:justify-around container mx-auto">
                 <div class="achievement-card">
                     <div class="stat">
                         <div id="achievement_1">
@@ -221,10 +221,13 @@
                     </div>
                 </div>
             </div>
+            <div class="w-full flex mx-auto xs:block md:hidden">
+                <button class="btn btn-cta text-white">Know More</button>
+            </div>
         </section>
         <section class="about-us-section w-full mx-auto">
             <img src="/assets/homepage/Ai-8-Cover.jpg" class="mx-auto w-full"
-                alt="Two women talking to each other | AI8" preload style="width: 100%; border-radius: 24px" />
+                alt="Two women talking to each other | AI8" loading="lazy" style="width: 100%; border-radius: 24px" />
             <div class="about-us container mx-auto">
                 <div class="about-us-header items-center justify-between w-screen container mx-auto row">
                     <p class="text-primary text-xl col-40 items-start justify-start self-start">About Us</p>
