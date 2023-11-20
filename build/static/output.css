@@ -1214,9 +1214,9 @@ html,
   }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 426px) {
   .header-nav {
-    max-width: 425px;
+    max-width: 426px;
   }
 }
 
@@ -2507,9 +2507,9 @@ span {
   }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 426px) {
   .partners-logos {
-    max-width: 425px;
+    max-width: 426px;
   }
 }
 
@@ -3010,6 +3010,7 @@ img {
   .achievements {
     padding-block: 72px 16px;
     padding-inline: 0;
+    border-radius: 24px;
   }
 
   .achievements .row {
@@ -3251,8 +3252,12 @@ img {
   }
 
   .about-us-section {
-    padding-inline: 20px;
+    /* padding-inline: 20px; */
     padding-block: 40px;
+  }
+
+  .about-us-section > img:nth-of-type(1) {
+    margin-top: -70px;
   }
 
   .about-us-header {
@@ -3878,6 +3883,22 @@ img {
     text-align: left;
     margin-block-end: 24px;
   }
+
+  .hero-mobile .row {
+    flex-wrap: nowrap;
+  }
+
+  .hero-mobile .blob {
+    position: absolute;
+    width: 653px;
+    height: 653px;
+    flex-shrink: 0;
+    bottom: -60%;
+    right: -60%;
+    border-radius: 653px;
+    background: rgba(225, 74, 107, 0.2);
+    filter: blur(60px);
+  }
 }
 
 /* Needs to be commented in production, until it's fixed. */
@@ -4000,9 +4021,9 @@ img {
   }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 426px) {
   .container {
-    max-width: 425px;
+    max-width: 426px;
   }
 }
 
@@ -4448,7 +4469,7 @@ img {
   }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 426px) {
   .sm\:gap-0 {
     gap: 0px;
   }
