@@ -434,7 +434,8 @@ if (window.innerWidth > 768) {
       triggerAction: "play none none reverse",
       ease: "power1.in",
     },
-    y: -600,
+    opacity: 0,
+    y: -300,
   });
   gsap.from(".achievement ", {
     scrollTrigger: {

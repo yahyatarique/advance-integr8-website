@@ -1677,7 +1677,7 @@ span {
 .about-us-section > img:nth-child(1) {
   width: auto;
   height: 100%;
-  margin-top: -24px;
+  margin-top: -48px;
 }
 
 .about-us-section::after {
@@ -2994,7 +2994,6 @@ img {
   .hero-item {
     font-size: 42px;
     line-height: 105%;
-    /* letter-spacing: 1.5px; */
     max-width: 100%;
   }
 
@@ -3805,6 +3804,80 @@ img {
   .location + .mobile-social {
     margin-block: 80px 8px;
   }
+
+  .hero-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding-inline: 16px;
+  }
+
+  .hero-mobile .row {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 100%;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .hero-mobile .hero-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--primary-blue, #102054);
+    font-family: "Eurostile", sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    min-height: 100%;
+    vertical-align: middle;
+  }
+
+  .hero-item svg {
+    height: 1em;
+    min-height: 1em;
+  }
+
+  .hero-mobile .hero-item.hero-item-last {
+    color: var(--secondary-dark, #232323);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120% !important;
+    text-align: center;
+    margin-inline: 0;
+    gap: 0;
+    margin-block: 44px 36px;
+    text-transform: capitalize;
+  }
+
+  .hero-mobile .get-started button {
+    color: var(--primary-red, #e6222f);
+    font-family: "Eurostile", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 22.4px */
+    letter-spacing: 1.28px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+  }
+
+  .hero-mobile .get-started {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin-block-end: 24px;
+  }
 }
 
 /* Needs to be commented in production, until it's fixed. */
@@ -4112,6 +4185,10 @@ img {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
 }
 
 .border-spacing-1 {
