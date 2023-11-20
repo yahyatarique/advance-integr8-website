@@ -859,7 +859,7 @@
     grid-area: unset;
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     .logo {
       max-width: 70px;
       max-height: 30px;
@@ -1472,7 +1472,6 @@
       position: absolute;
       top: 24px;
       right: 1rem;
-
     }
 
     .services-card-container {

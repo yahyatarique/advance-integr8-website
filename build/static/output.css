@@ -481,7 +481,7 @@ html,
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .about-us-header .header-nav {
     color: var(--secondary-dark, #232323);
     font-family: "Eurostile", sans-serif;
@@ -542,7 +542,7 @@ html,
   margin-right: auto;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .case-studies-section .header-nav .row {
     flex-direction: column;
     gap: 24px;
@@ -1273,7 +1273,7 @@ html,
   font-weight: 700;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .btn.btn-cta.header-nav li:hover {
     padding-block: 12px;
     padding-inline: 30px;
@@ -1370,7 +1370,7 @@ html,
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .about-us-header .hero {
     color: var(--secondary-dark, #232323);
     font-family: "Eurostile", sans-serif;
@@ -1722,7 +1722,7 @@ span {
   margin-block: 0;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .btn.btn-cta.about-us-header .text-secondary {
     padding-block: 12px;
     padding-inline: 30px;
@@ -1835,7 +1835,7 @@ span {
   width: 100%;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .case-studies-section .partners-logos .row {
     flex-direction: column;
     gap: 24px;
@@ -2976,7 +2976,7 @@ img {
   grid-area: unset;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .logo {
     max-width: 70px;
     max-height: 30px;
