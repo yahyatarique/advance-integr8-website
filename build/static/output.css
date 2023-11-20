@@ -2979,32 +2979,29 @@ img {
 @media screen and (max-width: 425px) {
   .logo {
     max-width: 70px;
+    max-height: 30px;
+  }
+
+  .header-nav {
+    padding: 16px;
+  }
+
+  .header-nav .btn.btn-cta {
+    display: none;
   }
 
   .hero .blob {
     display: none !important;
   }
 
+  .hero-mobile {
+    overflow: hidden;
+  }
+
   .row {
     flex-wrap: wrap;
     align-items: start;
     justify-content: center;
-  }
-
-  .hero-item {
-    font-size: 42px;
-    line-height: 105%;
-    max-width: 100%;
-  }
-
-  .hero-item-last {
-    color: var(--secondary-dark, #232323);
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 100%;
-    text-align: center;
-    margin-inline: 0;
   }
 
   .achievements {
@@ -3603,12 +3600,16 @@ img {
     min-width: 130px;
     min-height: 60px;
     padding: 24px;
+    position: relative;
   }
 
   .services-section .services-card img {
     flex-shrink: 0;
     width: 20px;
     height: 20px;
+    position: absolute;
+    top: 24px;
+    right: 1rem;
   }
 
   .services-card-container {
@@ -3818,6 +3819,7 @@ img {
     flex-direction: column;
     text-align: left;
     padding-inline: 16px;
+    margin-block-start: 48px;
   }
 
   .hero-mobile .row {
@@ -4112,6 +4114,11 @@ img {
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .my-4 {
