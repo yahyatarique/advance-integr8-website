@@ -859,6 +859,10 @@
     grid-area: unset;
   }
 
+  .services-section .services-card.odd {
+    grid-area: auto;
+  }
+
   @media screen and (max-width: 426px) {
     .logo {
       max-width: 70px;
@@ -1452,6 +1456,7 @@
       grid-area: 2 / 1 / 3 / 2;
     }
 
+    
     .services-section .services-card {
       color: var(--secondary-white, #fff);
       font-family: "Eurostile", sans-serif;
@@ -1463,6 +1468,11 @@
       min-height: 60px;
       padding: 24px;
       position: relative;
+    }
+
+    .services-card.product-development {
+      grid-row: 1 / 3;
+      grid-column: 3 / 4;
     }
 
     .services-section .services-card img {
@@ -1477,6 +1487,10 @@
     .services-card-container {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       grid-auto-rows: minmax(0, 1fr);
+    }
+
+    .services-section .services-card.odd {
+      grid-area: auto;
     }
 
     .sectors-section {
@@ -1755,6 +1769,24 @@
       border-radius: 653px;
       background: rgba(225, 74, 107, 0.2);
       filter: blur(60px);
+    }
+
+    .case-study-details h5 {
+      color: var(--primary-blue, #102054);
+      font-family: "Eurostile", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+
+    .case-study-details div {
+      color: var(--Gray-3, #828282);
+      font-family: "Poppins", sans-serif;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
     }
   }
 

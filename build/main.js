@@ -463,17 +463,17 @@ if (window.innerWidth > 768) {
     y: 100,
     skewY: 25,
   });
+  gsap.from(".about-us-section > img", {
+    scrollTrigger: {
+      trigger: ".about-us-section",
+      start: "top 80%",
+      end: "top 5%",
+      scrub: true,
+      triggerAction: "play none none reverse",
+    },
+    y: -500,
+  });
 }
-gsap.from(".about-us-section > img", {
-  scrollTrigger: {
-    trigger: ".about-us-section",
-    start: "top 80%",
-    end: "top 5%",
-    scrub: true,
-    triggerAction: "play none none reverse",
-  },
-  y: -500,
-});
 gsap.from(".about-us-header", {
   scrollTrigger: {
     trigger: ".about-us-header",
