@@ -536,7 +536,6 @@ gsap.from(".testimonial-header", {
     trigger: ".testimonial-section",
     start: "top 80%",
     end: "top 20%",
-    scrub: 0.3,
     triggerAction: "play none none reverse",
   },
   ease: "power1.in",

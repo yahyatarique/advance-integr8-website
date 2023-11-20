@@ -2,13 +2,14 @@
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/input.css -o ./build/static/output.css --watch",
     "dev": "live-server ./build",
-    "build-netlify": "npx tailwindcss -i ./src/input.css -o ./build/static/output.css --minify"
+    "build-netlify": "npx tailwindcss -i ./src/input.css -o ./build/static/output.css --minify && minify --js ./build/main.js"
   },
   "dependencies": {
     "gsap": "^3.12.2",
     "tailwindcss": "^3.3.5"
   },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "minify": "^10.5.2"
   }
 }
