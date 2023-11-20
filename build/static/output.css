@@ -3011,6 +3011,7 @@ img {
     padding-block: 72px 16px;
     padding-inline: 0;
     border-radius: 24px;
+    height: unset;
   }
 
   .achievements .row {
