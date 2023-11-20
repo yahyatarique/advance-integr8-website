@@ -557,7 +557,6 @@ html,
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -623,7 +622,6 @@ html,
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -689,7 +687,6 @@ html,
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -755,7 +752,6 @@ html,
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -821,7 +817,6 @@ html,
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -887,7 +882,6 @@ html,
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -953,7 +947,6 @@ html,
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -1019,7 +1012,6 @@ html,
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -1085,7 +1077,6 @@ html,
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -1151,7 +1142,6 @@ html,
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -1850,7 +1840,6 @@ span {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -1916,7 +1905,6 @@ span {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -1982,7 +1970,6 @@ span {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -2048,7 +2035,6 @@ span {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -2114,7 +2100,6 @@ span {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -2180,7 +2165,6 @@ span {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -2246,7 +2230,6 @@ span {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -2312,7 +2295,6 @@ span {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -2378,7 +2360,6 @@ span {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -2444,7 +2425,6 @@ span {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -3219,7 +3199,7 @@ img {
     line-height: 120%;
     /* 38.4px */
     text-transform: uppercase;
-    max-width: 60%;
+    max-width: 80%;
   }
 
   .contact-us-card {
@@ -3233,6 +3213,7 @@ img {
     font-size: 16px;
     font-weight: 700;
     line-height: 100%;
+    margin-block: 16px 0;
   }
 
   .contact-us-section .contact-us-card-svg-left {
@@ -3732,14 +3713,13 @@ img {
 
   .footer-section {
     padding-inline: 16px;
-    padding-block: 24px;
+    padding-block: 40px 24px;
   }
 
   .footer-section .container .row .col-40 {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    align-items: center;
     justify-content: flex-start;
     max-height: 40px;
   }
@@ -3790,7 +3770,7 @@ img {
   .footer-column:nth-of-type(2) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    place-items: center;
+    align-self: flex-start;
   }
 
   .footer-column .text-primary-faded-blue {
