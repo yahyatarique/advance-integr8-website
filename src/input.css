@@ -1020,7 +1020,7 @@
 
     .btn.btn-cta.text-primary-red {
       padding-block: 12px;
-      padding-inline: 30px;
+      padding-inline: 24px;
       margin-block: 0;
       color: var(--primary-red, #e6222f);
       font-family: "Eurostile", sans-serif;
@@ -1030,6 +1030,10 @@
       line-height: 140%; /* 22.4px */
       letter-spacing: 1.28px;
       text-transform: uppercase;
+    }
+
+    .btn.btn-cta:hover::after {
+      
     }
 
     .case-studies-section .container .row {
@@ -1102,7 +1106,7 @@
 
     .contact-us-section .btn.btn-cta {
       padding-block: 12px;
-      padding-inline: 30px;
+      padding-inline: 24px;
       font-size: 16px;
       font-weight: 700;
       line-height: 100%;
@@ -1450,6 +1454,8 @@
       line-height: 140%; /* 22.4px */
       letter-spacing: 1.28px;
       text-transform: uppercase;
+      padding-block: 12px;
+      padding-inline: 24px;
     }
 
     .services-card.odd {
@@ -1470,11 +1476,6 @@
       position: relative;
     }
 
-    .services-card.product-development {
-      grid-row: 1 / 3;
-      grid-column: 3 / 4;
-    }
-
     .services-section .services-card img {
       flex-shrink: 0;
       width: 20px;
@@ -1486,7 +1487,7 @@
 
     .services-card-container {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      grid-auto-rows: minmax(0, 1fr);
+      grid-auto-rows: minmax(0, 200px);
     }
 
     .services-section .services-card.odd {
@@ -1644,8 +1645,8 @@
       grid-row: 2;
     }
     .footer-column:nth-of-type(2) {
-      grid-column: 1;
-      grid-row: 2;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
       place-items: center;
     }
 
@@ -1787,6 +1788,15 @@
       font-style: normal;
       font-weight: 400;
       line-height: 120%;
+    }
+
+    .services-section .services-card.odd {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .services-section .services-card.product {
+      grid-column-start: 1;
+      grid-column-end: 3;
     }
   }
 
