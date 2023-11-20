@@ -411,46 +411,46 @@ createHeroTimeline(tl);
 // createTestimonialsTimeline(tl);
 // createServicesTimeline(tl);
 
-gsap.from(".blob", {
-  scrollTrigger: {
-    trigger: ".blob",
-    start: "-=100 80%",
-    end: "-=10 60%",
-    scrub: 0.3,
-    triggerAction: "play none none reverse",
-    ease: "power1.in",
-  },
-  y: 500,
-  x: 500,
-  scale: 1.2,
-});
-gsap.from(".achievements", {
-  scrollTrigger: {
-    trigger: ".hero",
-    start: "top 80%",
-    end: "bottom 40%",
-    scrub: true,
-    triggerAction: "play none none reverse",
-    ease: "power1.in",
-  },
-  y: -600,
-});
-gsap.from(".achievement ", {
-  scrollTrigger: {
-    trigger: ".achievements",
-    start: "top 80%",
-    end: "top 20%",
-    scrub: 0.3,
-    triggerAction: "play none none reverse",
-    ease: "power1.in",
-  },
-  y: 100,
-});
-
-// Skew with mouse move
-// Only when on desktop
-
 if (window.innerWidth > 768) {
+  gsap.from(".blob", {
+    scrollTrigger: {
+      trigger: ".blob",
+      start: "-=100 80%",
+      end: "-=10 60%",
+      scrub: 0.3,
+      triggerAction: "play none none reverse",
+      ease: "power1.in",
+    },
+    y: 500,
+    x: 500,
+    scale: 1.2,
+  });
+  gsap.from(".achievements", {
+    scrollTrigger: {
+      trigger: ".hero",
+      start: "top 80%",
+      end: "bottom 40%",
+      scrub: true,
+      triggerAction: "play none none reverse",
+      ease: "power1.in",
+    },
+    y: -600,
+  });
+  gsap.from(".achievement ", {
+    scrollTrigger: {
+      trigger: ".achievements",
+      start: "top 80%",
+      end: "top 20%",
+      scrub: 0.3,
+      triggerAction: "play none none reverse",
+      ease: "power1.in",
+    },
+    y: 100,
+  });
+
+  // Skew with mouse move
+  // Only when on desktop
+
   gsap.from(".achievement-card", {
     scrollTrigger: {
       trigger: ".achievement",
@@ -461,17 +461,6 @@ if (window.innerWidth > 768) {
     },
     y: 100,
     skewY: 25,
-  });
-} else {
-  gsap.from(".achievement-card", {
-    scrollTrigger: {
-      trigger: ".achievement",
-      start: "top 80%",
-      end: "top 5%",
-      scrub: 0.3,
-      triggerAction: "play none none reverse",
-    },
-    y: 20,
   });
 }
 gsap.from(".about-us-section > img", {

@@ -1300,7 +1300,7 @@ html,
     text-transform: capitalize;
     max-width: none;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 24px;
   }
 
   .btn.btn-cta.header-nav li:hover {
@@ -1329,7 +1329,7 @@ html,
     text-transform: capitalize;
     max-width: none;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 24px;
   }
 }
 
@@ -1749,7 +1749,7 @@ span {
     text-transform: capitalize;
     max-width: none;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 24px;
   }
 
   .btn.btn-cta.about-us-header .text-secondary {
@@ -1778,7 +1778,7 @@ span {
     text-transform: capitalize;
     max-width: none;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 24px;
   }
 }
 
@@ -3466,7 +3466,7 @@ img {
     text-transform: capitalize;
     max-width: none;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 24px;
   }
 
   .testimonial-header .header .row {
@@ -3813,9 +3813,9 @@ img {
     display: none;
   } */
 
-.about-us-section {
-  overflow-x: hidden;
-}
+/* .about-us-section {
+    overflow-x: hidden;
+  } */
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;

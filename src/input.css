@@ -1332,7 +1332,7 @@
       text-transform: capitalize;
       max-width: none;
       text-align: center;
-      margin-top: 16px;
+      margin-top: 24px;
     }
 
     .testimonial-header .header .row {
@@ -1665,7 +1665,7 @@
   /* .blob {
     display: none;
   } */
-  .about-us-section {
+  /* .about-us-section {
     overflow-x: hidden;
-  }
+  } */
 }
