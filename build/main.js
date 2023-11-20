@@ -15,7 +15,7 @@ const testimonials = [
     company: "Aram Co.",
     role: "Programme Manager",
     testimonial:
-"AI8 played a pivotal role in our company's digital transformation journey. Their expertise in implementing cutting-edge technologies and seamless integration of AI solutions truly set them apart. We experienced a significant boost in efficiency and productivity. AI8 is a reliable partner for any organization looking to stay ahead in the rapidly evolving digital landscape.",
+      "AI8 played a pivotal role in our company's digital transformation journey. Their expertise in implementing cutting-edge technologies and seamless integration of AI solutions truly set them apart. We experienced a significant boost in efficiency and productivity. AI8 is a reliable partner for any organization looking to stay ahead in the rapidly evolving digital landscape.",
     image_company: "assets/homepage/brands/aram-co-color.png",
     image_profile: "assets/homepage/testimonials/jack-wilson.jpg",
   },
@@ -53,9 +53,9 @@ function onClickSlide(index) {
         opacity: 1,
         duration: 0.25,
         y: 0,
-      })
-    }
-  })
+      });
+    },
+  });
 
   gsap.to(testimonialImageCompanyEl, {
     opacity: 0,
@@ -67,24 +67,24 @@ function onClickSlide(index) {
         opacity: 1,
         duration: 0.25,
         y: 0,
-      })
-    }
-  })
+      });
+    },
+  });
 
   gsap.to(testimonialRoleEl, {
     opacity: 0,
     y: 20,
     duration: 0.25,
     onComplete: () => {
-      testimonialRoleEl.innerText = testimonials[index].role + ", " +
-        testimonials[index].company;
+      testimonialRoleEl.innerText =
+        testimonials[index].role + ", " + testimonials[index].company;
       gsap.to(testimonialRoleEl, {
         opacity: 1,
         duration: 0.25,
         y: 0,
-      })
-    }
-  })
+      });
+    },
+  });
 
   gsap.to(testimonialImageProfileEl, {
     opacity: 0,
@@ -99,9 +99,9 @@ function onClickSlide(index) {
         duration: 0.25,
         skewY: 0,
         y: 0,
-      })
-    }
-  })
+      });
+    },
+  });
 
   gsap.to(testimonialEl, {
     opacity: 0.5,
@@ -113,9 +113,9 @@ function onClickSlide(index) {
         opacity: 1,
         duration: 0.25,
         y: 0,
-      })
-    }
-  })
+      });
+    },
+  });
   gsap.to(testimonialDetailsEl, {
     opacity: 0,
     y: 20,
@@ -125,9 +125,9 @@ function onClickSlide(index) {
         opacity: 1,
         duration: 0.25,
         y: 0,
-      })
-    }
-  })
+      });
+    },
+  });
 
   gsap.to(sliderButtonArrEl, {
     opacity: 0,
@@ -137,15 +137,15 @@ function onClickSlide(index) {
     onComplete: () => {
       sliderButtonArrEl.forEach((el) => {
         el.classList.remove("active");
-      })
+      });
       sliderButtonArrEl[index].classList.add("active");
       gsap.to(sliderButtonArrEl, {
         opacity: 1,
         duration: 0.25,
         y: 0,
-      })
-    }
-  })
+      });
+    },
+  });
 }
 
 function createHeaderTimeline(tl) {
@@ -519,77 +519,79 @@ gsap.from(".about-us-section .about-us-card", {
   y: 80,
   opacity: 0,
 });
-gsap.from(".lines-illustration", {
-  scrollTrigger: {
-    trigger: ".lines-illustration",
-    start: "top 80%",
-    end: "top 20%",
-    scrub: 0.2,
-    triggerAction: "play none none reverse",
-  },
-  ease: "power1.in",
-  y: 120,
-  opacity: 0,
-});
-gsap.from(".testimonial-header", {
-  scrollTrigger: {
-    trigger: ".testimonial-section",
-    start: "top 80%",
-    end: "top 20%",
-    triggerAction: "play none none reverse",
-  },
-  ease: "power1.in",
-  y: 200,
-  opacity: 0,
-});
-gsap.from(".slider-image img", {
-  scrollTrigger: {
-    trigger: ".testimonial-section",
-    start: "top 40%",
-    triggerAction: "play none none reverse",
-  },
-  // Parallax move
-  y: 100,
-  skewY: 25,
-  opacity: 0,
-});
-gsap.from(".testimonial", {
-  scrollTrigger: {
-    trigger: ".testimonial-section",
-    start: "top 40%",
-    triggerAction: "play none none reverse",
-  },
-  ease: "power1.in",
-  y: 200,
-  opacity: 0,
-});
+if (window.innerWidth > 768) {
+  gsap.from(".lines-illustration", {
+    scrollTrigger: {
+      trigger: ".lines-illustration",
+      start: "top 80%",
+      end: "top 20%",
+      scrub: 0.2,
+      triggerAction: "play none none reverse",
+    },
+    ease: "power1.in",
+    y: 120,
+    opacity: 0,
+  });
+  gsap.from(".testimonial-header", {
+    scrollTrigger: {
+      trigger: ".testimonial-section",
+      start: "top 80%",
+      end: "top 20%",
+      triggerAction: "play none none reverse",
+    },
+    ease: "power1.in",
+    y: 200,
+    opacity: 0,
+  });
+  gsap.from(".slider-image img", {
+    scrollTrigger: {
+      trigger: ".testimonial-section",
+      start: "top 40%",
+      triggerAction: "play none none reverse",
+    },
+    // Parallax move
+    y: 100,
+    skewY: 25,
+    opacity: 0,
+  });
+  gsap.from(".testimonial", {
+    scrollTrigger: {
+      trigger: ".testimonial-section",
+      start: "top 40%",
+      triggerAction: "play none none reverse",
+    },
+    ease: "power1.in",
+    y: 200,
+    opacity: 0,
+  });
 
-gsap.from(".slider-control .slider-button", {
-  scrollTrigger: {
-    trigger: ".testimonial-section",
-    start: "top 80%",
-    end: "top 5%",
-    triggerAction: "play none none reverse",
-  },
-  stagger: 0.05,
-  ease: "power1.in",
-  y: 1000,
-  skewY: 10,
-  opacity: 0,
-});
-gsap.from(".testimonial-details", {
-  scrollTrigger: {
-    trigger: ".testimonial-section",
-    start: "top 80%",
-    end: "top 0%",
-    scrub: 0.5,
-    triggerAction: "play none none reverse",
-  },
-  ease: "power1.in",
-  y: 1000,
-  skewY: 10,
-  opacity: 0,
-});
+  gsap.from(".slider-control .slider-button", {
+    scrollTrigger: {
+      trigger: ".testimonial-section",
+      start: "top 80%",
+      end: "top 5%",
+      triggerAction: "play none none reverse",
+    },
+    stagger: 0.05,
+    ease: "power1.in",
+    y: 1000,
+    skewY: 10,
+    opacity: 0,
+  });
+  gsap.from(".testimonial-details", {
+    scrollTrigger: {
+      trigger: ".testimonial-section",
+      start: "top 80%",
+      end: "top 0%",
+      scrub: 0.5,
+      triggerAction: "play none none reverse",
+    },
+    ease: "power1.in",
+    y: 1000,
+    skewY: 10,
+    opacity: 0,
+  });
+}
 
 // gsap.from('.services-cards', {
 //   scrollTrigger: {
