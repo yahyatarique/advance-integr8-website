@@ -1281,13 +1281,33 @@
       text-transform: uppercase;
     }
 
-    .testimonial-header .header {
+    .testimonial-header .text-secondary {
+      color: var(--primary-red, #e6222f);
+      font-family: "Eurostile", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 28.8px */
+      text-transform: capitalize;
+      max-width: none;
+    }
+
+    .testimonial-header .header .row {
       flex-direction: column;
       gap: 12px;
+      padding-inline: 0;
+    }
+
+    .testimonial-section .row {
+      flex-direction: column;
+    }
+
+    .testimonial-section {
+      padding: 0;
     }
 
     .testimonial-header .col-40, .testimonial-header .col-60 {
-      width: auto;
+      width: 100%;
       min-width: 100%;
       max-width: 100%;
     }
