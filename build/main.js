@@ -148,6 +148,32 @@ function onClickSlide(index) {
   });
 }
 
+function createSplashScreen(tl) {
+  tl.from('#splash-logo-top', {
+    x: 1000,
+    opacity: 0,
+    ease: "power2.in",
+    duration: 0.5,
+  })
+  tl.from('#splash-logo-bottom', {
+    x: -1000,
+    opacity: 0,
+    ease: "power2.in",
+    duration: 0.5,
+  })
+  tl.to('.animation-splash', {
+    scale: 100,
+    opacity: 0,
+    ease: "power1.in",
+    duration: 0.5,
+    delay: 0.5,
+    background: 'transparent',
+    onComplete: () => {
+      document.querySelector(".splash-loader").style.display = "none";
+    },
+  })
+}
+
 function createHeaderTimeline(tl) {
   tl.from(".logo", {
     y: -50,
@@ -155,14 +181,14 @@ function createHeaderTimeline(tl) {
     opacity: 0,
     scale: 0,
     ease: "power1.out",
-    duration: 0.5,
+    duration: 0.25,
   });
   tl.from(".nav-item", {
     y: -50,
     opacity: 0,
     stagger: 0.1,
     ease: "power1.out",
-    duration: 0.5,
+    duration: 0.25,
   });
 }
 
@@ -178,7 +204,7 @@ function createHeroTimeline(tl) {
     y: 50,
     opacity: 0,
     stagger: 0.25,
-    duration: 0.25,
+    duration: 0.2,
     ease: "power1.in",
   });
   tl.from(".hero-section .btn svg", {
@@ -404,6 +430,7 @@ function createServicesTimeline(tl) {
 const tl = gsap.timeline({
   defaults: { ease: "power1.out", duration: 1, delay: 0 },
 });
+createSplashScreen(tl);
 createHeaderTimeline(tl);
 createHeroTimeline(tl);
 // createAchievementTimeline(tl);
@@ -427,6 +454,7 @@ if (window.innerWidth > 768) {
   });
   gsap.from(".achievements", {
     scrollTrigger: {
+      preventOverlaps: true,
       trigger: ".hero",
       start: "top 80%",
       end: "bottom 40%",
