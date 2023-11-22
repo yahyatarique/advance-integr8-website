@@ -575,6 +575,14 @@ body .splash-loader {
   margin-right: auto;
 }
 
+.footer-section .header-nav a {
+  transition: all 0.2s ease;
+}
+
+.footer-section .header-nav a:hover {
+  color: var(--secondary-white, #fff);
+}
+
 @media screen and (max-width: 426px) {
   .case-studies-section .header-nav .row {
     flex-direction: column;
@@ -1858,6 +1866,14 @@ span {
   width: 100%;
 }
 
+.footer-section .partners-logos a {
+  transition: all 0.2s ease;
+}
+
+.footer-section .partners-logos a:hover {
+  color: var(--secondary-white, #fff);
+}
+
 @media screen and (max-width: 426px) {
   .case-studies-section .partners-logos .row {
     flex-direction: column;
@@ -2991,6 +3007,14 @@ img {
 
 .services-section .services-card.odd {
   grid-area: auto;
+}
+
+.footer-section .container a {
+  transition: all 0.2s ease;
+}
+
+.footer-section .container a:hover {
+  color: var(--secondary-white, #fff);
 }
 
 @media screen and (max-width: 426px) {

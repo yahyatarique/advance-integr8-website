@@ -896,6 +896,14 @@
     grid-area: auto;
   }
 
+  .footer-section .container a {
+    transition: all 0.2s ease;
+  }
+
+  .footer-section .container a:hover {
+    color: var(--secondary-white, #fff);
+  }
+
   @media screen and (max-width: 426px) {
     .logo {
       max-width: 70px;
