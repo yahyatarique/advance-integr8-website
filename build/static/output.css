@@ -4244,6 +4244,13 @@ img {
 .services-framework
     .content
     .services-framework-grid
+    .services-framework-item:hover {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.services-framework
+    .content
+    .services-framework-grid
     .services-framework-item {
   border-top: 4px solid rgba(255, 255, 255, 0.3);
   padding-block: 60px;
@@ -4554,10 +4561,6 @@ img {
 
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .max-h-full {
