@@ -496,12 +496,13 @@
     @apply items-center;
     @apply w-auto;
     @apply h-auto;
+    min-height: 1rem;
   }
-
+  
   .partner-logo img {
     @apply object-contain;
     @apply w-auto;
-    max-height: 100%;
+    height: 4rem;
   }
 
   .testimonial-section {
