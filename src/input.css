@@ -1947,22 +1947,27 @@
     --services-index: 1;
     --services-count: 6;
     width: 4px;
-    height: 80vh;
+    height: 60vh;
     flex-shrink: 0;
     border-radius: 21px;
-    opacity: 0.6;
-    background: var(--secondary-grey, #c1c1c1);
+    background: var(--secondary-grey, #c1c1c188);
     @apply relative;
   }
-
+  
   .services-pin-section .scroller::after {
     content: "";
+    opacity: 1;
     width: 4px;
-    height: calc(var(--services-index) * 80vh / var(--services-count));
+    height: calc(var(--services-index) * 60vh / var(--services-count));
     border-radius: 21px;
     background: var(--primary-red, #e6222f);
     @apply absolute;
     @apply top-0;
     @apply left-0;
+    transition: all 0.2s var(--bezier, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  .services-pin-section .scroller:hover {
+    --services-index: 3;
   }
 }

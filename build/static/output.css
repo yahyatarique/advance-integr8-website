@@ -4172,23 +4172,28 @@ img {
   --services-index: 1;
   --services-count: 6;
   width: 4px;
-  height: 80vh;
+  height: 60vh;
   flex-shrink: 0;
   border-radius: 21px;
-  opacity: 0.6;
-  background: var(--secondary-grey, #c1c1c1);
+  background: var(--secondary-grey, #c1c1c188);
   position: relative;
 }
 
 .services-pin-section .scroller::after {
   content: "";
+  opacity: 1;
   width: 4px;
-  height: calc(var(--services-index) * 80vh / var(--services-count));
+  height: calc(var(--services-index) * 60vh / var(--services-count));
   border-radius: 21px;
   background: var(--primary-red, #e6222f);
   position: absolute;
   top: 0px;
   left: 0px;
+  transition: all 0.2s var(--bezier, cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.services-pin-section .scroller:hover {
+  --services-index: 3;
 }
 
 *, ::before, ::after {
@@ -4591,11 +4596,6 @@ img {
 .bg-primary-red {
   --tw-bg-opacity: 1;
   background-color: rgb(230 34 47 / var(--tw-bg-opacity));
-}
-
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(11 13 23 / var(--tw-bg-opacity));
 }
 
 .px-0 {
