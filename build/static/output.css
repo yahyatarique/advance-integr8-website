@@ -4196,6 +4196,56 @@ img {
   --services-index: 3;
 }
 
+.services-framework
+    .content
+    .services-framework-grid
+    .services-framework-item
+    h2 {
+  color: var(--secondary-white, #fff);
+  font-family: "Eurostile", sans-serif;
+  font-size: 124px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  /* 148.8px */
+  text-transform: lowercase;
+}
+
+.services-framework
+    .content
+    .services-framework-grid
+    .services-framework-item
+    span {
+  color: var(--secondary-white, #fff);
+  font-family: "Eurostile", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 52.8px */
+}
+
+.services-framework
+    .content
+    .services-framework-grid
+    .services-framework-item
+    p {
+  color: var(--secondary-grey, #c1c1c1);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  /* 28.8px */
+}
+
+.services-framework
+      .content
+      .services-framework-grid
+      .services-framework-item {
+  border-top: 1px solid ;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
