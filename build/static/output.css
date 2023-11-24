@@ -4476,6 +4476,10 @@ img {
   max-height: 100%;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -4529,6 +4533,10 @@ img {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
