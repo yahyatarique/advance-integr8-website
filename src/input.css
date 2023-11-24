@@ -910,7 +910,7 @@
     color: var(--secondary-white, #fff);
   }
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 565px) {
     .logo {
       max-width: 70px;
       max-height: 30px;
@@ -1280,8 +1280,8 @@
     }
 
     .about-us-card {
-      max-width: calc(100vw - 80px);
-      min-width: calc(100vw - 80px);
+      max-width: 100%;
+      min-width: calc(80vw - 80px);
     }
     .about-us {
       padding: 40px 24px;

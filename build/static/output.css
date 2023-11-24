@@ -522,7 +522,7 @@ body .splash-loader {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 565px) {
   .about-us-header .header-nav {
     color: var(--secondary-dark, #232323);
     font-family: "Eurostile", sans-serif;
@@ -591,7 +591,7 @@ body .splash-loader {
   color: var(--secondary-white, #fff);
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 565px) {
   .case-studies-section .header-nav .row {
     flex-direction: column;
     gap: 24px;
@@ -1253,9 +1253,9 @@ body .splash-loader {
   }
 }
 
-@media (min-width: 426px) {
+@media (min-width: 565px) {
   .header-nav {
-    max-width: 426px;
+    max-width: 565px;
   }
 }
 
@@ -1312,7 +1312,7 @@ body .splash-loader {
   font-weight: 700;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 565px) {
   .btn.btn-cta.header-nav li:hover {
     padding-block: 12px;
     padding-inline: 24px;
@@ -1413,7 +1413,7 @@ body .splash-loader {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 565px) {
   .about-us-header .hero {
     color: var(--secondary-dark, #232323);
     font-family: "Eurostile", sans-serif;
@@ -1765,7 +1765,7 @@ span {
   margin-block: 0;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 565px) {
   .btn.btn-cta.about-us-header .text-secondary {
     padding-block: 12px;
     padding-inline: 24px;
@@ -1890,7 +1890,7 @@ span {
   color: var(--secondary-white, #fff);
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 565px) {
   .case-studies-section .partners-logos .row {
     flex-direction: column;
     gap: 24px;
@@ -2552,9 +2552,9 @@ span {
   }
 }
 
-@media (min-width: 426px) {
+@media (min-width: 565px) {
   .partners-logos {
-    max-width: 426px;
+    max-width: 565px;
   }
 }
 
@@ -3033,7 +3033,7 @@ img {
   color: var(--secondary-white, #fff);
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 565px) {
   .logo {
     max-width: 70px;
     max-height: 30px;
@@ -3417,8 +3417,8 @@ img {
   }
 
   .about-us-card {
-    max-width: calc(100vw - 80px);
-    min-width: calc(100vw - 80px);
+    max-width: 100%;
+    min-width: calc(80vw - 80px);
   }
 
   .about-us {
@@ -4056,7 +4056,7 @@ img {
   /* 38.4px */
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 565px) {
   .btn.btn-cta.services-pin-section .services-bullets .services-bullet-item.active {
     padding-block: 12px;
     padding-inline: 24px;
@@ -4425,9 +4425,9 @@ img {
   }
 }
 
-@media (min-width: 426px) {
+@media (min-width: 565px) {
   .container {
-    max-width: 426px;
+    max-width: 565px;
   }
 }
 
@@ -4914,7 +4914,7 @@ img {
   }
 }
 
-@media (min-width: 426px) {
+@media (min-width: 565px) {
   .sm\:gap-0 {
     gap: 0px;
   }
