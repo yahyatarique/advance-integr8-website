@@ -4255,6 +4255,11 @@ img {
   margin-block-start: 184px;
 }
 
+.services-framework
+    .content
+    .services-framework-grid .blob {
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;

@@ -2024,4 +2024,10 @@
     .services-framework-grid {
       margin-block-start: 184px;
     }
+
+    .services-framework
+    .content
+    .services-framework-grid .blob {
+      
+    }
 }
