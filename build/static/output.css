@@ -4273,6 +4273,7 @@ img {
   top: 1.5rem;
   right: 50%;
   z-index: -10;
+  transition: all 0.25s var(--bezier, cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 .services-framework .content .services-framework-grid .blob + .blob {
@@ -4284,6 +4285,24 @@ img {
   filter: blur(100px);
   right: 66.666667%;
   z-index: -20;
+}
+
+.services-framework .content .services-framework-grid:has(.services-framework-item:nth-of-type(2):hover) .blob {
+  right: 25%;
+}
+
+.services-framework .content .services-framework-grid:has(.services-framework-item:nth-of-type(2):hover) .blob + .blob {
+  right: 0px;
+}
+
+.services-framework .content .services-framework-grid:has(.services-framework-item:nth-of-type(3):hover) .blob {
+  right: 50%;
+  top: 50%;
+}
+
+.services-framework .content .services-framework-grid:has(.services-framework-item:nth-of-type(3):hover) .blob + .blob {
+  right: 66.666667%;
+  top: 50%;
 }
 
 *, ::before, ::after {
