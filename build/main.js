@@ -149,24 +149,11 @@ function onClickSlide(index) {
 }
 
 function createSplashScreen(tl) {
-  tl.from('#splash-logo-top', {
-    x: 1000,
-    opacity: 0,
-    ease: "power2.in",
-    duration: 0.5,
-  })
-  tl.from('#splash-logo-bottom', {
-    x: -1000,
-    opacity: 0,
-    ease: "power2.in",
-    duration: 0.5,
-  })
   tl.to('.animation-splash', {
     scale: 100,
     opacity: 0,
     ease: "power1.in",
-    duration: 0.5,
-    delay: 0.5,
+    duration: 4.8,
     background: 'transparent',
     onComplete: () => {
       document.querySelector(".splash-loader").style.display = "none";
