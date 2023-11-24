@@ -2056,30 +2056,51 @@
     @apply -z-20;
   }
 
-  .services-framework .content .services-framework-grid:has(.services-framework-item:nth-of-type(2):hover) .blob {
+  .services-framework
+    .content
+    .services-framework-grid:has(.services-framework-item:nth-of-type(2):hover)
+    .blob {
     @apply right-1/4;
   }
 
-  .services-framework .content .services-framework-grid:has(.services-framework-item:nth-of-type(2):hover) .blob + .blob {
+  .services-framework
+    .content
+    .services-framework-grid:has(.services-framework-item:nth-of-type(2):hover)
+    .blob
+    + .blob {
     @apply right-0;
   }
 
-  .services-framework .content .services-framework-grid:has(.services-framework-item:nth-of-type(3):hover) .blob {
+  .services-framework
+    .content
+    .services-framework-grid:has(.services-framework-item:nth-of-type(3):hover)
+    .blob {
     @apply right-1/2;
     @apply top-1/2;
   }
 
-  .services-framework .content .services-framework-grid:has(.services-framework-item:nth-of-type(3):hover) .blob + .blob {
+  .services-framework
+    .content
+    .services-framework-grid:has(.services-framework-item:nth-of-type(3):hover)
+    .blob
+    + .blob {
     @apply right-2/3;
     @apply top-1/2;
   }
 
-  .services-framework .content .services-framework-grid:has(.services-framework-item:nth-of-type(4):hover) .blob {
+  .services-framework
+    .content
+    .services-framework-grid:has(.services-framework-item:nth-of-type(4):hover)
+    .blob {
     @apply right-0;
     @apply top-1/2;
   }
 
-  .services-framework .content .services-framework-grid:has(.services-framework-item:nth-of-type(4):hover) .blob + .blob {
+  .services-framework
+    .content
+    .services-framework-grid:has(.services-framework-item:nth-of-type(4):hover)
+    .blob
+    + .blob {
     @apply right-1/3;
     @apply top-1/2;
   }
