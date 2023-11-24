@@ -4249,15 +4249,34 @@ img {
   padding-block: 60px;
 }
 
-.services-framework
-    .content
-    .services-framework-grid {
+.services-framework .content .services-framework-grid {
   margin-block-start: 184px;
+  position: relative;
+  z-index: 0;
 }
 
-.services-framework
-    .content
-    .services-framework-grid .blob {
+.services-framework .content .services-framework-grid .blob {
+  width: 340px;
+  height: 340px;
+  flex-shrink: 0;
+  border-radius: 340px;
+  background: rgba(225, 74, 107, 0.75);
+  filter: blur(100px);
+  position: absolute;
+  top: 1.5rem;
+  right: 50%;
+  z-index: -10;
+}
+
+.services-framework .content .services-framework-grid .blob + .blob {
+  width: 543px;
+  height: 543px;
+  flex-shrink: 0;
+  border-radius: 543px;
+  background: rgba(134, 113, 244, 0.6);
+  filter: blur(100px);
+  right: 66.666667%;
+  z-index: -20;
 }
 
 *, ::before, ::after {

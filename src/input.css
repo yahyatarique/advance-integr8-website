@@ -2019,15 +2019,33 @@
     border-top: 4px solid rgba(255, 255, 255, 0.3);
     padding-block: 60px;
   }
-  .services-framework
-    .content
-    .services-framework-grid {
-      margin-block-start: 184px;
-    }
+  .services-framework .content .services-framework-grid {
+    margin-block-start: 184px;
+    @apply relative;
+    @apply z-0;
+  }
 
-    .services-framework
-    .content
-    .services-framework-grid .blob {
-      
-    }
+  .services-framework .content .services-framework-grid .blob {
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+    border-radius: 340px;
+    background: rgba(225, 74, 107, 0.75);
+    filter: blur(100px);
+    @apply absolute;
+    @apply top-6;
+    @apply right-1/2;
+    @apply -z-10;
+  }
+
+  .services-framework .content .services-framework-grid .blob + .blob {
+    width: 543px;
+    height: 543px;
+    flex-shrink: 0;
+    border-radius: 543px;
+    background: rgba(134, 113, 244, 0.6);
+    filter: blur(100px);
+    @apply right-2/3;
+    @apply -z-20;
+  }
 }
