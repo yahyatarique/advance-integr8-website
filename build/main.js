@@ -452,19 +452,6 @@ if (window.innerWidth > 768) {
     x: 500,
     scale: 1.2,
   });
-  gsap.from(".achievements", {
-    scrollTrigger: {
-      preventOverlaps: true,
-      trigger: ".hero",
-      start: "top 80%",
-      end: "bottom 40%",
-      scrub: true,
-      triggerAction: "play none none reverse",
-      ease: "power1.in",
-    },
-    opacity: 0,
-    y: -300,
-  });
   gsap.from(".achievement ", {
     scrollTrigger: {
       trigger: ".achievements",
@@ -484,11 +471,13 @@ if (window.innerWidth > 768) {
     scrollTrigger: {
       trigger: ".achievement",
       start: "top 80%",
-      end: "top 5%",
+      end: "top 20%",
       scrub: 0.3,
+      duration: 0.5,
       triggerAction: "play none none reverse",
+      ease: "power1.in",
     },
-    y: 100,
+    y: 1000,
     skewY: 25,
   });
   gsap.from(".about-us-section > img", {
