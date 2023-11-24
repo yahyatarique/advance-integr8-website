@@ -1477,7 +1477,7 @@ body .splash-loader {
   padding-inline: 0%;
   /* margin-block-end: 2rem; */
   color: var(--primary-blue, #102054);
-  font-size: 105px;
+  font-size: max(105px, 6vw);
   text-align: left;
   font-weight: 900;
   line-height: 115px;
@@ -1495,7 +1495,7 @@ body .splash-loader {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: min(100%, 1366px);
+  min-width: min(100%, 1366px);
   margin-inline: 0;
   gap: 0.25ch;
   vertical-align: middle;
@@ -5016,12 +5016,12 @@ img {
     gap: 0px;
   }
 
-  .md\:gap-20 {
-    gap: 5rem;
+  .md\:gap-2 {
+    gap: 0.5rem;
   }
 
-  .md\:gap-6 {
-    gap: 1.5rem;
+  .md\:gap-20 {
+    gap: 5rem;
   }
 
   .md\:self-start {
