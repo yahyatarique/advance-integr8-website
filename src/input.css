@@ -1,12 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
 @font-face {
   font-family: "Eurostile";
   src: url("../assets/eurostile/Eurostile.ttf");
 }
 
+/* ? Homepage */
 @layer base {
   html,
   body {
@@ -20,6 +22,10 @@
 
   .text-poppins {
     font-family: "Poppins", sans-serif;
+  }
+
+  .text-euro {
+    font-family: "Eurostile", sans-serif;
   }
 
   body .splash-loader {
@@ -1843,4 +1849,120 @@
   /* .about-us-section {
     overflow-x: hidden;
   } */
+}
+
+/* ? Services Page */
+@layer base {
+  .services-hero .hero-item {
+    color: var(--primary-blue, #102054);
+    font-family: "Eurostile", sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 148.8px */
+    text-transform: uppercase;
+    margin-inline: 0.1em;
+  }
+
+  .hero-item.text-primary-red {
+    color: var(--primary-red, #e6222f);
+  }
+
+  .services-hero .hero-item.hero-item-last p {
+    color: var(--secondary-dark, #232323);
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 28.8px */
+    max-width: 60%;
+    width: auto;
+    text-transform: none;
+    text-align: left;
+  }
+
+  .services-pin-section .services-details .services-pin-title {
+    color: var(--primary-red, #e6222f);
+    font-family: "Eurostile", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 76.8px */
+    text-transform: uppercase;
+    margin-block-end: 44px;
+  }
+  .services-pin-section .services-details .services-pin-desc {
+    color: var(--primary-blue, #102054);
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 38.4px */
+  }
+
+  .services-pin-section .services-bullets .services-bullet-item.active {
+    @apply text-primary-red;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 38.4px */
+    text-transform: capitalize;
+  }
+  .services-pin-section .services-bullets .services-bullet-item {
+    color: var(--secondary-grey, #c1c1c1);
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 38.4px */
+    text-transform: capitalize;
+  }
+
+  .services-pin-section .row .col-60 {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-start;
+    @apply gap-20;
+    @apply items-start;
+    padding-inline-end: 124px;
+  }
+
+  .services-pin-section .row .col-40 {
+    padding-inline-start: 124px;
+  }
+
+  .services-pin-section .row .col-60 button {
+    max-width: fit-content;
+  }
+
+  .services-pin-section .services-bullets {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-start;
+    @apply gap-5;
+  }
+
+  .services-pin-section .scroller {
+    --services-index: 1;
+    --services-count: 6;
+    width: 4px;
+    height: 80vh;
+    flex-shrink: 0;
+    border-radius: 21px;
+    opacity: 0.6;
+    background: var(--secondary-grey, #c1c1c1);
+    @apply relative;
+  }
+
+  .services-pin-section .scroller::after {
+    content: "";
+    width: 4px;
+    height: calc(var(--services-index) * 80vh / var(--services-count));
+    border-radius: 21px;
+    background: var(--primary-red, #e6222f);
+    @apply absolute;
+    @apply top-0;
+    @apply left-0;
+  }
 }
