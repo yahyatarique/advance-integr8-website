@@ -153,7 +153,7 @@ function createSplashScreen(tl) {
     scale: 100,
     opacity: 0,
     ease: "power1.in",
-    duration: 4.8,
+    duration: 2.5,
     background: 'transparent',
     onComplete: () => {
       document.querySelector(".splash-loader").style.display = "none";
