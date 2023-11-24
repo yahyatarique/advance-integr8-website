@@ -148,6 +148,13 @@ function onClickSlide(index) {
   });
 }
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
 function createSplashScreen(tl) {
   tl.to('.animation-splash', {
     scale: 100,
